@@ -1,0 +1,51 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$third: 33.3333333333%
+$main-panel-width: 84%
+
+
+.main-panel
+	width: $main-panel-width
+	max-width: 1000px
+	height: 94px
+	margin: 30px auto 0px
+	text-align: center
+	border: 1px black solid
+
+@media screen and (max-width: 767px)
+	.main-panel
+		width: 100%
+
+#logo-panel
+	float: left
+	width: 94px	
+	img
+		width: 100%
+
+//***************
+
+#middle-panel
+	box-sizing: border-box
+	// border: 1px blue solid
+	width: 65%
+	float: left
+	padding: 10px 5px
+	#title-panel
+		margin: 0px auto
+		// border: 1px orange solid
+		width: 90%
+		img
+			height: 46px
+			max-width: 800px
+
+@media screen and (max-width: 767px)
+	#title-panel
+		width: 75%
+
+//*****************
+
+#info-panel
+	float: right
+	border: 2px red solid
