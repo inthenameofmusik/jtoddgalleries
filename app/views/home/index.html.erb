@@ -1,19 +1,82 @@
-<div class="main-panel">
-	<div id="logo-panel">
-		<%= link_to image_tag("jtg_logo.png"), root_path, :class => "logo" %>
+
+<%= render 'partials/header' %>
+
+<br>
+<br>
+
+<%= render :partial => "partials/feature", locals: {type: @full_feature} %>
+
+<div id="main-1">
+	<div id="welcome">
+		<p id="welcome-1">Largest Selection of Fine Art in New England</p>
+		<p id="welcome-2">Est. 1980</p>
 	</div>
-	<div id="middle-panel">
-		<div id="title-panel">
-			<%= link_to	image_tag("jtg_title.png"), root_path, :class => "title" %>
-		</div>
-		<div id="nav-panel">
-			Hello My Name Is Niles Brandon
+	<div id="welcome-browse">
+		<span id="full-info">100+ Artists<span id="get-rid-of-2"> • 1000+ Paintings</span><span id="get-rid-of-1"> • Custom Framing</span></span>
+		<div id="welcome-browse-button">
+			<%= link_to raw('BROWSE OUR COLLECTION'), artworks_path %>
 		</div>
 	</div>
-	<div id="info-panel">
-		<div id="info-panel-address">
-			<%= link_to(raw("572 Washington St.<br>Wellesley, MA 02482")) %>
+	<div id="now-playing-panel">
+		<div id="now-playing-panel-bg">
+		</div>
+		<div id="now-playing-title">Now Showing
+		</div>
+		<div id="now-playing-info">
+		"A Chocolate Chandelier"<br>
+		Luke DuBois<br>
+		August 11, 2016
+		</div>
+		<%= link_to "", exhibitions_path, :id => "to-now-showing" %>
+	</div>
+	<div id="sub-heading-panel">
+		<div id="sub-heading-1" class="individual-sub-heading">
+			<div class="desaturated-heading">
+			</div>
+			<div class="color-sub-heading">
+			</div>
+			<div class="gradient-overlay">
+			</div>
+			<div class="sub-heading-text">
+				<div class="title">Home Trial</div><br>
+				<span class="info">Completely <span class="free-emphasis">Free</span> Home Trial<br>
+				at your most convenient time</span>
+			</div>
+			<%= link_to "", contact_path, :class => "clickable-overlay" %>
+		</div>
+		<div id="sub-heading-2" class="individual-sub-heading">
+			<div class="desaturated-heading">
+			</div>
+			<div class="color-sub-heading">
+			</div>
+			<div class="gradient-overlay">
+			</div>
+			<div class="sub-heading-text">
+				<div class="title">News</div><br>
+				<span class="article info">Oct 23: Building Renovation</span><br>
+				<span class="article info">Nov 8: Mona Visits</span><br>
+				<span class="article info">January 12: World Famous Visit</span><br>
+			</div>
+			<%= link_to "", contact_path, :class => "clickable-overlay" %>
+		</div>
+		<div id="sub-heading-3" class="individual-sub-heading">
+			<div class="desaturated-heading">
+			</div>
+			<div class="color-sub-heading">
+			</div>
+			<div class="gradient-overlay">
+			</div>
+			<div class="sub-heading-text">
+				<div class="title">Art Facts</div><br>
+				<span class="article info">Oil prints are generally less expensive than their brother, acrylic prints</span>
+			</div>
+			<%= link_to "", contact_path, :class => "clickable-overlay" %>
 		</div>
 	</div>
-	<!-- <p>Find me in app/views/home/index.html.erb</p> -->
+	<br>
+	<br>
 </div>
+
+<%= render 'partials/footer' %>
+
+<!-- '<span id="line-1">BROWSE OUR</span><br><span id="line2">COLLECTION</span>' -->

@@ -2,50 +2,274 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$third: 33.3333333333%
-$main-panel-width: 84%
+$jtodd-blue: #305768
 
+=absolutely-fill
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
 
-.main-panel
-	width: $main-panel-width
-	max-width: 1000px
-	height: 94px
-	margin: 30px auto 0px
+#main-1
+	max-width: 960px
+	margin: 0px auto
+	position: relative
 	text-align: center
-	border: 1px black solid
+	// border: 1px red solid
+	@media screen and (max-width: 800px)
+		margin-top: 50px
+	@media screen and (max-width: 520px)
+		margin-top: 80px
+	#welcome
+		@media screen and (max-width: 800px) and (min-width: 700px)
+			margin-top: 60px
+			// border: 1px blue solid
+		#welcome-1
+			font-family: "Marion"
+			font-style: italic
+			font-size: 32px
+			letter-spacing: 6px
+			color: $jtodd-blue
+		#welcome-2
+			font-family: "kepler-std-display"
+			margin-top: -30px
+			letter-spacing: 4px
 
-@media screen and (max-width: 767px)
-	.main-panel
+	#welcome-browse
+		position: relative
+		max-width: 960px
+		margin-top: 100px
+		height: 18px
 		width: 100%
-
-#logo-panel
-	float: left
-	width: 94px	
-	img
+		background: image_url("rounding.png")
+		@media screen and (max-width: 920px)
+			background: none
+		background-size: 100%
+		#full-info
+			position: absolute
+			left: 13px
+			@media screen and (max-width: 920px)
+				left: 100px
+			@media screen and (max-width: 850px)
+				left: 70px
+			@media screen and (max-width: 800px)
+				left: 50px
+			@media screen and (max-width: 740px)
+				left: 30px
+			@media screen and (max-width: 700px)
+				left: 0px
+				right: 0px
+				margin: 0px auto
+				text-align: center
+			bottom: 14px
+			// border: 1px black solid
+			text-align: left
+			font-family: "Marion"
+			font-style: italic
+			color: $jtodd-blue
+			font-size: 19px
+			letter-spacing: 8px
+			#get-rid-of-1
+				@media screen and (max-width: 920px)
+					display: none
+			// #get-rid-of-2
+			// 	@media screen and (max-width: 700px)
+			// 		display: none
+		#welcome-browse-button
+			box-sizing: border-box
+			border: 2px $jtodd-blue solid
+			border-radius: 20px
+			position: absolute
+			right: 7px
+			@media screen and (max-width: 920px)
+				right: 100px
+			@media screen and (max-width: 850px)
+				right: 70px
+			@media screen and (max-width: 800px)
+				right: 50px
+			@media screen and (max-width: 740px)
+				right: 30px
+			@media screen and (max-width: 700px)
+				right: 0px
+				left: 0px
+				top: 15px
+				margin: 0px auto
+			bottom: 6px
+			width: 200px
+			line-height: 14px
+			padding-top: 4px
+			height: 40px
+			@media screen and (max-width: 900px)
+				bottom: 9px
+			a
+				display: inline-block
+				font-family: "Copperplate"
+				font-weight: lighter
+				text-decoration: none
+				color: black
+		#welcome-browse-button:hover
+			background-color: lighten($jtodd-blue, 55)
+			transition: background-color .1s linear
+	#now-playing-panel
+		box-sizing: border-box
+		margin-top: 80px
 		width: 100%
+		height: 112px
+		border: 2px $jtodd-blue solid
+		// z-index: 10
+		display: block
+		position: relative
+		#now-playing-panel-bg
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			&:hover
+				opacity: .4
+		#to-now-showing
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+		#now-playing-panel-bg::after
+			content: ""
+			background: image_url("chocolate.jpg")
+			background-size: cover
+			background-repeat: no-repeat
+			opacity: 0.65
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			position: absolute
+			z-index: 0
 
-//***************
+		#now-playing-title
+			position: absolute
+			top: 5px
+			left: 11px
+			font-family: "trajan-pro-3"
+			font-size: 19px
+			letter-spacing: 11px
+		#now-playing-info
+			position: absolute
+			bottom: 5px
+			left: 11px
+			text-align: left
+			font-family: "Marion"
+			font-style: italic
+			letter-spacing: 4px
+			font-size: 16px
+			line-height: 17px
+			color: #333333
 
-#middle-panel
-	box-sizing: border-box
-	// border: 1px blue solid
-	width: 65%
-	float: left
-	padding: 10px 5px
-	#title-panel
-		margin: 0px auto
-		// border: 1px orange solid
-		width: 90%
-		img
-			height: 46px
-			max-width: 800px
+	#sub-heading-panel
+		width: 100%
+		height: 280px
+		margin-top: 65px
+		box-sizing: border-box
+		position: relative
+		// border: 2px purple dotted
+		.individual-sub-heading
+			position: relative
+			box-sizing: border-box
+			border: 1px $jtodd-blue solid
+			width: 30%
+			height: 280px
+			float: left
+			@media screen and (max-width: 800px)
+				border: 3px $jtodd-blue solid
+				width: 100%
+				margin-bottom: 30px
+				height: 70px
 
-@media screen and (max-width: 767px)
-	#title-panel
-		width: 75%
+			.desaturated-heading
+				+absolutely-fill
+			.color-sub-heading
+				+absolutely-fill
+				display: none
+			.gradient-overlay
+				+absolutely-fill
+				background: linear-gradient(to bottom, rgba(227,226,217,1) 0%, rgba(227,226,217,1) 30%, rgba(0,0,0,0) 100%)
+			.sub-heading-text
+				+absolutely-fill
+				.title
+					display: block
+					position: relative
+					margin-top: 10px
+					margin-bottom: 0
+					font-family: "trajan-pro-3"
+					font-size: 19px
+					letter-spacing: 10px
+					font-weight: 100
+					@media screen and (max-width: 800px)
+						position: absolute
+						right: 0
+						left: 0
+						margin: 5px auto
+						text-align: center
+				.info
+					display: block
+					position: relative
+					margin-top: -3px
+					font-family: "proxima-nova-condensed"
+					color: gray
+					letter-spacing: 4px
+					font-size: 13px
+					text-align: center
+					@media screen and (max-width: 800px)
+						// position: absolute
+						// right: 0
+						// top: 10px
+						display: none
+					.free-emphasis
+						font-style: italic
+						color: darken(gray, 30)
+			.clickable-overlay
+				display: block
+				+absolutely-fill
+		#sub-heading-1
+			box-sizing: border-box
+			margin-right: 5%
+			@media screen and (max-width: 800px)
+				margin-right: 0
+				// height: 112px
+				border-right: none
+			.desaturated-heading
+				background: image_url("sub-headings/vine_sm_desat.jpg")
+				background-size: cover
+			.color-sub-heading
+				background: image_url("sub-headings/vine_sm.jpg")
+				background-size: cover
 
-//*****************
+		#sub-heading-2
+			box-sizing: border-box
+			.info.article
+				text-align: left
+				margin-left: 5px
+				margin-top: -10px
+			.desaturated-heading
+				background: image_url("sub-headings/canoe_sm_desat.jpg")
+				background-size: cover
+			.color-sub-heading
+				background: image_url("sub-headings/canoe_sm.jpg")
+				background-size: cover
 
-#info-panel
-	float: right
-	border: 2px red solid
+		#sub-heading-3
+			box-sizing: border-box
+			margin-left: 5%
+			@media screen and (max-width: 800px)
+				margin-left: 0
+				// height: 112px
+				border-left: none
+			.desaturated-heading
+				background: image_url("sub-headings/cherries_sm_desat.jpg")
+				background-size: cover
+			.color-sub-heading
+				background: image_url("sub-headings/cherries_sm.jpg")
+				background-size: cover
+
+

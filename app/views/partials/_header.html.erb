@@ -1,0 +1,37 @@
+<header>
+	<div id="logo-panel">
+		<%= link_to image_tag("jtg_logo.png"), root_path, :class => "logo" %>
+	</div>
+	<div id="middle-panel">
+		<div id="title-panel">
+			<%= link_to	image_tag("jtg_title.png"), root_path, :class => "title" %>
+		</div>
+		<div id="nav-panel">
+			<%= link_to "About", about_path, :class => "nav-item" %>
+			<%= link_to "Fine Art", artworks_path, :class => "nav-item" %>
+			<%= link_to "Exhibitions", exhibitions_path, :class => "nav-item" %>
+			<br id="nav-line-break">
+			<%= link_to "Services", services_path, :class => "nav-item" %>
+			<%= link_to "News", articles_path, :class => "nav-item" %>
+			<%= link_to "Contact", contact_path, :class => "nav-item" %>
+		</div>
+	</div>
+	<div>
+		<%= image_tag("header_divider.png", id: "header-divider") %>
+	</div>
+	<div id="info-panel" class="">
+		<div id="info-panel-address">
+			<%= link_to raw("572 Washington St.<br>Wellesley, MA 02482"), root_path, :class => "info-text info-1 non-hovered" %>
+			<%= link_to image_tag("info_map_larger.png"), root_path, :id => "info-icon-map", :class => "info-icon info-1 non-hovered" %>
+		</div>
+		<div id="info-panel-phone">
+			<%= link_to "508-333-2232", root_path, :class => "info-text info-2 non-hovered" %>
+			<%= link_to image_tag("info_phone.png"), root_path, :id => "info-icon-phone", :class => "info-icon info-2 non-hovered" %>
+		</div>
+		<div id="info-panel-email">
+			<%= link_to "fineart@jtodd.com", root_path, :class => "info-text info-3 non-hovered" %>
+			<%= link_to image_tag("info_email.png"), root_path, :id => "info-icon-email", :class => "info-icon info-3 non-hovered" %>
+		</div>
+	</div>
+	<!-- <p>Find me in app/views/home/index.html.erb</p> -->
+</header>

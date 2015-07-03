@@ -1,0 +1,47 @@
+<footer>
+	<%= image_tag "footer/bottom_divider.png", :id => "bottom-divider" %>
+	
+	<div id="footer-panels">
+		<div id="footer-panel-1" class="a-footer-panel">
+			<div class="panel-title">
+			Follow Us
+			</div>
+			<div id="social-icons">
+				<div id="social-1">
+					<%= link_to image_tag("footer/facebook.png"), contact_path, :class => "color-icon" %>
+				</div>
+				<div id="social-2">
+					<%= link_to image_tag("footer/pinterest.png"), contact_path, :class => "color-icon" %>
+				</div>
+				<div id="social-3">
+					<%= link_to image_tag("footer/instagram.png"), contact_path, :class => "color-icon" %>
+				</div>
+			</div>
+		</div>
+		<div id="footer-panel-2" class="a-footer-panel">
+			<div class="panel-title">
+			Newsletter
+			</div>
+			<div id="email-form">
+			<%= form_for("/subscribe", method: "post") do %>
+				<%= label_tag(:e, "Enter Email") %> <br><br>
+				<%= text_field_tag(:e) %> <br><br>
+				<%= submit_tag("Subscribe", id: "submit-button") %>
+			<% end %>
+			</div>
+		</div>
+		<div id="footer-panel-3" class="a-footer-panel">
+			<div class="panel-title">
+			Pinterest
+			</div>
+			<div id="pinterest-panel">
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div id="copyright">
+	©2015 J. Todd Galleries
+	</div>
+
+</footer>
