@@ -169,6 +169,9 @@ $jtodd-blue: #305768
 	#sub-heading-panel
 		width: 100%
 		height: 280px
+		// @media screen and (max-width: 450px)
+		// 	height: 240px
+		// 	overflow: hidden
 		margin-top: 65px
 		box-sizing: border-box
 		position: relative
@@ -178,13 +181,15 @@ $jtodd-blue: #305768
 			box-sizing: border-box
 			border: 1px $jtodd-blue solid
 			width: 30%
+			@media screen and (max-width: 800px)
+				width: 45%
 			height: 280px
 			float: left
-			@media screen and (max-width: 800px)
-				border: 3px $jtodd-blue solid
-				width: 100%
-				margin-bottom: 30px
-				height: 70px
+			// @media screen and (max-width: 800px)
+			// 	border: 1px $jtodd-blue solid
+			// 	width: 100%
+			// 	margin-bottom: 30px
+			// 	height: 70px
 
 			.desaturated-heading
 				+absolutely-fill
@@ -205,12 +210,12 @@ $jtodd-blue: #305768
 					font-size: 19px
 					letter-spacing: 10px
 					font-weight: 100
-					@media screen and (max-width: 800px)
-						position: absolute
-						right: 0
-						left: 0
-						margin: 5px auto
-						text-align: center
+					// @media screen and (max-width: 800px)
+					// 	position: absolute
+					// 	right: 0
+					// 	left: 0
+					// 	margin: 5px auto
+					// 	text-align: center
 				.info
 					display: block
 					position: relative
@@ -220,11 +225,11 @@ $jtodd-blue: #305768
 					letter-spacing: 4px
 					font-size: 13px
 					text-align: center
-					@media screen and (max-width: 800px)
-						// position: absolute
-						// right: 0
-						// top: 10px
-						display: none
+					// @media screen and (max-width: 800px)
+					// 	// position: absolute
+					// 	// right: 0
+					// 	// top: 10px
+					// 	display: none
 					.free-emphasis
 						font-style: italic
 						color: darken(gray, 30)
@@ -234,19 +239,33 @@ $jtodd-blue: #305768
 		#sub-heading-1
 			box-sizing: border-box
 			margin-right: 5%
-			@media screen and (max-width: 800px)
-				margin-right: 0
-				// height: 112px
-				border-right: none
+			// @media screen and (max-width: 800px)
+			// 	margin-right: 0
+			// 	// height: 112px
+			// 	border-right: none
 			.desaturated-heading
 				background: image_url("sub-headings/vine_sm_desat.jpg")
 				background-size: cover
 			.color-sub-heading
 				background: image_url("sub-headings/vine_sm.jpg")
 				background-size: cover
+			& .home-trial-break
+				display: none
+				@media screen and (max-width: 530px)
+					display: block
+			& #title-break
+				display: none
+				@media screen and (max-width: 530px)
+					display: block
 
 		#sub-heading-2
 			box-sizing: border-box
+			@media screen and (max-width: 800px)
+				margin-left: 5%
+			& .sub-heading-text
+				@media screen and (max-width: 530px)
+					margin-top: 12px
+					margin-bottom: 50px
 			.info.article
 				text-align: left
 				margin-left: 5px
@@ -257,14 +276,20 @@ $jtodd-blue: #305768
 			.color-sub-heading
 				background: image_url("sub-headings/canoe_sm.jpg")
 				background-size: cover
+			& #breakpoint-margin
+				@media screen and (max-width: 530px)
+					margin-top: 10px
 
 		#sub-heading-3
 			box-sizing: border-box
 			margin-left: 5%
 			@media screen and (max-width: 800px)
-				margin-left: 0
-				// height: 112px
-				border-left: none
+				display: none
+				margin-left: 0%
+			// @media screen and (max-width: 800px)
+			// 	margin-left: 0
+			// 	// height: 112px
+			// 	border-left: none
 			.desaturated-heading
 				background: image_url("sub-headings/cherries_sm_desat.jpg")
 				background-size: cover
