@@ -1,34 +1,6 @@
-<%= form_for(@artwork) do |f| %>
-  
-  <% if @artwork.errors.any? %>
-    <div id="error_explanation">
-      <h2>
-        <%= pluralize(@artwork.errors.count, "error") %>
-        prohibited this article from being saved:
-      </h2>
-      <ul>
-        <% @artwork.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label "Title" %><br>
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label "JTG#" %><br>
-    <%= f.text_field :jtg %>
-  </div>
-  <div class="field">
-    <% Subject.all.each do |subject| %>
-      <%= check_box_tag "artwork[subject_ids][]", subject.id, @artwork.subject_ids.include?(subject.id) %>
-      <%= subject.title %><br>
-    <% end %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<%= simple_form_for @artwork do |f| %>
+  <%= f.input :title %>
+  <%= f.input :jtg %>
+  <%= f.button :submit %>
+  <%= f.association :subjects, as: :check_boxes %>
 <% end %>

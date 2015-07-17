@@ -6,6 +6,8 @@ gem 'rails', '4.2.1'
 
 ruby '2.2.1'
 
+gem 'simple_form'
+
 # Use sqlite3 as the database for Active Record
 
 # Use SCSS for stylesheets

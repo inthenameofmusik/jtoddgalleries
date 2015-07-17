@@ -38,7 +38,7 @@ class ArtworksController < ApplicationController
 
 	private
 
-	def artwork_params
-		params.require(:artwork).permit(:title, :jtg, subjects_attributes: [:subject_ids])
-	end
+		def artwork_params
+			params.require(:artwork).permit(:title, :jtg, :subject_ids => [])
+		end
 end
