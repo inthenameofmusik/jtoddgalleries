@@ -1,0 +1,17 @@
+<%= render 'partials/header' %>
+
+<br>
+<br>
+
+<%= render :partial => "partials/feature", locals: {type: @full_feature} %>
+
+<br>
+<% @artwork.each do |art| %>
+	<%= art.title %> <br>
+	<%= art.jtg %> <br> <br>
+	Subjects: <br>
+	<% art.subjects.each do |r| %>
+		<%= r.title %>
+	<% end %>
+	<hr>
+<% end %>
