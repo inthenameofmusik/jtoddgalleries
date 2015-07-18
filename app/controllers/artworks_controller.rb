@@ -5,7 +5,15 @@ class ArtworksController < ApplicationController
 	end
 
 	def index2
-		@artwork = Artwork.all
+		@artwork_q = Artwork.all
+
+		# render plain: @artwork_q
+	end
+
+	def q
+		@artwork_q = Artwork.search params[:q], :conditions => {:subject => params[:artwork][:subject_ids], :location => params[:artwork][:location_ids], :artist_last => params[:artwork][:artist_id], :artist_first => params[:artwork][:artist_id]}
+		render 'index2'
+
 	end
 
 	def show

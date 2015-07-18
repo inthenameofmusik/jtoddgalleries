@@ -10,18 +10,42 @@
 
 <div id="fineart-full-page">
 	<div id="search-panel">
-		<div id="top-round">
-		</div>
-		<div id="main-row">
-			<div id="column-1">
-				<div id="row-1">
-				Power Search
+		<%= form_tag('/fineart/q', method: :get) do %>
+			<div id="top-round">
+			</div>
+			<div id="main-row">
+				<div id="column-1">
+					<div id="row-1">
+					Power Search
+					</div>
+					<div id="row-2">
+					<%= text_field_tag 'q', '', :id => "q-search-bar" %>
+					</div>
+					<div id="row-3">
+					Search Keyword, Title, Artist,<br>Subject, Location, & JTG#
+					</div>
+				</div>
+				<div id="column-2">
+					<div id="sub-column-1" class="sub-column">
+						<%= collection_select(:artwork, :artist_id, Artist.order('lower(last_name) ASC'), :last_name, :last_first, include_blank: "Artist") %>
+					</div>
+					<div id="sub-column-2" class="sub-column">
+						<%= collection_select(:artwork, :subject_ids, Subject.order('lower(title) ASC'), :title, :title, include_blank: "Subject") %>
+					</div>
+					<div id="sub-column-3" class="sub-column">
+						<%= collection_select(:artwork, :location_ids, Location.order('lower(title) ASC'), :title, :title, include_blank: "Location") %>
+					</div>
 				</div>
 			</div>
-			<div id="column-2">
+			<%= submit_tag 'Submit', id: "query-submit" %>
+			<div id="bottom-round">
 			</div>
-		</div>
-		<div id="bottom-round">
-		</div>
+		<% end %>
+	</div>
+	<div id="results-panel">
+		<% @artwork_q.each do |art| %>
+		<%= art.title %>
+		<% end %>
 	</div>
 </div>
+

@@ -1,3 +1,5 @@
+$jtodd-blue: #305768
+
 #picture-container
 	width: 100%
 	height: 400px
@@ -140,6 +142,8 @@
 		width: 100%
 		height: 130px
 		// border: 1px red solid
+		#query-submit
+			display: none
 		#top-round
 			width: 100%
 			height: 25px
@@ -148,27 +152,77 @@
 		#main-row
 			width: 100%
 			height: 70px
-			border: 1px blue solid
+			// border: 1px blue solid
 			font-family: "Marion W01 Italic"
 			#column-1
 				box-sizing: border-box
 				width: 50%
 				height: 100%
-				border: 1px red solid
+				// border: 1px red solid
 				float: left
 				#row-1
+					margin-top: 7px
 					width: 100%
 					text-align: center
-					font-family: "Marion W01 Italic"
+					font-family: Copperplate
+					letter-spacing: 2px
+					color: $jtodd-blue
+				#row-2
+					position: relative
+					width: 70%
+					margin: 0px auto
+					height: 25px
+					background-image: image_url("input_diamond.png")
+					background-size: contain
+					background-repeat: no-repeat
+					// border: 1px green solid
+					#q-search-bar
+						position: absolute
+						width: 58%
+						top: 3px
+						left: 0
+						right: 0
+						margin: 0px auto
+						border-radius: 30px
+						background-color: transparent
+						border: none
+						text-align: center
+						font-size: 14px
+						letter-spacing: 1.2px
+				#row-3
+					width: 100%
+					font-size: 9px
+					margin-top: 0px
+					text-align: center
+					font-style: italic
+					letter-spacing: 1.5px
 			#column-2
 				box-sizing: border-box
 				width: 50%
 				height: 100%
-				border: 1px blue solid
+				// border: 1px blue solid
 				float: left
+				.sub-column
+					padding-top: 24px
+					box-sizing: border-box
+					width: 33.33333%
+					// border: 1px purple solid
+					float: left
+					height: 100%
+					select
+						width: 95%
+						background: transparent
+						border: $jtodd-blue 1px solid
+						border-radius: 5px
+						text-align: center
+						letter-spacing: 2.1px
+						color: $jtodd-blue
 		#bottom-round
 			width: 100%
 			height: 27px
 			background-image: image_url("rounded_bottom_2.png")
 			background-size: 100%
 			// border: 1px green solid
+	#results-panel
+		border: 1px blue solid
+		height: 400px

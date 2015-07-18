@@ -9,7 +9,12 @@ Rails.application.routes.draw do
 
   get 'about' => 'about#index'
   resources :artworks
+
+  #for users
   get 'fineart' => 'artworks#index2'
+  get 'fineart/q' => 'artworks#q'
+
+  #and back
   get 'exhibitions' => 'exhibitions#index'
   get 'services' => 'services#index'
   resources :articles
