@@ -1,0 +1,44 @@
+<%= render 'partials/header' %>
+
+<br>
+<br>
+
+<%= render :partial => "partials/feature", locals: {type: @full_feature} %>
+
+<br>
+<%= render 'partials/artwork_admin' %>
+<br>
+
+<div id="admin-subjects">
+	<div class="add-field">
+		<% flash.each do |key, value| %>
+			<div class="alert alert-<%= key %>"><%= value %></div>
+		<% end %>
+		<%= simple_form_for @new_subject do |f| %>
+			<%= f.input :title, label: "", placeholder: "Enter new subject...then press Enter", input_html: {id: "focused-text"} %>
+			<%= f.button :submit %>
+		<% end %>
+	</div>
+	<div class="list-fields">
+		<table>
+			<tr>
+				<td><strong>Record</strong></td>
+				<td><strong>Delete</strong></td>
+			</tr>
+			<% @subject.each do |s| %>
+			<tr>
+				<td><%= s.title %></td>
+				<td><%= link_to "Delete", s, method: :delete %></td>
+			</tr>
+			<% end %>
+
+		</table>
+	</div>
+</div>
+<br><br><br>
+
+<script>
+window.onload = function() {
+  var input = document.getElementById("focused-text").focus();
+}
+</script>

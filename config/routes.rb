@@ -9,10 +9,16 @@ Rails.application.routes.draw do
 
   get 'about' => 'about#index'
   resources :artworks
+  get 'fineart' => 'artworks#index2'
   get 'exhibitions' => 'exhibitions#index'
   get 'services' => 'services#index'
   resources :articles
   get 'contact' => 'contact#index'
+
+  resources :subjects
+  resources :locations
+  resources :keywords
+  resources :artists
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

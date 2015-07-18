@@ -4,6 +4,10 @@ class ArtworksController < ApplicationController
 		@artwork = Artwork.all
 	end
 
+	def index2
+		@artwork = Artwork.all
+	end
+
 	def show
 		@artwork = Artwork.find(params[:id])
 	end
@@ -39,6 +43,6 @@ class ArtworksController < ApplicationController
 	private
 
 		def artwork_params
-			params.require(:artwork).permit(:title, :jtg, :subject_ids => [])
+			params.require(:artwork).permit(:title, :jtg, :photo, :artist_id, :subject_ids => [], :location_ids => [], :keyword_ids => [], :style_ids => [], :medium_ids => [])
 		end
 end

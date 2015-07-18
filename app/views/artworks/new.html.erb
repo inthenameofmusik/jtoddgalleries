@@ -5,5 +5,28 @@
 
 <%= render :partial => "partials/feature", locals: {type: @full_feature} %>
 
+<div id="picture-container">
+</div>
+<div id="complete-upload-panel">
+	<%= render 'form' %>
+</div>
 
-<%= render 'form' %>
+
+<script>
+$(function() {
+  $('#photo-upload-field').on('change', function(event) {
+    var files = event.target.files;
+    var image = files[0]
+    var reader = new FileReader();
+    reader.onload = function(file) {
+      var img = new Image();
+      console.log(file);
+      img.src = file.target.result;
+      $('#picture-container').html(img);
+      $('#complete-upload-panel').css("background-color", "rgba(255,255,255,0.8)")
+    }
+    reader.readAsDataURL(image);
+    console.log(files);
+  });
+});
+</script>

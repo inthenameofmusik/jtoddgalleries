@@ -1,5 +1,6 @@
 class Subject < ActiveRecord::Base
-	#validations
+	#validations only for managing Subjects in their own domain
+		#not through Artwork Model
 	validates :title, presence: true, uniqueness: true
 
 	#associations

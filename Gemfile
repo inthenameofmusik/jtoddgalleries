@@ -39,6 +39,9 @@ gem 'mysql2'
 
 gem 'pg'
 
+gem 'paperclip'
+
+gem 'simple_form_fancy_uploads'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

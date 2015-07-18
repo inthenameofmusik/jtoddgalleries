@@ -1,6 +1,27 @@
 <%= simple_form_for @artwork do |f| %>
-  <%= f.input :title %>
-  <%= f.input :jtg %>
+  <div id="column-1">
+  <%= f.input :photo, as: :file, input_html: {id: "photo-upload-field"}, label: false %>
+  <%= f.input :title, label: false, placeholder: "Title", input_html: {id: "title-upload-field"} %>
+  <div>
+    <%= f.association :artist, label: false, :label_method => :fullname, default: 1, input_html: {id: "artist-drop-down"} %>
+  </div>
+  <%= f.association :styles, as: :check_boxes, label: false, input_html: {class: "style-selecting"} %>
+  <%= f.association :media, as: :check_boxes, label: false %>
+  <%= f.input :jtg, label: false, placeholder: "JTG#", input_html: {id: "jtg-inputter"} %>
+  </div>
+  <div id="column-2">
+    <div class="column-title">Subjects</div>
+  <%= f.association :subjects, as: :check_boxes, label: false, collection: Subject.order('title ASC') %>
+  </div>
+  <div id="column-3">
+    <div class="column-title">Locations</div>
+  <%= f.association :locations, as: :check_boxes, collection: Location.order('title ASC'), label: false %>
+  </div>
+  <div id="column-4">
+    <div class="column-title">Locations</div>
+  <%= f.association :keywords, as: :check_boxes, label: false, collection: Keyword.order('title ASC') %>
+  </div>
+  <div id="submit-row">
   <%= f.button :submit %>
-  <%= f.association :subjects, as: :check_boxes %>
+  </div>
 <% end %>

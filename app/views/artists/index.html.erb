@@ -1,0 +1,38 @@
+<%= render 'partials/header' %>
+
+<br>
+<br>
+
+<%= render :partial => "partials/feature", locals: {type: @full_feature} %>
+
+<br>
+<%= render 'partials/artwork_admin' %>
+<br>
+
+<div id="admin-artists">
+	<div class="add-field">
+		<% flash.each do |key, value| %>
+			<div class="alert alert-<%= key %>"><%= value %></div>
+		<% end %>
+		<%= simple_form_for @new_artist do |f| %>
+			<%= f.input :first_name, label: "", placeholder: "Enter first name..." %>
+			<%= f.input :last_name, label: "", placeholder: "Enter last name..." %>
+			<%= f.button :submit %>
+		<% end %>
+	</div>
+	<div class="list-fields">
+		<table>
+			<tr>
+				<td><strong>Record</strong></td>
+				<td><strong>Delete</strong></td>
+			</tr>
+			<% @artist.each do |s| %>
+			<tr>
+				<td><%= s.fullname %></td>
+				<td><%= link_to "Delete", s, method: :delete %></td>
+			</tr>
+			<% end %>
+
+		</table>
+	</div>
+</div>

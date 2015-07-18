@@ -1,0 +1,37 @@
+<%= render 'partials/header' %>
+
+<br>
+<br>
+
+<%= render :partial => "partials/feature", locals: {type: @full_feature} %>
+
+<br>
+<%= render 'partials/artwork_admin' %>
+<br>
+
+<div id="admin-locations">
+	<div class="add-field">
+		<% flash.each do |key, value| %>
+			<div class="alert alert-<%= key %>"><%= value %></div>
+		<% end %>
+		<%= simple_form_for @new_location do |f| %>
+			<%= f.input :title, label: "", placeholder: "Enter new location...then press Enter" %>
+			<%= f.button :submit %>
+		<% end %>
+	</div>
+	<div class="list-fields">
+		<table>
+			<tr>
+				<td><strong>Record</strong></td>
+				<td><strong>Delete</strong></td>
+			</tr>
+			<% @location.each do |s| %>
+			<tr>
+				<td><%= s.title %></td>
+				<td><%= link_to "Delete", s, method: :delete %></td>
+			</tr>
+			<% end %>
+
+		</table>
+	</div>
+</div>
