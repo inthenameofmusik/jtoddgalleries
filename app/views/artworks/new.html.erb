@@ -4,13 +4,27 @@
 <br>
 
 <%= render :partial => "partials/feature", locals: {type: @full_feature} %>
-
+<br>
+  <% if @artwork.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@artwork.errors.count, "error") %> prohibited
+        this artwork from being saved:
+      </h2>
+      <ul>
+        <% @artwork.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+<br>
 <div id="picture-container">
 </div>
 <div id="complete-upload-panel">
 	<%= render 'form' %>
 </div>
-
+<br><br><br>
 
 <script>
 $(function() {

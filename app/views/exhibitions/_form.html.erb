@@ -1,0 +1,33 @@
+<%= simple_form_for @exhibition, :html => {multipart: true} do |f| %>
+  <div id="column-1" class="exhibition">
+    <%= f.input :main_photo, as: :file, input_html: {id: "photo-upload-field"}, label: false %>
+    <%= f.input :title, label: false, placeholder: "Title", input_html: {id: "title-upload-field"} %>
+    <div>
+      <%= f.association :artist, label: false, :label_method => :fullname, default: 1, :include_blank => "Artist", input_html: {id: "artist-drop-down", :class => "exhibition"} %>
+    </div>
+    <%= f.input :admission, label: false, placeholder: "Admission", input_html: {id: "admission-inputter"} %>
+  </div>
+  <div id="column-2" class="exhibition">
+    <div>Description</div>
+    <%= f.input :description, as: :text, label: false, :input_html => {rows: 20, cols: 45}  %>
+  </div>
+  <div id="column-3" class="exhibition">
+    <div>From Date</div>
+    <%= f.input :from_date, as: :date, label: false %>
+    <br><br><br><br><br>
+    <div>To Date</div>
+    <%= f.input :to_date, as: :date, label: false, :include_blank => true %>
+  </div>
+  <div id="column-4" class="exhibition">
+  <div>Alternative Photos</div>
+    <%= f.input :alt_photo_1, as: :file, label: false %>
+    <br><br><br><br><br>
+    <%= f.input :alt_photo_2, as: :file, label: false %>
+    <br><br><br><br><br>
+    <%= f.input :alt_photo_3, as: :file, label: false %>
+  </div>
+  <div id="submit-row">
+    <%= f.button :submit %>
+  </div>
+  <br><br>
+<% end %>

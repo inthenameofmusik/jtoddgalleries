@@ -19,15 +19,16 @@
 	</div>
 	<div id="now-playing-panel">
 		<div id="now-playing-panel-bg">
+			<%= image_tag @first_one.main_photo.url(:listing) %>
 		</div>
-		<div id="now-playing-title">Now Showing
+		<div id="now-playing-title"><%= @correct_version %>
 		</div>
 		<div id="now-playing-info">
-		"A Chocolate Chandelier"<br>
-		Luke DuBois<br>
-		August 11, 2016
+		"<%= @first_one.title %>"<br>
+		<%= @first_one.artist.fullname %><br>
+		<%= @first_one.from_date.strftime("%B %e, %Y") %>
 		</div>
-		<%= link_to "", exhibitions_path, :id => "to-now-showing" %>
+		<%= link_to "", exhibitions_current_path, :id => "to-now-showing" %>
 	</div>
 	<div id="sub-heading-panel">
 		<div id="sub-heading-1" class="individual-sub-heading">

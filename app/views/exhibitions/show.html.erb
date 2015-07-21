@@ -1,0 +1,41 @@
+
+<%= render 'partials/header' %>
+
+<br>
+<br>
+
+<%= render :partial => "partials/feature", locals: {type: @full_feature} %>
+
+<br><br>
+
+<div id="full-exhibition-results">
+	<div id="exhibition-nav-current">
+		<span>Exhibitions</span><br>
+		<ul>
+			<li id="margin-correct"><%= link_to @correct_version, exhibitions_current_path, :id => "first-link" %></li>
+			<li id="non-margin-correct"><%= link_to "Past", exhibitions_path, :id => "last-link" %></li>
+		</ul>
+	</div>
+	<div id="exhibition-results">
+	</div>
+
+	<div id="single-showing">
+		<%= image_tag @exhibition.main_photo.url(:full_feature) if @exhibition.main_photo.present? %>
+		<div id="info">
+			<div class="a-result-info">
+				<div class="column-1">
+					<span id="artist"><br><%= @exhibition.artist.last_first if @exhibition.artist.present? %></span><br><br>
+					<span id="title"><%= @exhibition.title %></span>
+				</div>
+				<div class="column-2">
+					<br><%= @exhibition.from_date.to_formatted_s(:long) %><br><br>
+					<span class="admission">Admission: <%= @exhibition.admission %></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="description-of-showing">
+	<%= @exhibition.description if @exhibition.description.present? %>
+	</div>
+	<br><br>
+</div>

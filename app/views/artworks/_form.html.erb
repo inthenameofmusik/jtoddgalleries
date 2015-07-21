@@ -7,7 +7,9 @@
   </div>
   <%= f.association :styles, as: :check_boxes, label: false, input_html: {class: "style-selecting"} %>
   <%= f.association :media, as: :check_boxes, label: false %>
+  <%= f.input :width, label: false, wrapper: false, placeholder: "W" %>" x <%= f.input :height, label: false, wrapper: false, placeholder: "H" %>"
   <%= f.input :jtg, label: false, placeholder: "JTG#", input_html: {id: "jtg-inputter"} %>
+  
   </div>
   <div id="column-2">
     <div class="column-title">Subjects</div>
@@ -18,10 +20,11 @@
   <%= f.association :locations, as: :check_boxes, collection: Location.order('title ASC'), label: false %>
   </div>
   <div id="column-4">
-    <div class="column-title">Locations</div>
+    <div class="column-title">Keywords</div>
   <%= f.association :keywords, as: :check_boxes, label: false, collection: Keyword.order('title ASC') %>
   </div>
   <div id="submit-row">
   <%= f.button :submit %>
   </div>
+  <br><br>
 <% end %>

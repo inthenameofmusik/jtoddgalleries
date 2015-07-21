@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150717113144) do
+ActiveRecord::Schema.define(version: 20150720000539) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -79,6 +79,35 @@ ActiveRecord::Schema.define(version: 20150717113144) do
   add_index "artworks_subjects", ["artwork_id"], name: "index_artworks_subjects_on_artwork_id", using: :btree
   add_index "artworks_subjects", ["subject_id"], name: "index_artworks_subjects_on_subject_id", using: :btree
 
+  create_table "exhibitions", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.integer  "artist_id"
+    t.date     "from_date"
+    t.date     "to_date"
+    t.string   "admission"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.string   "main_photo_file_name"
+    t.string   "main_photo_content_type"
+    t.integer  "main_photo_file_size"
+    t.datetime "main_photo_updated_at"
+    t.string   "alt_photo_1_file_name"
+    t.string   "alt_photo_1_content_type"
+    t.integer  "alt_photo_1_file_size"
+    t.datetime "alt_photo_1_updated_at"
+    t.string   "alt_photo_2_file_name"
+    t.string   "alt_photo_2_content_type"
+    t.integer  "alt_photo_2_file_size"
+    t.datetime "alt_photo_2_updated_at"
+    t.string   "alt_photo_3_file_name"
+    t.string   "alt_photo_3_content_type"
+    t.integer  "alt_photo_3_file_size"
+    t.datetime "alt_photo_3_updated_at"
+  end
+
+  add_index "exhibitions", ["artist_id"], name: "index_exhibitions_on_artist_id", using: :btree
+
   create_table "keywords", force: :cascade do |t|
     t.string   "title"
     t.datetime "created_at", null: false
@@ -97,6 +126,13 @@ ActiveRecord::Schema.define(version: 20150717113144) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "sorts", force: :cascade do |t|
+    t.string   "title"
+    t.string   "value"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "styles", force: :cascade do |t|
     t.string   "title"
     t.datetime "created_at", null: false
@@ -109,4 +145,5 @@ ActiveRecord::Schema.define(version: 20150717113144) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "exhibitions", "artists"
 end

@@ -13,9 +13,12 @@ Rails.application.routes.draw do
   #for users
   get 'fineart' => 'artworks#index2'
   get 'fineart/q' => 'artworks#q'
+  post 'fineart/show' => 'artworks#ajax_show'
 
   #and back
   get 'exhibitions' => 'exhibitions#index'
+  get 'exhibitions/admin' => 'exhibitions#admin'
+  get 'exhibitions/current' => 'exhibitions#get_current'
   get 'services' => 'services#index'
   resources :articles
   get 'contact' => 'contact#index'
@@ -24,7 +27,8 @@ Rails.application.routes.draw do
   resources :locations
   resources :keywords
   resources :artists
-  # The priority is based upon order of creation: first created -> highest priority.
+  resources :exhibitions
+   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"

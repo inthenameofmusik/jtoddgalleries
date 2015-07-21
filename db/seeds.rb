@@ -7,7 +7,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Style.create([{title: "Traditional"}, {title: "Transitional"}, {title: "Contemporary"}])
-Medium.create(title: "Acrylic")
+Medium.create([{title: "Acrylic"}, {title: "Oil"}])
+Sort.create([{title: "Fine Art A-Z", value: "title ASC"}, {title: "Fine Art Z-A", value: "title DESC"}, {title: "Artist A-Z", value: "artist_last ASC"}, {title: "Artist Z-A", value: "artist_last DESC"}, {title: "JTG#", value: "jtg ASC"}])
+
 Artist.create(first_name: "Lisa", last_name: "Rochi")
 Artist.create(first_name: "Tom", last_name: "Haverford")
 Subject.create(title: "Dog")

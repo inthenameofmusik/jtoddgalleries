@@ -1,0 +1,57 @@
+
+<%= render 'partials/header' %>
+
+<br>
+<br>
+
+<%= render :partial => "partials/feature", locals: {type: @full_feature} %>
+
+<br><br>
+<% if @exhibition.errors.any? %>
+	<div id="error_explanation">
+	  <h2>
+	    <%= pluralize(@exhibition.errors.count, "error") %> prohibited
+	    this exhibition from being saved:
+	  </h2>
+	  <ul>
+	    <% @exhibition.errors.full_messages.each do |msg| %>
+	      <li><%= msg %></li>
+	    <% end %>
+	  </ul>
+	</div>
+<% end %>
+
+
+<div id="admin-exhibition">
+	<div id="exhibition-nav-past">
+		<span>Exhibitions - Admin</span><br>
+		<ul>
+			<li id="margin-correct"><%= link_to "List", exhibitions_admin_path, :id => "first-link" %></li>
+			<li id="non-margin-correct"><%= link_to "New", new_exhibition_path, :id => "last-link" %></li>
+		</ul>
+	</div>
+</div>
+<div id="picture-container" class="exhibition">
+</div>
+<div id="complete-upload-panel">
+	<%= render 'form' %>
+</div>
+
+<script>
+$(function() {
+  $('#photo-upload-field').on('change', function(event) {
+    var files = event.target.files;
+    var image = files[0]
+    var reader = new FileReader();
+    reader.onload = function(file) {
+      var img = new Image();
+      console.log(file);
+      img.src = file.target.result;
+      $('#picture-container').html(img);
+      $('#complete-upload-panel').css("background-color", "rgba(255,255,255,0.8)")
+    }
+    reader.readAsDataURL(image);
+    console.log(files);
+  });
+});
+</script>

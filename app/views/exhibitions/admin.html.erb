@@ -1,0 +1,44 @@
+
+<%= render 'partials/header' %>
+
+<br>
+<br>
+
+<%= render :partial => "partials/feature", locals: {type: @full_feature} %>
+
+<br><br>
+
+<div id="admin-exhibition">
+	<div id="exhibition-nav-current">
+		<span>Exhibitions - Admin</span><br>
+		<ul>
+			<li id="margin-correct"><%= link_to "List", exhibitions_admin_path, :id => "first-link" %></li>
+			<li id="non-margin-correct"><%= link_to "New", new_exhibition_path, :id => "last-link" %></li>
+		</ul>
+	</div>
+
+	<div id="exhibition-results">
+		<% @exhibition.each do |expo| %>
+			<div class="an-expo-result">
+				<img src="<%= expo.main_photo.url(:listing) %>">
+				<div class="a-result-info">
+					<div class="column-1">
+						<span id="artist"><br><%= expo.artist.last_first if expo.artist.present? %></span><br>
+						<span id="title"><%= expo.title %></span>
+					</div>
+					<div class="column-2">
+						<br><%= expo.from_date.to_formatted_s(:long) %><br>
+						<span class="admission">Admission: <%= expo.admission %></span>
+					</div>
+				</div>
+				<div class="to-show">
+					<%= link_to "", edit_exhibition_path(expo) %>
+				</div>
+				<div class="to-delete">
+					<%= link_to "", exhibition_path(expo), method: :delete, data: {confirm: "Are you sure you want to delete?"} %>
+				</div>
+			</div>
+		<% end %>
+		<br><br><br><br><br>
+	</div>
+</div>

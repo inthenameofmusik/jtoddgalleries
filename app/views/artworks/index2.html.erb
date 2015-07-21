@@ -19,7 +19,7 @@
 					Power Search
 					</div>
 					<div id="row-2">
-					<%= text_field_tag 'q', '', :id => "q-search-bar" %>
+					<%= text_field_tag 'q', params[:q] , :id => "q-search-bar" %>
 					</div>
 					<div id="row-3">
 					Search Keyword, Title, Artist,<br>Subject, Location, & JTG#
@@ -28,24 +28,47 @@
 				<div id="column-2">
 					<div id="sub-column-1" class="sub-column">
 						<%= collection_select(:artwork, :artist_id, Artist.order('lower(last_name) ASC'), :last_name, :last_first, include_blank: "Artist") %>
+						<%= collection_select(:sort, :title, Sort.all, :value, :title, include_blank: "Sort") %>
 					</div>
 					<div id="sub-column-2" class="sub-column">
 						<%= collection_select(:artwork, :subject_ids, Subject.order('lower(title) ASC'), :title, :title, include_blank: "Subject") %>
+						
 					</div>
 					<div id="sub-column-3" class="sub-column">
 						<%= collection_select(:artwork, :location_ids, Location.order('lower(title) ASC'), :title, :title, include_blank: "Location") %>
+						<%= submit_tag 'Submit', id: "query-submit" %>
 					</div>
 				</div>
 			</div>
-			<%= submit_tag 'Submit', id: "query-submit" %>
 			<div id="bottom-round">
 			</div>
 		<% end %>
 	</div>
 	<div id="results-panel">
-		<% @artwork_q.each do |art| %>
-		<%= art.title %>
+		<% if @artwork_q.respond_to?('each') %>
+			<% @artwork_q.each.with_index do |art, index| %>
+				<div class="a-result<%= " last-one" if art.id == @last_artwork.id %>" id="<%= index %>">
+					<div class="a-result-photo">
+						<%= image_tag art.photo.url(:small) %>
+					</div>
+					<div class="a-result-info">
+						<%= art.artist.last_first if art.artist.present? %><br>
+						<strong><%= art.title %></strong><span class="hidden_id"><%= art.id %></span><br>
+					</div>
+				</div>
+			<% end %>
+		<% else %>
+			<div class="a-result only-one" id="0">
+				<div class="a-result-photo">
+					<%= image_tag @artwork_q.photo.url(:small) %>
+				</div>
+				<div class="a-result-info">
+					<%= @artwork_q.artist.last_first if @artwork_q.artist.present? %><br>
+					<strong><%= @artwork_q.title %></strong><span class="hidden_id"><%= @artwork_q.id %></span><br>
+				</div>
+			</div>
 		<% end %>
 	</div>
+	<br><br>
 </div>
-
+<br><br>

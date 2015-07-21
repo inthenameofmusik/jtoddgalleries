@@ -57,6 +57,16 @@ $(function(){
 		}
 	);
 
+	$(".nav-item").click(function(e){
+		var $tolink = $(this).attr("href");
+
+		if (e.altKey) {
+			e.preventDefault();
+			window.location.href = $tolink + "/admin";
+		}
+
+	});
+
 });
 
 
