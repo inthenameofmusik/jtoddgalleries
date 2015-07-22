@@ -43,7 +43,7 @@ gem 'pg'
 
 gem 'paperclip'
 
-gem 'aws-sdk'
+gem 'aws-sdk', '<2.0'
 
 gem 'simple_form_fancy_uploads'
 
