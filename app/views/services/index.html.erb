@@ -1,0 +1,49 @@
+
+<%= render 'partials/header' %>
+
+<br>
+<br>
+
+<%= render :partial => "partials/feature", locals: {type: @full_feature} %>
+
+<br><br>
+
+<div id="full-about-panel">
+
+	<div id="about-gallery">
+		<div class="left-entry" id="history-entry">
+			<%= image_tag("fade_line.png") %>
+			<div id="column-1">
+				<div id="title">Art Appraisal</div>
+				<div id="history-content">Our art appraisal process...</div>
+			</div>
+			<div id="column-2">
+			</div>
+		</div>
+		<div class="right-entry" id="mission-statement">
+			<%= image_tag("fade_line.png") %>
+			<div id="column-1"></div>
+			<div id="column-2">
+				<div id="title">Custom Framing</div>
+				<div id="mission-content">We do custom framing...</div>
+			</div>
+		</div>
+		<div class="left-entry" id="goals-future">
+			<%= image_tag("fade_line.png") %>
+			<div id="column-1">
+				<div id="title">Art Restoration</div>
+				<div id="history-content">Our restored art...</div>
+			</div>
+			<div id="column-2">
+			</div>
+		</div>
+		<div class="right-entry" id="mission-statement">
+			<%= image_tag("fade_line.png") %>
+			<div id="column-1"></div>
+			<div id="column-2">
+				<div id="title">Consultation</div>
+				<div id="mission-content">We provide art consultation...</div>
+			</div>
+		</div>
+	</div>
+</div>
