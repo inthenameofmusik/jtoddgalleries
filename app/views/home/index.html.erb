@@ -19,14 +19,14 @@
 	</div>
 	<div id="now-playing-panel">
 		<div id="now-playing-panel-bg">
-			<%= image_tag @first_one.main_photo.url(:listing) %>
+			<%= image_tag @first_one.main_photo.url(:listing) if @first_one.present? %>
 		</div>
 		<div id="now-playing-title"><%= @correct_version %>
 		</div>
 		<div id="now-playing-info">
-		"<%= @first_one.title %>"<br>
-		<%= @first_one.artist.fullname %><br>
-		<%= @first_one.from_date.strftime("%B %e, %Y") %>
+		"<%= @first_one.title if @first_one.present? %>"<br>
+		<%= @first_one.artist.fullname if @first_one.present? %><br>
+		<%= @first_one.from_date.strftime("%B %e, %Y") if @first_one.present? %>
 		</div>
 		<%= link_to "", exhibitions_current_path, :id => "to-now-showing" %>
 	</div>
