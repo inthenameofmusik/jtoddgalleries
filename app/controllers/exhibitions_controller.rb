@@ -3,7 +3,7 @@ class ExhibitionsController < ApplicationController
 
 	def index
 		@first_one = Exhibition.order('from_date DESC').first
-		if !@first_one.to_date.nil?
+		if @first_one.present?
 			if (@first_one.from_date..@first_one.to_date).cover?(DateTime.now.to_date)
 				@correct_version = "Now Showing"
 			else
