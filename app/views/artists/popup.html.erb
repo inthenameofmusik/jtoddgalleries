@@ -1,0 +1,13 @@
+<div class="attribute-popup">
+	<br>
+	<div class="title">
+	New Artist
+	</div>
+	<div class="enter-attribute">
+		<%= simple_form_for @artist, :remote => true do |f| %>
+			<%= f.input :first_name, label: false, placeholder: "Enter first name..." %>
+			<%= f.input :last_name, label: false, placeholder: "Enter last name..." %>
+			<%= f.button :submit, input_html: {id: "popup-form-submit"} %>
+		<% end %>
+	</div>
+</div>

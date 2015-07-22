@@ -4,15 +4,22 @@ class ArtistsController < ApplicationController
 		@new_artist = Artist.new
 	end
 
+	def popup
+		@artist = Artist.new
+		render 'popup', layout: false
+	end
+
 	def create
 		@artist = Artist.new(artist_params)
 
-		if @artist.save
-			flash[:success] = "Artist Added"
-			redirect_to action: 'index'
-		else
-			flash[:error] = "That record already exists"
-			redirect_to action: 'index'
+		respond_to do |format|
+			if @artist.save
+				format.html { redirect_to action: 'index', notice: "Artist Added" }
+				format.js
+			else
+				flash[:error] = "That record already exists"
+				redirect_to action: 'index'
+			end
 		end
 	end
 

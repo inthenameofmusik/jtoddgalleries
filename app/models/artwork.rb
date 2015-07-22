@@ -22,6 +22,8 @@ class Artwork < ActiveRecord::Base
 
 	#paperclip
 	has_attached_file :photo, :styles => {
+		listing: ['200x165#', :jpg, quality: 80],
+		detail: ['460x350>', :jpg, quality: 80],
 		thumb: ['60>', :jpg, quality: 70],
 		small: ['300>', :jpg, quality: 70],
 		large: ['600>', :jpg, quality: 70]

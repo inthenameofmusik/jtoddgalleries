@@ -1,5 +1,5 @@
 class ArtworksController < ApplicationController
-
+	before_filter :authenticate, :except => [:index2, :q, :ajax_show]
 	def index
 		@artwork = Artwork.all
 	end
@@ -56,6 +56,12 @@ class ArtworksController < ApplicationController
 		else
 			render 'edit'
 		end
+	end
+
+	def destroy
+		@artwork = Artwork.find(params[:id])
+		@artwork.destroy
+		redirect_to action: 'index2'
 	end
 
 	private

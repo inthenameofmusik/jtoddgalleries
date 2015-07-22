@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   get 'fineart/q' => 'artworks#q'
   post 'fineart/show' => 'artworks#ajax_show'
 
+  post 'artists/popup' => 'artists#popup'
+
   #and back
   get 'exhibitions' => 'exhibitions#index'
   get 'exhibitions/admin' => 'exhibitions#admin'

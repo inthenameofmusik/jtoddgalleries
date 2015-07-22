@@ -4,7 +4,8 @@ $(".a-result").click(function(e) {
 	
 	var $original = $(this);
 
-	var $currentScroll
+	var $currentScroll;
+	var $reverseDirection = false;
 
 	// if ($somethingSelected == true) {
 	// 	$("div.returned-show").remove();
@@ -26,12 +27,12 @@ $(".a-result").click(function(e) {
 	var $next1, $next2, $next3, $next4
 	var $next1 = $(this).next();
 	if ($original.hasClass("last-one")) {
+		$reverseDirection = true;
 		$rowBeginner = $original;
 		$(window).scrollTop(+350);
 	} else if ($original.hasClass("only-one")) {
 		$rowBeginner = $original;
-	}
-	else {
+	} else {
 		if ($next1.length !== 0) {
 			if ($next1.offset().top !== $thisOffset) {
 				$rowBeginner = $next1;
@@ -93,7 +94,11 @@ $(".a-result").click(function(e) {
 
 	$.post(result + "/fineart/show", {id: $artwork_id})
 		.done(function(data){
-			$rowBeginner.before(data);
+			if ($reverseDirection == false) {
+				$rowBeginner.before(data);
+			} else {
+				$rowBeginner.after(data);
+			}
 		});
 	$(document).scrollTop($currentScroll);
 });

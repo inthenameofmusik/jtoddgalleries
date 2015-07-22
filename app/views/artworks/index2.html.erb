@@ -50,6 +50,10 @@
 				<div class="a-result<%= " last-one" if art.id == @last_artwork.id %>" id="<%= index %>">
 					<div class="a-result-photo">
 						<%= image_tag art.photo.url(:small) %>
+							<% if has_basic_credentials? %>
+							<div id="update-photo"><%= link_to "Update", edit_artwork_path(art.id) %></div>
+							<div id="delete-photo"><%= link_to "Delete", artwork_path(art.id), 'data-method' => :delete, 'data-confirm' => "Are you sure?" %></div>
+							<% end %>
 					</div>
 					<div class="a-result-info">
 						<%= art.artist.last_first if art.artist.present? %><br>
@@ -61,6 +65,10 @@
 			<div class="a-result only-one" id="0">
 				<div class="a-result-photo">
 					<%= image_tag @artwork_q.photo.url(:small) %>
+						<% if logged_in? %>
+							<div id="update-photo"><%= link_to "Update", edit_artwork_path(art.id) %></div>
+							<div id="delete-photo"><%= link_to "Delete", artwork_path(art.id), 'data-method' => :delete, 'data-confirm' => "Are you sure?" %></div>
+						<% end %>
 				</div>
 				<div class="a-result-info">
 					<%= @artwork_q.artist.last_first if @artwork_q.artist.present? %><br>
