@@ -1,0 +1,2651 @@
+/* line 5, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel {
+  max-width: 960px;
+  margin: 0px auto;
+}
+/* line 8, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-gallery {
+  width: 350px;
+  margin: 0px auto;
+  text-align: center;
+}
+/* line 13, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-gallery span {
+  font-family: "clavo";
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  color: #765454;
+}
+/* line 18, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-gallery ul {
+  padding: 0px;
+  list-style-type: none;
+  font-family: "kepler-std-display";
+  letter-spacing: 2.8px;
+  font-size: 13px;
+}
+/* line 24, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-gallery ul #margin-correct {
+  margin-right: -6px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+/* line 28, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-gallery ul #non-margin-correct {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/* line 31, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-gallery ul li {
+  display: inline-block;
+  width: 155px;
+  border: 1px #765454 solid;
+}
+/* line 35, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-gallery ul li a {
+  color: #765454;
+  display: block;
+  text-decoration: none;
+  padding: 3px;
+}
+/* line 40, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-gallery ul li a:hover {
+  text-decoration: none;
+}
+/* line 42, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-gallery ul li a:visited {
+  color: #765454;
+}
+/* line 44, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-gallery ul li #first-link {
+  color: black;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: rgba(107, 150, 167, 0.5);
+}
+/* line 49, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-gallery ul li #last-link:hover {
+  background-color: rgba(107, 150, 167, 0.2);
+}
+/* line 51, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-gallery ul li #last-link {
+  color: #765454;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/* line 56, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-staff {
+  width: 350px;
+  margin: 0px auto;
+  text-align: center;
+}
+/* line 61, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-staff span {
+  font-family: "clavo";
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  color: #765454;
+}
+/* line 66, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-staff ul {
+  padding: 0px;
+  list-style-type: none;
+  font-family: "kepler-std-display";
+  letter-spacing: 2.8px;
+  font-size: 13px;
+}
+/* line 72, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-staff ul #margin-correct {
+  margin-right: -6px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+/* line 76, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-staff ul #non-margin-correct {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/* line 79, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-staff ul li {
+  display: inline-block;
+  width: 155px;
+  border: 1px #765454 solid;
+}
+/* line 83, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-staff ul li a {
+  color: #765454;
+  display: block;
+  text-decoration: none;
+  padding: 3px;
+}
+/* line 88, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-staff ul li a:hover {
+  text-decoration: none;
+}
+/* line 90, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-staff ul li a:visited {
+  color: #765454;
+}
+/* line 92, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-staff ul li #first-link {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+/* line 95, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-staff ul li #first-link:hover {
+  background-color: rgba(107, 150, 167, 0.2);
+}
+/* line 97, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-nav-staff ul li #last-link {
+  color: black;
+  background-color: rgba(107, 150, 167, 0.5);
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/* line 103, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-gallery {
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
+  margin-bottom: 80px;
+}
+/* line 110, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-gallery .left-entry {
+  width: 100%;
+  height: 235px;
+  box-sizing: border-box;
+  position: relative;
+}
+/* line 116, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-gallery .left-entry img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* line 120, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-gallery .left-entry #column-1 {
+  padding: 15px;
+  box-sizing: border-box;
+  width: 65%;
+  float: left;
+}
+/* line 125, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-gallery .left-entry #column-1 #title {
+  text-align: center;
+  font-family: "clavo";
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+/* line 131, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-gallery .left-entry #column-2 {
+  background-size: cover;
+  height: 235px;
+  float: right;
+  width: 35%;
+  box-sizing: border-box;
+}
+/* line 139, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-gallery .right-entry {
+  width: 100%;
+  height: 235px;
+  box-sizing: border-box;
+  position: relative;
+}
+/* line 144, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-gallery .right-entry img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* line 148, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-gallery .right-entry #column-1 {
+  background-size: cover;
+  height: 235px;
+  float: left;
+  width: 35%;
+  box-sizing: border-box;
+}
+/* line 154, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-gallery .right-entry #column-2 {
+  padding: 15px;
+  box-sizing: border-box;
+  width: 65%;
+  float: right;
+}
+/* line 159, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-gallery .right-entry #column-2 #title {
+  text-align: center;
+  font-family: "clavo";
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+/* line 165, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-gallery #history-entry #column-2 {
+  background-image: url(/assets/about_gallery_history-48364795a0f1adc247441450b04285d282356f465b557508630b20cc4e928159.png);
+}
+/* line 168, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-gallery #mission-statement #column-1 {
+  background-image: url(/assets/about_gallery_mission-e9721b09acb22ab8f7aa23f340e42e72a159f5fa1e6cce7b8dff49444573a338.png);
+}
+/* line 171, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/about.sass */
+#full-about-panel #about-gallery #goals-future #column-2 {
+  background-image: url(/assets/about_gallery_goals-c2eda167a97091c36ccb9829dd36c9e3cc9f93a0b9a2c811e6fff8c1841336ac.png);
+}
+/* line 5, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/articles.sass */
+#full-articles-panel {
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+/* line 13, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/articles.sass */
+#full-articles-panel .a-column {
+  width: 45%;
+  box-sizing: border-box;
+  overflow: auto;
+  float: left;
+  height: 600px;
+  margin: 2.5%;
+}
+/* line 21, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/articles.sass */
+#full-articles-panel .a-column .a-article {
+  box-sizing: border-box;
+  width: 100%;
+  height: 52px;
+  padding: 5px;
+  overflow: hidden;
+  font-family: "kepler-std-display";
+  cursor: pointer;
+}
+/* line 30, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/articles.sass */
+#full-articles-panel .a-column .a-article:hover {
+  background-color: rgba(48, 87, 104, 0.3);
+}
+/* line 32, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/articles.sass */
+#full-articles-panel .a-column .a-article .top-info {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/* line 35, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/articles.sass */
+#full-articles-panel .a-column .a-article .top-info .left-side {
+  float: left;
+}
+/* line 37, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/articles.sass */
+#full-articles-panel .a-column .a-article .top-info .right-side {
+  float: right;
+}
+/* line 39, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/articles.sass */
+#full-articles-panel .a-column .a-article .bottom-info {
+  margin-top: 9px;
+  line-height: 20px;
+  color: gray;
+  overflow: hidden;
+  font-style: italic;
+}
+/* line 45, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/articles.sass */
+#full-articles-panel #shown-article {
+  font-family: "Marion W01 Italic";
+  font-style: italic;
+  font-size: 18px;
+  padding: 5px;
+  letter-spacing: 3px;
+}
+/* line 51, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/articles.sass */
+#full-articles-panel #shown-article .title {
+  font-weight: bold;
+}
+/* line 8, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artists.sass */
+#admin-artists {
+  width: 900px;
+  margin: 0px auto;
+  font-family: Georgia;
+}
+/* line 14, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artists.sass */
+#admin-artists table {
+  width: 400px;
+  margin: 0px auto;
+  text-align: center;
+}
+/* line 19, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artists.sass */
+#admin-artists table td {
+  border-bottom: 1px gray dotted;
+}
+/* line 21, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artists.sass */
+#admin-artists .add-field {
+  font-family: Georgia;
+  margin-bottom: 20px;
+  width: 600px;
+  margin: 0px auto;
+  overflow: hidden;
+  text-align: center;
+}
+/* line 29, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artists.sass */
+#admin-artists .add-field label {
+  display: none;
+}
+/* line 31, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artists.sass */
+#admin-artists .add-field input[type=text] {
+  float: left;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  width: 250px;
+  height: 25px;
+  text-align: center;
+  background-color: rgba(250, 252, 247, 0.8);
+  border-radius: 30px;
+  font-family: Georgia;
+  font-size: 1.2em;
+}
+/* line 43, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artists.sass */
+#admin-artists .add-field input[type=submit] {
+  display: none;
+  font-family: Georgia;
+  letter-spacing: 0.8em;
+  width: 300px;
+  height: 25px;
+  margin: 0px auto;
+  text-align: center;
+  border: 1px gray inset;
+  marign-top: 20px;
+  margin-bottom: 50px;
+  background-color: #40748b;
+  border-radius: 40px;
+}
+/* line 57, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artists.sass */
+#admin-artists .add-field input[type=submit]:hover {
+  background-color: #2e5465;
+  cursor: pointer;
+}
+/* line 3, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#error_explanation {
+  color: red;
+}
+
+/* line 6, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#picture-container {
+  width: 100%;
+  height: 400px;
+  margin-top: 70px;
+  position: absolute;
+  overflow: hidden;
+}
+/* line 13, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#picture-container img {
+  width: 100%;
+}
+
+/* line 15, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#picture-container.exhibition {
+  margin-top: 57px;
+}
+
+/* line 18, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#new-item {
+  display: block;
+  width: 130px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #765454;
+  font-family: clavo;
+  color: #765454;
+}
+
+/* line 27, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel {
+  width: 100%;
+  position: relative;
+  height: 400px;
+  margin-top: 70px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* line 34, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-1 {
+  width: 40%;
+  float: left;
+  text-align: center;
+}
+/* line 39, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-1 #photo-upload-field {
+  margin: 45px 0px 30px 60px;
+}
+/* line 41, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-1 #title-upload-field {
+  text-align: center;
+  margin-bottom: 40px;
+  width: 400px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: Georgia;
+}
+/* line 50, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-1 #artist-drop-down {
+  background: transparent;
+  width: 400px;
+  height: 30px;
+  font-family: Georgia;
+  font-size: 14px;
+  letter-spacing: 2.2px;
+}
+/* line 57, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-1 #artist-drop-down.exhibition {
+  margin-top: 40px;
+}
+/* line 59, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-1 .style-selecting {
+  margin-top: 40px;
+  margin-bottom: 35px;
+  font-family: Georgia;
+}
+/* line 63, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-1 .checkbox {
+  margin: 0px 12px;
+  letter-spacing: 2px;
+}
+/* line 66, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-1 #jtg-inputter {
+  text-align: center;
+  font-family: Georgia;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 25px;
+}
+/* line 72, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-1 #admission-inputter {
+  margin-top: 30px;
+  width: 250px;
+  height: 25px;
+  text-align: center;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.4);
+}
+/* line 79, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-1 #artwork_width {
+  width: 50px;
+  height: 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+/* line 85, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-1 #artwork_height {
+  width: 50px;
+  height: 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+/* line 92, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-2 {
+  width: 20%;
+  height: 370px;
+  position: relative;
+  overflow: auto;
+  float: left;
+  font-family: Georgia;
+  text-align: left;
+  padding-top: 30px;
+  letter-spacing: 1.4px;
+  border-left: 1px gray solid;
+}
+/* line 104, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-2.exhibition {
+  border-left: none;
+}
+/* line 106, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-2.exhibition div {
+  text-align: center;
+  font-family: "kepler-std-display";
+  margin-bottom: 8px;
+  letter-spacing: 3px;
+  font-size: 17px;
+}
+/* line 113, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-2 .column-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  text-align: center;
+  font-family: Georgia;
+  background-color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 2px;
+}
+/* line 123, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-2 .checkbox {
+  display: block;
+}
+/* line 127, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-3 {
+  width: 20%;
+  height: 370px;
+  position: relative;
+  overflow: auto;
+  float: left;
+  font-family: Georgia;
+  text-align: left;
+  padding-top: 30px;
+  letter-spacing: 1.4px;
+  border-left: 1px solid gray;
+}
+/* line 139, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-3.exhibition {
+  border-left: none;
+}
+/* line 141, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-3.exhibition div {
+  text-align: center;
+  font-family: "kepler-std-display";
+  margin-bottom: 8px;
+  letter-spacing: 3px;
+  font-size: 17px;
+}
+/* line 147, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-3 .column-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  text-align: center;
+  font-family: Georgia;
+  background-color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 2px;
+}
+/* line 157, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-3 .checkbox {
+  display: block;
+}
+/* line 159, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-4 {
+  width: 19%;
+  height: 370px;
+  position: relative;
+  overflow: auto;
+  float: left;
+  font-family: Georgia;
+  text-align: left;
+  padding-top: 30px;
+  letter-spacing: 1.4px;
+  border-left: 1px gray solid;
+}
+/* line 171, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-4.exhibition {
+  border-left: none;
+}
+/* line 173, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-4.exhibition div {
+  text-align: center;
+  font-family: "kepler-std-display";
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+  font-size: 17px;
+}
+/* line 179, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-4 .column-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  text-align: center;
+  font-family: Georgia;
+  background-color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 2px;
+}
+/* line 189, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #column-4 .checkbox {
+  display: block;
+}
+/* line 191, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #submit-row {
+  clear: both;
+  margin: 0px auto;
+  text-align: center;
+  padding-top: 20px;
+}
+/* line 196, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #submit-row .btn {
+  width: 180px;
+  font-size: 16px;
+  background-color: transparent;
+  border-radius: 40px;
+}
+/* line 201, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#complete-upload-panel #submit-row .btn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 207, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 940px;
+  height: 300px;
+  margin: 30px auto 20px;
+}
+/* line 215, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #search-panel {
+  width: 100%;
+  height: 130px;
+}
+/* line 219, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #search-panel #top-round {
+  width: 100%;
+  height: 25px;
+  background-image: url(/assets/rounded_top-3121e955bee4ce1f02f6897faa686cb6ea99c5f0a6abafe7ba4244916a68778d.png);
+  background-size: cover;
+}
+/* line 224, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #search-panel #main-row {
+  width: 100%;
+  height: 70px;
+  font-family: "Marion W01 Italic";
+}
+/* line 229, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #search-panel #main-row #column-1 {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+/* line 235, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #search-panel #main-row #column-1 #row-1 {
+  margin-top: 7px;
+  width: 100%;
+  text-align: center;
+  font-family: Copperplate;
+  letter-spacing: 2px;
+  color: #305768;
+}
+/* line 242, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #search-panel #main-row #column-1 #row-2 {
+  position: relative;
+  width: 70%;
+  margin: 0px auto;
+  height: 25px;
+  background-image: url(/assets/input_diamond-090d73b1da19a2c64aec462fb4aba0ce0a33a70cb9351f71b3010626994e2e4f.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* line 251, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #search-panel #main-row #column-1 #row-2 #q-search-bar {
+  position: absolute;
+  width: 58%;
+  top: 3px;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  border-radius: 30px;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+}
+/* line 264, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #search-panel #main-row #column-1 #row-3 {
+  width: 100%;
+  font-size: 9px;
+  margin-top: 0px;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 1.5px;
+}
+/* line 271, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #search-panel #main-row #column-2 {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+/* line 277, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #search-panel #main-row #column-2 .sub-column {
+  padding-top: 24px;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  height: 100%;
+}
+/* line 284, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #search-panel #main-row #column-2 .sub-column select {
+  width: 95%;
+  background: transparent;
+  border: #305768 1px solid;
+  border-radius: 5px;
+  text-align: center;
+  letter-spacing: 2.1px;
+  color: #305768;
+}
+/* line 292, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #search-panel #main-row #column-2 #sort_title {
+  margin-top: 20px;
+}
+/* line 294, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #search-panel #main-row #column-2 #query-submit {
+  margin-top: 20px;
+  width: 95%;
+  margin-top: 16px;
+  margin-left: 0px;
+  background-color: transparent;
+  border: #305768 2px solid;
+}
+/* line 301, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #search-panel #bottom-round {
+  width: 100%;
+  height: 27px;
+  background-image: url(/assets/rounded_bottom_2-957459d4031cf32ddf3add155424b618714ea33764b711e5190713e0fac4203c.png);
+  background-size: 100%;
+}
+/* line 307, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel {
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 312, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .a-result {
+  box-sizing: border-box;
+  position: relative;
+  width: 25%;
+  height: 242px;
+  float: left;
+  padding: 2%;
+}
+/* line 320, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .a-result .a-result-photo {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 165px;
+}
+/* line 325, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .a-result .a-result-photo img {
+  width: 100%;
+}
+/* line 327, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .a-result .a-result-photo div {
+  position: absolute;
+  text-align: center;
+  width: 50%;
+  display: block;
+  background-color: white;
+  font-family: "kepler-std-display";
+  top: 0;
+}
+/* line 335, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .a-result .a-result-photo #update-photo {
+  background-color: rgba(220, 219, 20, 0.1);
+  left: 0;
+}
+/* line 338, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .a-result .a-result-photo #update-photo:hover {
+  background-color: rgba(220, 225, 10, 0.8);
+}
+/* line 340, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .a-result .a-result-photo #delete-photo {
+  background-color: rgba(230, 20, 20, 0.1);
+  right: 0;
+}
+/* line 342, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .a-result .a-result-photo #delete-photo:hover {
+  background-color: rgba(230, 20, 14, 0.8);
+}
+/* line 345, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .a-result .a-result-photo div a {
+  display: block;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.2);
+}
+/* line 351, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .a-result .a-result-photo div a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 353, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .a-result .a-result-info {
+  text-align: center;
+  font-family: "Marion W01 Italic";
+  font-style: italic;
+  color: #305768;
+}
+/* line 358, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .a-result:hover {
+  border: 1px #305768 solid;
+  cursor: pointer;
+}
+/* line 361, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .hidden_id {
+  display: none;
+}
+/* line 363, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .returned-show {
+  box-sizing: border-box;
+  width: 100%;
+  height: 350px;
+  clear: both;
+  padding: 8px;
+}
+/* line 370, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .returned-show #column-1 {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+/* line 375, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .returned-show #column-1 img {
+  width: 100%;
+  height: 100%;
+}
+/* line 378, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .returned-show #column-2 {
+  width: 50%;
+  box-sizing: border-box;
+  line-height: 25px;
+  letter-spacing: 4.5px;
+  font-family: "kepler-std-display";
+  padding: 10px;
+  float: left;
+}
+/* line 386, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .returned-show #column-2 .title {
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+/* line 390, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .returned-show #column-2 .additional-info {
+  font-size: 14px;
+}
+/* line 392, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/artworks.sass */
+#fineart-full-page #results-panel .returned-show #column-2 .listing {
+  font-style: italic;
+}
+/* line 5, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/contact.sass */
+#contact-full-panel {
+  max-width: 960px;
+  margin: 0px auto;
+  position: relative;
+}
+/* line 9, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/contact.sass */
+#contact-full-panel #map-canvas {
+  width: 800px;
+  height: 550px;
+  margin: 0px auto;
+  border: 2px gray solid;
+  background-color: #CCC;
+}
+/* line 15, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/contact.sass */
+#contact-full-panel #info {
+  margin-top: 30px;
+  width: 100%;
+}
+/* line 18, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/contact.sass */
+#contact-full-panel #info .a-column {
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  color: #305768;
+  text-align: center;
+  font-family: "Marion W01 Italic";
+  font-style: italic;
+  line-height: 35px;
+  font-size: 20px;
+  height: 200px;
+  padding-top: 30px;
+}
+/* line 30, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/contact.sass */
+#contact-full-panel #info .a-column span {
+  font-weight: bold;
+}
+/* line 32, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/contact.sass */
+#contact-full-panel #info #left-info {
+  line-height: 23px;
+  text-align: left;
+  letter-spacing: 4px;
+}
+/* line 1, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results {
+  max-width: 960px;
+  margin: 0px auto;
+}
+/* line 5, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-past {
+  width: 350px;
+  margin: 0px auto;
+  text-align: center;
+}
+/* line 10, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-past span {
+  font-family: "clavo";
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  color: #765454;
+}
+/* line 15, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-past ul {
+  padding: 0px;
+  list-style-type: none;
+  font-family: "kepler-std-display";
+  letter-spacing: 2.8px;
+  font-size: 13px;
+}
+/* line 21, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-past ul #margin-correct {
+  margin-right: -6px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+/* line 25, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-past ul #non-margin-correct {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/* line 28, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-past ul li {
+  display: inline-block;
+  width: 155px;
+  border: 1px #765454 solid;
+}
+/* line 32, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-past ul li a {
+  color: #765454;
+  display: block;
+  text-decoration: none;
+  padding: 3px;
+}
+/* line 37, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-past ul li a:hover {
+  text-decoration: none;
+}
+/* line 39, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-past ul li a:visited {
+  color: #765454;
+}
+/* line 41, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-past ul li #first-link {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+/* line 44, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-past ul li #first-link:hover {
+  background-color: rgba(107, 150, 167, 0.2);
+}
+/* line 46, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-past ul li #last-link {
+  color: black;
+  background-color: rgba(107, 150, 167, 0.5);
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/* line 52, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-current {
+  width: 350px;
+  margin: 0px auto;
+  text-align: center;
+}
+/* line 57, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-current span {
+  font-family: "clavo";
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  color: #765454;
+}
+/* line 62, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-current ul {
+  padding: 0px;
+  list-style-type: none;
+  font-family: "kepler-std-display";
+  letter-spacing: 2.8px;
+  font-size: 13px;
+}
+/* line 68, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-current ul #margin-correct {
+  margin-right: -6px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+/* line 72, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-current ul #non-margin-correct {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/* line 75, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-current ul li {
+  display: inline-block;
+  width: 155px;
+  border: 1px #765454 solid;
+}
+/* line 79, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-current ul li a {
+  color: #765454;
+  display: block;
+  text-decoration: none;
+  padding: 3px;
+}
+/* line 84, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-current ul li a:hover {
+  text-decoration: none;
+}
+/* line 86, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-current ul li a:visited {
+  color: #765454;
+}
+/* line 88, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-current ul li #first-link {
+  color: black;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: rgba(107, 150, 167, 0.5);
+}
+/* line 93, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-current ul li #last-link:hover {
+  background-color: rgba(107, 150, 167, 0.2);
+}
+/* line 95, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#full-exhibition-results #exhibition-nav-current ul li #last-link {
+  color: #765454;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* line 101, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#exhibition-results {
+  box-sizing: border-box;
+  width: 100%;
+}
+/* line 105, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#exhibition-results .an-expo-result {
+  box-sizing: border-box;
+  width: 100%;
+  height: 150px;
+  position: relative;
+  background-image: none;
+  margin-top: 50px;
+}
+/* line 113, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#exhibition-results .an-expo-result img {
+  width: 100%;
+}
+/* line 115, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#exhibition-results .an-expo-result .to-show {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 120, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#exhibition-results .an-expo-result .to-show a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 3px #6b96a7 solid;
+}
+/* line 127, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#exhibition-results .an-expo-result .to-show a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+/* line 129, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#exhibition-results .an-expo-result .to-delete {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10%;
+  height: 100%;
+}
+/* line 136, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#exhibition-results .an-expo-result .to-delete a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0);
+}
+/* line 142, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#exhibition-results .an-expo-result .to-delete a:hover {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+/* line 144, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#exhibition-results .an-expo-result .a-result-info {
+  box-sizing: border-box;
+  padding: 8px;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  bottom: 0px;
+  font-family: "kepler-std-display";
+  letter-spacing: 3px;
+  line-height: 22px;
+  color: white;
+}
+/* line 156, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#exhibition-results .an-expo-result .a-result-info #artist {
+  font-style: normal;
+}
+/* line 158, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#exhibition-results .an-expo-result .a-result-info #title {
+  font-size: 26px;
+  letter-spacing: 9px;
+  font-style: italic;
+}
+/* line 162, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#exhibition-results .an-expo-result .a-result-info .admission {
+  letter-spacing: 5px;
+  font-style: italic;
+}
+/* line 165, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#exhibition-results .an-expo-result .a-result-info .column-1 {
+  box-sizing: border-box;
+  width: 72%;
+  height: 80px;
+  float: left;
+}
+/* line 171, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#exhibition-results .an-expo-result .a-result-info .column-2 {
+  width: 28%;
+  float: left;
+  text-align: right;
+}
+
+/* line 178, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition {
+  max-width: 960px;
+  margin: 0px auto;
+}
+/* line 182, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-past {
+  width: 350px;
+  margin: 0px auto;
+  text-align: center;
+}
+/* line 187, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-past span {
+  font-family: "clavo";
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  color: #765454;
+}
+/* line 192, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-past ul {
+  padding: 0px;
+  list-style-type: none;
+  font-family: "kepler-std-display";
+  letter-spacing: 2.8px;
+  font-size: 13px;
+}
+/* line 198, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-past ul #margin-correct {
+  margin-right: -6px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+/* line 202, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-past ul #non-margin-correct {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/* line 205, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-past ul li {
+  display: inline-block;
+  width: 155px;
+  border: 1px #765454 solid;
+}
+/* line 209, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-past ul li a {
+  color: #765454;
+  display: block;
+  text-decoration: none;
+  padding: 3px;
+}
+/* line 214, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-past ul li a:hover {
+  text-decoration: none;
+}
+/* line 216, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-past ul li a:visited {
+  color: #765454;
+}
+/* line 218, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-past ul li #first-link {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+/* line 221, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-past ul li #first-link:hover {
+  background-color: rgba(107, 150, 167, 0.2);
+}
+/* line 223, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-past ul li #last-link {
+  color: black;
+  background-color: rgba(107, 150, 167, 0.5);
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/* line 228, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-update {
+  width: 500px;
+  margin: 0px auto;
+  text-align: center;
+}
+/* line 233, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-update span {
+  font-family: "clavo";
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  color: #765454;
+}
+/* line 238, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-update ul {
+  padding: 0px;
+  list-style-type: none;
+  font-family: "kepler-std-display";
+  letter-spacing: 2.8px;
+  font-size: 13px;
+}
+/* line 244, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-update ul #margin-correct {
+  margin-right: -6px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+/* line 248, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-update ul #middle-option {
+  margin-right: -6px;
+}
+/* line 250, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-update ul #non-margin-correct {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/* line 253, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-update ul li {
+  display: inline-block;
+  width: 155px;
+  border: 1px #765454 solid;
+}
+/* line 257, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-update ul li a {
+  color: #765454;
+  display: block;
+  text-decoration: none;
+  padding: 3px;
+}
+/* line 262, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-update ul li a:hover {
+  text-decoration: none;
+}
+/* line 264, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-update ul li a:visited {
+  color: #765454;
+}
+/* line 266, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-update ul li #first-link {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+/* line 269, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-update ul li #first-link:hover {
+  background-color: rgba(107, 150, 167, 0.2);
+}
+/* line 271, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-update ul li #middle-link {
+  color: black;
+  background-color: rgba(107, 150, 167, 0.5);
+}
+/* line 274, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-update ul li #last-link {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/* line 277, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-update ul li #last-link:hover {
+  background-color: rgba(107, 150, 167, 0.2);
+}
+/* line 279, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-current {
+  width: 350px;
+  margin: 0px auto;
+  text-align: center;
+}
+/* line 284, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-current span {
+  font-family: "clavo";
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  color: #765454;
+}
+/* line 289, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-current ul {
+  padding: 0px;
+  list-style-type: none;
+  font-family: "kepler-std-display";
+  letter-spacing: 2.8px;
+  font-size: 13px;
+}
+/* line 295, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-current ul #margin-correct {
+  margin-right: -6px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+/* line 299, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-current ul #non-margin-correct {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/* line 302, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-current ul li {
+  display: inline-block;
+  width: 155px;
+  border: 1px #765454 solid;
+}
+/* line 306, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-current ul li a {
+  color: #765454;
+  display: block;
+  text-decoration: none;
+  padding: 3px;
+}
+/* line 311, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-current ul li a:hover {
+  text-decoration: none;
+}
+/* line 313, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-current ul li a:visited {
+  color: #765454;
+}
+/* line 315, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-current ul li #first-link {
+  color: black;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: rgba(107, 150, 167, 0.5);
+}
+/* line 320, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-current ul li #last-link:hover {
+  background-color: rgba(107, 150, 167, 0.2);
+}
+/* line 322, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#admin-exhibition #exhibition-nav-current ul li #last-link {
+  color: #765454;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* line 327, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#single-showing {
+  width: 960px;
+  height: 720px;
+  border: 5px #6b96a7 solid;
+  position: relative;
+}
+/* line 332, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#single-showing img {
+  width: 100%;
+  height: 100%;
+}
+/* line 336, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#single-showing #info .a-result-info {
+  box-sizing: border-box;
+  padding: 5px;
+  padding-top: -20px;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  bottom: 0px;
+  font-family: "kepler-std-display";
+  letter-spacing: 3px;
+  line-height: 17px;
+  color: white;
+  background-color: rgba(48, 87, 104, 0.5);
+}
+/* line 350, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#single-showing #info .a-result-info #artist {
+  font-style: normal;
+  letter-spacing: 10px;
+  font-size: 15px;
+}
+/* line 354, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#single-showing #info .a-result-info #title {
+  font-size: 26px;
+  letter-spacing: 9px;
+  font-style: italic;
+}
+/* line 358, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#single-showing #info .a-result-info .admission {
+  letter-spacing: 5px;
+  font-style: italic;
+}
+/* line 361, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#single-showing #info .a-result-info .column-1 {
+  box-sizing: border-box;
+  width: 72%;
+  height: 80px;
+  float: left;
+}
+/* line 367, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#single-showing #info .a-result-info .column-2 {
+  width: 28%;
+  float: left;
+  text-align: right;
+}
+
+/* line 373, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/exhibitions.sass */
+#description-of-showing {
+  min-height: 200px;
+  color: black;
+  font-family: "kempler-std-display";
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 8px;
+}
+/* line 14, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 {
+  max-width: 960px;
+  margin: 0px auto;
+  position: relative;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  /* line 14, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 520px) {
+  /* line 14, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 700px) {
+  /* line 24, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #welcome {
+    margin-top: 60px;
+  }
+}
+/* line 28, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #welcome #welcome-1 {
+  font-family: "Marion W01 Italic";
+  font-style: italic;
+  font-size: 32px;
+  letter-spacing: 6px;
+  color: #305768;
+}
+/* line 34, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #welcome #welcome-2 {
+  font-family: "kepler-std-display";
+  margin-top: -30px;
+  letter-spacing: 4px;
+}
+/* line 39, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #welcome-browse {
+  position: relative;
+  max-width: 960px;
+  margin-top: 100px;
+  height: 18px;
+  width: 100%;
+  background: url(/assets/rounding-967f5a55e1a0a38763a35a9a99bd83ed89b15c6353645dabeea792d3f44384ed.png);
+  background-size: 100%;
+}
+@media screen and (max-width: 946px) {
+  /* line 39, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #welcome-browse {
+    background: none;
+  }
+}
+/* line 49, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #welcome-browse #full-info {
+  position: absolute;
+  left: 13px;
+  bottom: 14px;
+  text-align: left;
+  font-family: "Marion W01 Italic";
+  font-style: italic;
+  color: #305768;
+  font-size: 19px;
+  letter-spacing: 7.3px;
+}
+@media screen and (max-width: 946px) {
+  /* line 49, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #welcome-browse #full-info {
+    left: 100px;
+  }
+}
+@media screen and (max-width: 850px) {
+  /* line 49, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #welcome-browse #full-info {
+    left: 70px;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 49, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #welcome-browse #full-info {
+    left: 50px;
+  }
+}
+@media screen and (max-width: 760px) {
+  /* line 49, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #welcome-browse #full-info {
+    left: 30px;
+  }
+}
+@media screen and (max-width: 720px) {
+  /* line 49, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #welcome-browse #full-info {
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 946px) {
+  /* line 73, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #welcome-browse #full-info #get-rid-of-1 {
+    display: none;
+  }
+}
+/* line 79, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #welcome-browse #welcome-browse-button {
+  box-sizing: border-box;
+  border: 2px #305768 solid;
+  border-radius: 20px;
+  position: absolute;
+  right: 7px;
+  bottom: 6px;
+  width: 200px;
+  line-height: 14px;
+  padding-top: 4px;
+  height: 40px;
+}
+@media screen and (max-width: 946px) {
+  /* line 79, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #welcome-browse #welcome-browse-button {
+    right: 100px;
+  }
+}
+@media screen and (max-width: 850px) {
+  /* line 79, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #welcome-browse #welcome-browse-button {
+    right: 70px;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 79, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #welcome-browse #welcome-browse-button {
+    right: 50px;
+  }
+}
+@media screen and (max-width: 760px) {
+  /* line 79, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #welcome-browse #welcome-browse-button {
+    right: 30px;
+  }
+}
+@media screen and (max-width: 720px) {
+  /* line 79, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #welcome-browse #welcome-browse-button {
+    right: 0px;
+    left: 0px;
+    top: 15px;
+    margin: 0px auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* line 79, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #welcome-browse #welcome-browse-button {
+    bottom: 9px;
+  }
+}
+/* line 105, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #welcome-browse #welcome-browse-button a {
+  display: inline-block;
+  font-family: "Copperplate";
+  font-weight: lighter;
+  text-decoration: none;
+  color: black;
+}
+/* line 111, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #welcome-browse #welcome-browse-button:hover {
+  background-color: #cadee7;
+  transition: background-color 0.1s linear;
+}
+/* line 114, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #now-playing-panel {
+  box-sizing: border-box;
+  margin-top: 80px;
+  width: 100%;
+  height: 112px;
+  border: 2px #305768 solid;
+  display: block;
+  position: relative;
+}
+/* line 123, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #now-playing-panel #now-playing-panel-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+}
+/* line 130, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #now-playing-panel #now-playing-panel-bg img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+/* line 134, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #now-playing-panel #to-now-showing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* line 153, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #now-playing-panel #now-playing-title {
+  position: absolute;
+  top: 5px;
+  left: 11px;
+  font-family: "trajan-pro-3";
+  font-size: 19px;
+  letter-spacing: 11px;
+}
+/* line 160, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #now-playing-panel #now-playing-info {
+  position: absolute;
+  bottom: 5px;
+  left: 11px;
+  text-align: left;
+  font-family: "Marion W01 Italic";
+  font-style: italic;
+  letter-spacing: 4px;
+  font-size: 16px;
+  line-height: 17px;
+  color: #333333;
+}
+/* line 172, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel {
+  width: 100%;
+  height: 280px;
+  margin-top: 65px;
+  box-sizing: border-box;
+  position: relative;
+}
+/* line 182, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel .individual-sub-heading {
+  position: relative;
+  box-sizing: border-box;
+  border: 1px #305768 solid;
+  width: 30%;
+  height: 280px;
+  float: left;
+}
+@media screen and (max-width: 800px) {
+  /* line 182, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #sub-heading-panel .individual-sub-heading {
+    width: 45%;
+  }
+}
+/* line 197, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel .individual-sub-heading .desaturated-heading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* line 199, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel .individual-sub-heading .color-sub-heading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+/* line 202, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel .individual-sub-heading .gradient-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #e3e2d9 0%, #e3e2d9 30%, transparent 100%);
+}
+/* line 205, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel .individual-sub-heading .sub-heading-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* line 207, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel .individual-sub-heading .sub-heading-text .title {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-family: "trajan-pro-3";
+  font-size: 19px;
+  letter-spacing: 10px;
+  font-weight: 100;
+}
+/* line 222, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel .individual-sub-heading .sub-heading-text .info {
+  display: block;
+  position: relative;
+  margin-top: -3px;
+  font-family: "proxima-nova-condensed";
+  color: gray;
+  letter-spacing: 4px;
+  font-size: 13px;
+  text-align: center;
+}
+/* line 236, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel .individual-sub-heading .sub-heading-text .info .free-emphasis {
+  font-style: italic;
+  color: #343434;
+}
+/* line 239, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel .individual-sub-heading .clickable-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* line 242, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel #sub-heading-1 {
+  box-sizing: border-box;
+  margin-right: 5%;
+}
+/* line 249, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel #sub-heading-1 .desaturated-heading {
+  background: url(/assets/sub-headings/vine_sm_desat-279a616a8e2bf967d39ffcc01057c2bd638095b315c50cf4d73b48ac7a533ca2.jpg);
+  background-size: cover;
+}
+/* line 252, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel #sub-heading-1 .color-sub-heading {
+  background: url(/assets/sub-headings/vine_sm-9c6ff9f555103ba0e25c6a04cc72de016ed86c0f02fd8a81cf7fe9ca9516076b.jpg);
+  background-size: cover;
+}
+/* line 255, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel #sub-heading-1 .home-trial-break {
+  display: none;
+}
+@media screen and (max-width: 530px) {
+  /* line 255, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #sub-heading-panel #sub-heading-1 .home-trial-break {
+    display: block;
+  }
+}
+/* line 259, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel #sub-heading-1 #title-break {
+  display: none;
+}
+@media screen and (max-width: 530px) {
+  /* line 259, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #sub-heading-panel #sub-heading-1 #title-break {
+    display: block;
+  }
+}
+/* line 264, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel #sub-heading-2 {
+  box-sizing: border-box;
+}
+@media screen and (max-width: 800px) {
+  /* line 264, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #sub-heading-panel #sub-heading-2 {
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 530px) {
+  /* line 268, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #sub-heading-panel #sub-heading-2 .sub-heading-text {
+    margin-top: 12px;
+    margin-bottom: 50px;
+  }
+}
+/* line 272, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel #sub-heading-2 .info.article {
+  text-align: left;
+  margin-left: 5px;
+  margin-top: -10px;
+}
+/* line 276, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel #sub-heading-2 .desaturated-heading {
+  background: url(/assets/sub-headings/canoe_sm_desat-427dab610407b1b0d3c68acc75881d9fa8b4cf26209787e73e4ab0f289c06c92.jpg);
+  background-size: cover;
+}
+/* line 279, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel #sub-heading-2 .color-sub-heading {
+  background: url(/assets/sub-headings/canoe_sm-7e9e1339e993f56a21ed2e9423d54f3387ff4a08b90e928d9182c64d6f60b4bc.jpg);
+  background-size: cover;
+}
+@media screen and (max-width: 530px) {
+  /* line 282, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #sub-heading-panel #sub-heading-2 #breakpoint-margin {
+    margin-top: 10px;
+  }
+}
+/* line 286, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel #sub-heading-3 {
+  box-sizing: border-box;
+  margin-left: 5%;
+}
+@media screen and (max-width: 800px) {
+  /* line 286, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+  #main-1 #sub-heading-panel #sub-heading-3 {
+    display: none;
+    margin-left: 0%;
+  }
+}
+/* line 296, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel #sub-heading-3 .desaturated-heading {
+  background: url(/assets/sub-headings/cherries_sm_desat-406ad7851914a1115596e30d5a3cc4c09e64bad93dabe7f404a75c5532a31dfc.jpg);
+  background-size: cover;
+}
+/* line 299, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/home.sass */
+#main-1 #sub-heading-panel #sub-heading-3 .color-sub-heading {
+  background: url(/assets/sub-headings/cherries_sm-430e23942621da62822254197bce74b82f2b694e4b09d8f3d359428b08045b62.jpg);
+  background-size: cover;
+}
+/* line 8, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/keywords.sass */
+#admin-keywords {
+  width: 900px;
+  margin: 0px auto;
+  font-family: Georgia;
+}
+/* line 14, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/keywords.sass */
+#admin-keywords table {
+  width: 400px;
+  margin: 0px auto;
+  text-align: center;
+}
+/* line 19, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/keywords.sass */
+#admin-keywords table td {
+  border-bottom: 1px gray dotted;
+}
+/* line 21, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/keywords.sass */
+#admin-keywords .add-field {
+  font-family: Georgia;
+  margin-bottom: 20px;
+  width: 600px;
+  margin: 0px auto;
+  text-align: center;
+}
+/* line 28, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/keywords.sass */
+#admin-keywords .add-field input[type=text] {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 500px;
+  height: 30px;
+  text-align: center;
+  background-color: rgba(250, 252, 247, 0.8);
+  border-radius: 30px;
+  font-family: Georgia;
+  font-size: 1.2em;
+}
+/* line 38, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/keywords.sass */
+#admin-keywords .add-field input[type=submit] {
+  display: none;
+  font-family: Georgia;
+  letter-spacing: 0.8em;
+  width: 300px;
+  height: 25px;
+  margin: 0px auto;
+  text-align: center;
+  border: 1px gray inset;
+  marign-top: 20px;
+  margin-bottom: 50px;
+  background-color: #40748b;
+  border-radius: 40px;
+}
+/* line 52, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/keywords.sass */
+#admin-keywords .add-field input[type=submit]:hover {
+  background-color: #2e5465;
+  cursor: pointer;
+}
+/* line 5, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/locations.sass */
+#admin-locations {
+  width: 900px;
+  margin: 0px auto;
+  font-family: Georgia;
+}
+/* line 11, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/locations.sass */
+#admin-locations table {
+  width: 400px;
+  margin: 0px auto;
+  text-align: center;
+}
+/* line 16, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/locations.sass */
+#admin-locations table td {
+  border-bottom: 1px gray dotted;
+}
+/* line 18, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/locations.sass */
+#admin-locations .add-field {
+  font-family: Georgia;
+  margin-bottom: 20px;
+  width: 600px;
+  margin: 0px auto;
+  text-align: center;
+}
+/* line 25, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/locations.sass */
+#admin-locations .add-field input[type=text] {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 500px;
+  height: 30px;
+  text-align: center;
+  background-color: rgba(250, 252, 247, 0.8);
+  border-radius: 30px;
+  font-family: Georgia;
+  font-size: 1.2em;
+}
+/* line 35, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/locations.sass */
+#admin-locations .add-field input[type=submit] {
+  display: none;
+  font-family: Georgia;
+  letter-spacing: 0.8em;
+  width: 300px;
+  height: 25px;
+  margin: 0px auto;
+  text-align: center;
+  border: 1px gray inset;
+  marign-top: 20px;
+  margin-bottom: 50px;
+  background-color: #40748b;
+  border-radius: 40px;
+}
+/* line 49, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/locations.sass */
+#admin-locations .add-field input[type=submit]:hover {
+  background-color: #2e5465;
+  cursor: pointer;
+}
+/* line 1, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/artwork_admin.sass */
+.a-admin-panel {
+  padding: 0px;
+  margin: 0px;
+  width: 900px;
+  margin: 0px auto;
+}
+/* line 7, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/artwork_admin.sass */
+.a-admin-panel ul {
+  margin: 0px auto;
+  width: 900px;
+}
+/* line 11, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/artwork_admin.sass */
+.a-admin-panel ul li {
+  display: inline-block;
+  height: 23px;
+  margin-right: -4px;
+}
+/* line 17, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/artwork_admin.sass */
+.a-admin-panel ul li a {
+  padding: 5px 20px;
+  line-height: 23px;
+  display: block;
+  text-align: center;
+  background-color: rgba(123, 73, 23, 0.5);
+  color: black;
+  letter-spacing: 2px;
+  font-family: Georgia;
+  text-decoration: none;
+}
+/* line 28, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/artwork_admin.sass */
+.a-admin-panel ul li a:hover {
+  background-color: rgba(222, 150, 77, 0.5);
+}
+/* line 30, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/artwork_admin.sass */
+.a-admin-panel ul li #first-admin-button {
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+}
+/* line 33, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/artwork_admin.sass */
+.a-admin-panel ul li #last-admin-button {
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+}
+/* line 6, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/feature.sass */
+#feature-panel {
+  z-index: 0;
+  margin-top: 10px;
+  position: relative;
+  height: 292px;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  /* line 6, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/feature.sass */
+  #feature-panel {
+    margin-top: 63px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  /* line 6, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/feature.sass */
+  #feature-panel {
+    height: 240px;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* line 6, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/feature.sass */
+  #feature-panel {
+    height: 220px;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 6, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/feature.sass */
+  #feature-panel {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 520px) {
+  /* line 6, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/feature.sass */
+  #feature-panel {
+    height: 110px;
+  }
+}
+/* line 27, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/feature.sass */
+#feature-panel #multiple-features .a-feature {
+  position: relative;
+  box-sizing: border-box;
+  width: 33%;
+  float: left;
+  height: 292px;
+}
+@media screen and (max-width: 800px) {
+  /* line 27, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/feature.sass */
+  #feature-panel #multiple-features .a-feature {
+    width: 49.5%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  /* line 27, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/feature.sass */
+  #feature-panel #multiple-features .a-feature {
+    height: 240px;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* line 27, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/feature.sass */
+  #feature-panel #multiple-features .a-feature {
+    height: 220px;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 27, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/feature.sass */
+  #feature-panel #multiple-features .a-feature {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 520px) {
+  /* line 27, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/feature.sass */
+  #feature-panel #multiple-features .a-feature {
+    height: 110px;
+  }
+}
+/* line 44, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/feature.sass */
+#feature-panel #multiple-features #feature-1-of-3 {
+  margin-right: 0.5%;
+  background-image: url(/assets/feature_pictures/trees-3bbfb65a299d3b3cdd3baa97dc61ad66649331cbfb011dda6acdd51ccd22f537.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 520px) {
+  /* line 44, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/feature.sass */
+  #feature-panel #multiple-features #feature-1-of-3 {
+    display: none;
+  }
+}
+/* line 51, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/feature.sass */
+#feature-panel #multiple-features #feature-2-of-3 {
+  background-image: url(/assets/feature_pictures/city_street-bb2fc0da0b950508a5ab4eba2b6ef30c39d93aec4eee107eb9f8216c3c510fd4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 800px) {
+  /* line 51, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/feature.sass */
+  #feature-panel #multiple-features #feature-2-of-3 {
+    display: none;
+  }
+}
+/* line 59, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/feature.sass */
+#feature-panel #multiple-features #feature-3-of-3 {
+  margin-left: 0.5%;
+  background-image: url(/assets/feature_pictures/table-b97f4d046e2e9d2a291641580baa6230a62f162e20258a4dbbd6b9676dedbd45.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 520px) {
+  /* line 59, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/feature.sass */
+  #feature-panel #multiple-features #feature-3-of-3 {
+    margin: 0;
+    width: 100%;
+  }
+}
+/* line 1, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+footer {
+  max-width: 960px;
+  margin: 50px auto 10px;
+  text-align: center;
+  position: relative;
+  font-family: "kepler-std-display";
+}
+/* line 7, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+footer #bottom-divider {
+  max-width: 100%;
+}
+/* line 9, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+footer #footer-panels {
+  margin-top: 20px;
+  width: 100%;
+  position: relative;
+}
+/* line 13, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+footer #footer-panels .a-footer-panel {
+  width: 33.33333%;
+  float: left;
+}
+@media screen and (max-width: 800px) {
+  /* line 13, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+  footer #footer-panels .a-footer-panel {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 530px) {
+  /* line 13, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+  footer #footer-panels .a-footer-panel {
+    width: 50%;
+    float: none;
+    margin: 0px auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 13, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+  footer #footer-panels .a-footer-panel {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 370px) {
+  /* line 13, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+  footer #footer-panels .a-footer-panel {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 300px) {
+  /* line 13, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+  footer #footer-panels .a-footer-panel {
+    width: 95%;
+  }
+}
+/* line 28, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+footer #footer-panels .a-footer-panel .panel-title {
+  font-size: 18px;
+  letter-spacing: 9px;
+}
+/* line 31, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+footer #footer-panels #social-icons {
+  position: relative;
+  height: 48px;
+  margin: 50px 20px;
+}
+/* line 36, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+footer #footer-panels #social-icons div {
+  positon: relative;
+  width: 48px;
+  height: 48px;
+}
+/* line 41, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+footer #footer-panels #social-icons div .color-icon {
+  opacity: 0;
+}
+/* line 43, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+footer #footer-panels #social-icons div .color-icon:hover {
+  opacity: 1;
+}
+/* line 45, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+footer #footer-panels #social-icons #social-1 {
+  float: left;
+  background: url(/assets/footer/facebook_desat-0290ada3eee1c0af4d2d844d8ccf8646fb9d6ec30e41b91365ec88b886aa93b7.png);
+}
+/* line 48, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+footer #footer-panels #social-icons #social-2 {
+  postion: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  background: url(/assets/footer/pinterest_desat-1def637c7765f62d78157c911df9a8c90e745982cdbeb04a3d6fc29512a40798.png);
+}
+/* line 54, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+footer #footer-panels #social-icons #social-3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+  background: url(/assets/footer/instagram_desat-9eaa0c4b21d537d1760047306030a9eb0f6660609df454eff45f9f3948e428c6.png);
+}
+/* line 60, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+footer #footer-panels #footer-panel-2 {
+  position: relative;
+}
+/* line 62, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+footer #footer-panels #footer-panel-2 #email-form {
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 30px;
+  font-size: 13px;
+  letter-spacing: 6px;
+}
+/* line 68, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+footer #footer-panels #footer-panel-2 #email-form #e {
+  width: 200px;
+  background-color: #f2f1e4;
+  border-radius: 20px;
+  height: 20px;
+  text-align: center;
+}
+/* line 74, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+footer #footer-panels #footer-panel-2 #email-form #submit-button {
+  border-radius: 20px;
+  background-color: #e9e8e0;
+}
+@media screen and (max-width: 800px) {
+  /* line 77, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+  footer #footer-panels #footer-panel-3 {
+    display: none;
+  }
+}
+/* line 80, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+footer #footer-panels #footer-panel-3 #pinterest-panel {
+  margin-top: 20px;
+  width: 90%;
+  height: 100px;
+  border: 1px black solid;
+  border-radius: 20px;
+}
+/* line 87, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/footer.sass */
+footer #copyright {
+  position: relative;
+  clear: both;
+  letter-spacing: 4px;
+  font-size: 11px;
+  padding-top: 20px;
+}
+/* line 7, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header .non-hovered {
+  opacity: 0.4;
+  transition: opacity 0.1s linear;
+}
+/* line 11, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header .hovered {
+  opacity: 0.8;
+  transition: opacity 0.2s ease-out;
+}
+
+/* line 15, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header {
+  position: relative;
+  width: 84%;
+  max-width: 1000px;
+  height: 94px;
+  margin: 30px auto 0px;
+  text-align: center;
+}
+@media screen and (max-width: 950px) {
+  /* line 15, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+  header {
+    width: 100%;
+  }
+}
+/* line 28, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header #logo-panel {
+  float: left;
+  width: 94px;
+}
+@media screen and (max-width: 800px) {
+  /* line 28, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+  header #logo-panel {
+    float: none;
+    margin: 0px auto;
+  }
+}
+/* line 35, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header #logo-panel img {
+  width: 100%;
+}
+
+/* line 41, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header #header-divider {
+  position: absolute;
+  left: 77%;
+}
+@media screen and (max-width: 1165px) {
+  /* line 41, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+  header #header-divider {
+    left: 95%;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 41, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+  header #header-divider {
+    top: 0px;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 41, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+  header #header-divider {
+    display: none;
+  }
+}
+
+/* line 54, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header #middle-panel {
+  box-sizing: border-box;
+  float: left;
+  padding: 10px 5px;
+}
+@media screen and (min-width: 1166px) {
+  /* line 54, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+  header #middle-panel {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 1165px) {
+  /* line 54, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+  header #middle-panel {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 54, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+  header #middle-panel {
+    clear: left;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 54, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+  header #middle-panel {
+    clear: left;
+    width: 100%;
+  }
+}
+/* line 69, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header #middle-panel #title-panel {
+  margin: 0px auto;
+  width: 100%;
+}
+/* line 73, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header #middle-panel #title-panel img {
+  display: block;
+  margin: auto;
+  height: 46px;
+  max-width: 800px;
+}
+@media screen and (max-width: 700px) and (min-width: 421px) {
+  /* line 73, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+  header #middle-panel #title-panel img {
+    max-width: 400px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 420px) {
+  /* line 73, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+  header #middle-panel #title-panel img {
+    max-width: 300px;
+    height: 25px;
+  }
+}
+/* line 85, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header #middle-panel #nav-panel {
+  margin-top: 10px;
+  z-index: 100;
+}
+/* line 88, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header #middle-panel #nav-panel .nav-item {
+  text-decoration: none;
+  color: black;
+  margin: 0px 20px;
+  font-family: "clavo";
+  color: #704c4c;
+  font-size: 1em;
+}
+/* line 96, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header #middle-panel #nav-panel .nav-item:hover {
+  color: #305768;
+}
+@media screen and (max-width: 700px) {
+  /* line 88, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+  header #middle-panel #nav-panel .nav-item {
+    font-size: 1em;
+    margin: 0px 10px;
+  }
+}
+/* line 102, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header #nav-line-break {
+  display: none;
+}
+@media screen and (max-width: 520px) {
+  /* line 102, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+  header #nav-line-break {
+    display: block;
+  }
+}
+
+/* line 110, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header #info-panel {
+  position: relative;
+  padding-top: 4px;
+  float: right;
+  color: #305768;
+  font-family: "Marion W01 Italic";
+  font-style: italic;
+  letter-spacing: 3.2px;
+}
+/* line 119, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header #info-panel :visited {
+  color: #305768;
+}
+/* line 121, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header #info-panel > div {
+  text-align: right;
+  padding-right: 20px;
+  margin-bottom: 8px;
+}
+/* line 125, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header #info-panel > div a {
+  text-decoration: none;
+}
+/* line 127, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header #info-panel .info-icon {
+  position: absolute;
+}
+/* line 129, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header #info-panel #info-icon-map {
+  top: 8px;
+  right: 0;
+}
+/* line 132, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header #info-panel #info-icon-phone {
+  top: 43px;
+  right: 0;
+}
+/* line 135, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+header #info-panel #info-icon-email {
+  top: 75px;
+  right: 0;
+}
+@media screen and (max-width: 1165px) {
+  /* line 139, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+  header #info-panel .info-text {
+    display: none;
+  }
+}
+@media screen and (max-width: 950px) {
+  /* line 110, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+  header #info-panel {
+    margin-right: 19px;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 110, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/partials/header.sass */
+  header #info-panel {
+    margin-right: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: left;
+  }
+}
+/* line 5, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/subjects.sass */
+#admin-subjects {
+  width: 900px;
+  margin: 0px auto;
+  font-family: Georgia;
+}
+/* line 11, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/subjects.sass */
+#admin-subjects table {
+  width: 400px;
+  margin: 0px auto;
+  text-align: center;
+}
+/* line 16, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/subjects.sass */
+#admin-subjects table td {
+  border-bottom: 1px gray dotted;
+}
+/* line 18, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/subjects.sass */
+#admin-subjects .add-field {
+  font-family: Georgia;
+  margin-bottom: 20px;
+  width: 600px;
+  margin: 0px auto;
+  text-align: center;
+}
+/* line 25, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/subjects.sass */
+#admin-subjects .add-field input[type=text] {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 500px;
+  height: 30px;
+  text-align: center;
+  background-color: rgba(250, 252, 247, 0.8);
+  border-radius: 30px;
+  font-family: Georgia;
+  font-size: 1.2em;
+}
+/* line 35, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/subjects.sass */
+#admin-subjects .add-field input[type=submit] {
+  display: none;
+  font-family: Georgia;
+  letter-spacing: 0.8em;
+  width: 300px;
+  height: 25px;
+  margin: 0px auto;
+  text-align: center;
+  border: 1px gray inset;
+  marign-top: 20px;
+  margin-bottom: 50px;
+  background-color: #40748b;
+  border-radius: 40px;
+}
+/* line 49, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/subjects.sass */
+#admin-subjects .add-field input[type=submit]:hover {
+  background-color: #2e5465;
+  cursor: pointer;
+}
+/* This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *
+ *
+ */
+/* line 18, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/application.css.sass */
+html, body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background-image: url(/assets/pattern_background-dd76147b144b9d2539fd3f19a7c53d464d8a8faf25a59b2fa04234ac1a5219f2.png);
+}
+
+/* line 24, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/application.css.sass */
+abbr[title="required"] {
+  display: none;
+}
+
+/* line 27, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/application.css.sass */
+.alert {
+  font-size: 13px;
+}
+
+/* line 29, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/application.css.sass */
+.alert-error {
+  color: red;
+}
+
+/* line 31, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/application.css.sass */
+.alert-success {
+  color: green;
+}
+
+/* line 35, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/application.css.sass */
+#popup-panel .attribute-popup {
+  position: fixed;
+  width: 100%;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-top: 4px #704c4c solid;
+  border-bottom: 4px #704c4c solid;
+  z-index: 20;
+  top: 380px;
+  text-align: center;
+}
+/* line 45, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/application.css.sass */
+#popup-panel .attribute-popup .title {
+  font-family: "kepler-std-display";
+  font-size: 38px;
+  letter-spacing: 12px;
+}
+/* line 49, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/application.css.sass */
+#popup-panel .attribute-popup .enter-attribute {
+  width: 650px;
+  margin: 0px auto;
+  margin-top: 40px;
+}
+/* line 53, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/application.css.sass */
+#popup-panel .attribute-popup .enter-attribute input {
+  width: 300px;
+  height: 40px;
+  margin: 0px auto;
+  margin-right: 10px;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 4px;
+  border: none;
+  border-bottom: 2px black solid;
+  background-color: transparent;
+}
+/* line 65, /Users/nilesmackbrandon/Developer/jtodd/jtoddgalleries/app/assets/stylesheets/application.css.sass */
+#popup-panel .attribute-popup .enter-attribute .btn {
+  display: none;
+}
