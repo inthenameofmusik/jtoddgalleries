@@ -1,8 +1,40 @@
 <div class="returned-show">
 	<div id="column-1">
-		<%= image_tag @artwork.photo.url(:large) %>
+		<%= image_tag @artwork.photo.url(:detail) %>
 	</div>
 	<div id="column-2">
-		<%= @artwork.title %>
+		<div class="artist"><%= @artwork.artist.last_first unless @artwork.artist.nil? %></div>
+		<div class="title"><%= @artwork.title %></div>
+		Style: 
+		<% @artwork.styles.each do |r| %>
+			<%= r.title %>
+		<% end %>
+		<br>
+		Medium:
+		<% @artwork.media.each do |r| %>
+			<%= r.title %>
+		<% end %>
+		<br>
+		<% unless @artwork.width.nil? %>
+			<%= @artwork.width %>" x <%= @artwork.height %>"<br>
+		<% end %>
+		JTG#: <%= @artwork.jtg %><br>
+		<br><br>
+		<div class="additional-info">
+			Subjects:
+			<span class="listing"><% @artwork.subjects.each do |r| %>
+				<%= r.title %> |
+			<% end %></span>
+			<br>
+			Locations:
+			<span class="listing"><% @artwork.locations.each do |r| %>
+				<%= r.title %> |
+			<% end %></span>
+			<br>
+			Keywords:
+			<span class="listing"><% @artwork.keywords.each do |r| %>
+				<%= r.title %> |
+			<% end %></span>
+		</div>
 	</div>
 </div>

@@ -12,7 +12,9 @@ Rails.application.routes.draw do
 
   #for users
   get 'fineart' => 'artworks#index2'
+  get 'fineart/admin' => 'artworks#index3'
   get 'fineart/q' => 'artworks#q'
+  get 'fineart/q' => 'artworks#q2'
   post 'fineart/show' => 'artworks#ajax_show'
 
   post 'artists/popup' => 'artists#popup'

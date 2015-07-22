@@ -333,6 +333,7 @@ $jtodd-blue: #305768
 						background-color: rgba(230,20,14,0.8)
 					right: 0
 				div a
+					display: block
 					text-decoration: none
 					letter-spacing: 3px
 					font-weight: bold
@@ -359,9 +360,25 @@ $jtodd-blue: #305768
 			#column-1
 				width: 50%
 				height: 100%
-				overflow: hidden
+				float: left
+				// overflow: hidden
 				img
 					width: 100%
 					height: 100%
-
+			#column-2
+				width: 50%
+				box-sizing: border-box
+				line-height: 25px
+				letter-spacing: 4.5px
+				font-family: 'kepler-std-display'
+				padding: 10px
+				float: left
+				.title
+					font-weight: bold
+					font-size: 18px
+					letter-spacing: 5px
+				.additional-info
+					font-size: 14px
+				.listing
+					font-style: italic
 
