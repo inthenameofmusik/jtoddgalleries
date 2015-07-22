@@ -11,10 +11,11 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
-//= require turbolinks
 //= require jquery.turbolinks
+//= require jquery_ujs
 //= require_tree .
+
+
 $(function(){
 
 	if (!Array.prototype.indexOf) {
@@ -161,6 +162,20 @@ $(function(){
 				$("#popup-panel").html(data);
 			});
 		}
+	});
+
+	$(".a-article").click(function() {
+		var $articleId = $(this).attr("id");
+		console.log($articleId);
+
+		var url = window.location.href;
+		var arr = url.split("/");
+		var result = arr[0] + "//" + arr[2]
+
+		$.post(result + "/article/show", {id: $articleId})
+			.done(function(data){
+				$("#shown-article").html(data);
+			})
 	});
 
 	// $("*").unbind("ajax:success").bind("ajax:success", function() {

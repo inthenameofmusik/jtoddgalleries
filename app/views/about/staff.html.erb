@@ -1,0 +1,48 @@
+
+<%= render 'partials/header' %>
+
+<br>
+<br>
+
+<%= render :partial => "partials/feature", locals: {type: @full_feature} %>
+
+<br><br>
+
+<div id="full-about-panel">
+	<div id="about-nav-staff">
+		<span>About Us</span><br>
+		<ul>
+			<li id="margin-correct"><%= link_to "Our Gallery", about_gallery_path, :id => "first-link" %></li>
+			<li id="non-margin-correct"><%= link_to "Our Staff", about_staff_path, :id => "last-link" %></li>
+		</ul>
+	</div>
+
+	<div id="about-gallery">
+		<div class="left-entry" id="history-entry">
+			<%= image_tag("fade_line.png") %>
+			<div id="column-1">
+				<div id="title">Mona Kumar</div>
+				<div id="history-content">This is all of our history content...</div>
+			</div>
+			<div id="column-2">
+			</div>
+		</div>
+		<div class="right-entry" id="mission-statement">
+			<%= image_tag("fade_line.png") %>
+			<div id="column-1"></div>
+			<div id="column-2">
+				<div id="title">Brian Hart</div>
+				<div id="mission-content">This is our mission statement wrapped up neatly...</div>
+			</div>
+		</div>
+		<div class="left-entry" id="goals-future">
+			<%= image_tag("fade_line.png") %>
+			<div id="column-1">
+				<div id="title">Jessica</div>
+				<div id="history-content">This is all of our future goals...</div>
+			</div>
+			<div id="column-2">
+			</div>
+		</div>
+	</div>
+</div>

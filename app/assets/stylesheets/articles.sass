@@ -1,0 +1,52 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#full-articles-panel
+	max-width: 960px
+	margin: 0px auto
+	// border: 1px blue solid
+	padding: 10px
+	overflow: hidden
+	box-sizing: border-box
+	margin-bottom: 50px
+	.a-column
+		width: 45%
+		box-sizing: border-box
+		// border: 2px gray outset
+		overflow: auto
+		float: left
+		height: 600px
+		margin: 2.5%
+		.a-article
+			box-sizing: border-box
+			width: 100%
+			// border: 1px green solid
+			height: 52px
+			padding: 5px
+			overflow: hidden
+			font-family: "kepler-std-display"
+			cursor: pointer
+			&:hover
+				background-color: rgba(48,87,104, 0.3)
+			.top-info
+				font-weight: bold
+				letter-spacing: 2px
+				.left-side
+					float: left
+				.right-side
+					float: right
+			.bottom-info
+				margin-top: 9px
+				line-height: 20px
+				color: gray
+				overflow: hidden
+				font-style: italic
+	#shown-article
+		font-family: "Marion W01 Italic"
+		font-style: italic
+		font-size: 18px
+		padding: 5px
+		letter-spacing: 3px
+		.title
+			font-weight: bold

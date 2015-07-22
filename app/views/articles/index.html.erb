@@ -4,3 +4,24 @@
 <br>
 
 <%= render :partial => "partials/feature", locals: {type: @full_feature} %>
+
+<br>
+<br>
+
+<div id="full-articles-panel">
+	<div id="listed-articles" class="a-column">
+		<% @article.each do |news| %>
+			<div class="a-article" id="<%= news.id %>">
+				<div class="top-info">
+					<div class="left-side"><%= news.title %></div>
+					<div class="right-side"><%= news.published_date %></div>
+				</div><br>
+				<div class="bottom-info">
+					<%= news.body %>
+				</div>
+			</div>
+		<% end %>
+	</div>
+	<div id="shown-article" class="a-column">
+	</div>
+</div>

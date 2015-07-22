@@ -1,5 +1,10 @@
 class AboutController < ApplicationController
-  def index
-  	@full_feature = true
+  def gallery
+  	@full_feature = false
+  end
+
+  def staff
+  	@full_feature = false
   end
 end
+

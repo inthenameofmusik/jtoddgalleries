@@ -20,22 +20,22 @@
 	</div>
 
 	<div id="single-showing">
-		<%= image_tag @exhibition.main_photo.url(:full_feature) if @exhibition.main_photo.present? %>
+		<%= image_tag @exhibition.main_photo.url(:full_feature) if @exhibition.present? %>
 		<div id="info">
 			<div class="a-result-info">
 				<div class="column-1">
-					<span id="artist"><br><%= @exhibition.artist.last_first if @exhibition.artist.present? %></span><br><br>
-					<span id="title"><%= @exhibition.title %></span>
+					<span id="artist"><br><%= @exhibition.artist.last_first if @exhibition.present? %></span><br><br>
+					<span id="title"><%= @exhibition.title if @exhibition.present? %></span>
 				</div>
 				<div class="column-2">
-					<br><%= @exhibition.from_date.to_formatted_s(:long) %><br><br>
-					<span class="admission">Admission: <%= @exhibition.admission %></span>
+					<br><%= @exhibition.from_date.to_formatted_s(:long) if @exhibition.present? %><br><br>
+					<span class="admission">Admission: <%= @exhibition.admission if @exhibition.present? %></span>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div id="description-of-showing">
-	<%= @exhibition.description if @exhibition.description.present? %>
+	<%= @exhibition.description if @exhibition.present? %>
 	</div>
 	<br><br>
 </div>
