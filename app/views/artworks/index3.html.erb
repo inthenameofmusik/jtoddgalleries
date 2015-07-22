@@ -10,6 +10,7 @@
 
 <div id="fineart-full-page">
 	<%= link_to "New Artwork", new_artwork_path, :id => "new-item" %>
+	<%= render 'partials/artwork_admin' %> <br><br>
 	<div id="search-panel">
 		<%= form_tag('/fineart/q2', method: :get) do %>
 			<div id="top-round">
