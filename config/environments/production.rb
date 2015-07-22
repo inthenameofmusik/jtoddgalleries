@@ -78,13 +78,12 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.paperclip_defaults = {
-      storage: :s3,
-      s3_host_name: 's3-eu-west-1.amazonaws.com',
-      s3_credentials: {
-        access_key_id: ENV['AKIAIQ7IKQCCH5LTWRMQ'],
-        secret_access_key: ENV['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']
-      },
-      bucket: ENV['media.jtodd.com']
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['S3_BUCKET_NAME'],
+      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+    }
   }
 
 
