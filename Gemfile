@@ -43,6 +43,8 @@ gem 'pg'
 
 gem 'paperclip'
 
+gem 'aws-sdk'
+
 gem 'simple_form_fancy_uploads'
 
 # Use ActiveModel has_secure_password
