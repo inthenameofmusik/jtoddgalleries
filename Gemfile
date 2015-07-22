@@ -35,6 +35,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'thinking-sphinx'
 
+gem 'flying-sphinx'
+
 gem 'mysql2'
 
 gem 'pg'
