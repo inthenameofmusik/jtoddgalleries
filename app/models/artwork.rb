@@ -27,8 +27,7 @@ class Artwork < ActiveRecord::Base
 		thumb: ['60>', :jpg, quality: 70],
 		small: ['300>', :jpg, quality: 70],
 		large: ['600>', :jpg, quality: 70]
-	}, :storage => :s3,
-		:bucket => ENV['media.jtodd.com']
+	}
 	validates_attachment :photo, content_type: { content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"] }
 
 end
