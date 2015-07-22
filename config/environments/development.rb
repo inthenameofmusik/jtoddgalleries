@@ -38,6 +38,16 @@ Rails.application.configure do
 
   Paperclip.options[:image_magick_path] = "/opt/ImageMagick/bin"
   Paperclip.options[:command_path] = "/opt/ImageMagick/bin"
+ 
+  config.paperclip_defaults = {
+      storage: :s3,
+      s3_host_name: 's3-eu-west-1.amazonaws.com',
+      s3_credentials: {
+        access_key_id: ENV['AKIAIQ7IKQCCH5LTWRMQ'],
+        secret_access_key: ENV['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']
+      },
+      bucket: ENV['media.jtodd.com']
+  }
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
