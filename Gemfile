@@ -8,6 +8,8 @@ ruby '2.2.1'
 
 gem 'simple_form'
 
+gem 'figaro'
+
 # Use sqlite3 as the database for Active Record
 
 # Use SCSS for stylesheets
