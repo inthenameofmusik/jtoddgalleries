@@ -35,6 +35,9 @@ Rails.application.routes.draw do
   resources :articles
   get 'contact' => 'contact#index'
 
+  get 'clips/expo_now' => 'clips#expo_now'
+  get 'clips/expo_upcoming' => 'clips#expo_upcoming'
+
   resources :subjects
   resources :locations
   resources :keywords

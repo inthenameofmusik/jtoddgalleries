@@ -19,19 +19,13 @@ class ExhibitionsController < ApplicationController
 	end
 
 	def get_current
-		@first_one = Exhibition.order('from_date DESC').first
+		    @now_expo = Clip.where("title = 'expo_now'").first.value.to_i
+   			 @exhibition = Exhibition.find(@now_expo)
+		# @first_one = Exhibition.order('from_date DESC').first
 
-		if @irst_one.present?
-			if (@first_one.from_date..@first_one.to_date).cover?(DateTime.now.to_date)
-				@correct_version = "Now Showing"
-			else
-				@correct_version = "Soon Showing"
-			end
-		else
-			@correct_version = "Now Showing"
-		end
+		@correct_version = "Now Showing"
 
-		@exhibition = Exhibition.order('from_date DESC').first
+		# @exhibition = Exhibition.order('from_date DESC').first
 		render 'show'
 	end
 

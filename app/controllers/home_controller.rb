@@ -1,6 +1,9 @@
 class HomeController < ApplicationController
   def index
-  	@first_one = Exhibition.order('from_date DESC').first
+  	# @first_one = Exhibition.order('from_date DESC').first
+
+    @now_expo = Clip.where("title = 'expo_now'").first.value.to_i
+    @first_one = Exhibition.find(@now_expo)
 
   	@total_art = Artwork.all.count
 

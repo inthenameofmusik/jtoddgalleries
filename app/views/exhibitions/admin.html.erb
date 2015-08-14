@@ -37,6 +37,10 @@
 				<div class="to-delete">
 					<%= link_to "", exhibition_path(expo), method: :delete, data: {confirm: "Are you sure you want to delete?"} %>
 				</div>
+				<div id="set-expo">
+					<%= link_to "Now Showing", controller: "clips", action: "expo_now", id: expo.id %>
+					<%= link_to "Upcoming", controller: "clips", action: "expo_upcoming", id: expo.id %>
+				</div>
 			</div>
 		<% end %>
 		<br><br><br><br><br>
