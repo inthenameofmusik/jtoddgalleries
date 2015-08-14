@@ -10,6 +10,7 @@
 
 <div id="full-services-panel">
 	<div id="title">Services</div>
+	<%= link_to "New Service", new_service_path %>
 
 	<div id="services" class="classy-list">
 		<% @services.each.with_index do |service, index| %>
@@ -27,6 +28,10 @@
 					</div>
 					<div class="description description-left"><%= service.description %></div>					
 				<% end %>
+			<div class="editing">
+				<%= link_to "Edit", edit_service_path(service) %>
+				<%= link_to 'Destroy',  service,  method: :delete, data: { confirm: 'Are you sure?' } %>
+			</div>
 			</div><br><br><br>
 		<% end %>
 		

@@ -1,0 +1,6 @@
+<%= simple_form_for @service do |f| %>
+	<%= f.input :title, label: false, placeholder: "Title" %>
+	<%= f.input :description, label: false, placeholder: "Body Text" %>
+    <%= f.input :main_photo, as: :file, input_html: {id: "photo-upload-field"}, label: false %>
+	<%= f.button :submit %>
+<% end %>
