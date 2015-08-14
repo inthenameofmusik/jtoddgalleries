@@ -325,23 +325,25 @@
 					border-top-right-radius: 15px
 
 #single-showing
-	width: 960px
-	height: 720px
-	border: 5px #6b96a7 solid
+	max-width: 960px
+	max-height: 720px
+	// border: 5px #6b96a7 solid
 	position: relative
 	img
 		width: 100%
 		height: 100%
+		border: 5px #6b96a7 solid
 	#info
 		.a-result-info
-			box-sizing: border-box
+			// box-sizing: border-box
 			padding: 5px
 			padding-top: -20px
+			// display: none
 			// border: 1px red solid
 			position: absolute
 			width: 100%
 			height: 80px
-			bottom: 0px
+			bottom: 3px
 			font-family: "kepler-std-display"
 			letter-spacing: 3px
 			line-height: 17px
@@ -358,6 +360,12 @@
 			.admission
 				letter-spacing: 5px
 				font-style: italic
+				a
+					text-decoration: none
+					color: white
+					font-style: none
+					font-size: 18px
+					border-bottom: white 1px solid
 			.column-1
 				box-sizing: border-box
 				// border: 1px green solid
@@ -371,9 +379,21 @@
 				text-align: right
 
 #description-of-showing
-	min-height: 200px
+	min-height: 100px
 	color: black
 	font-family: "kempler-std-display"
 	font-size: 20px
 	letter-spacing: 2px
 	padding: 8px
+	max-width: 960px
+	overflow: hidden
+
+
+.picture-show
+	position: relative
+	margin: 0px auto
+	width: 300px
+	a
+		opacity: 0.8
+	a:hover
+		opacity: 1

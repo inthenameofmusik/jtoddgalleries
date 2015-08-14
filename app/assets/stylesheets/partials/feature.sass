@@ -11,6 +11,8 @@
 	@media screen and (max-width: 800px)
 		margin-top: 63px
 	position: relative
+	overflow: hidden
+	// display: none
 	height: 292px
 	// box-sizing: border-box
 	width: 100%
@@ -22,6 +24,7 @@
 		height: 150px
 	@media screen and (max-width: 520px)
 		height: 110px
+	
 
 	#multiple-features
 		.a-feature
@@ -65,4 +68,35 @@
 			@media screen and (max-width: 520px)
 				margin: 0
 				width: 100%
-
+		.to-art
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			opacity: 0
+			&:hover
+				background-color: white
+				opacity: 0.1
+				cursor: pointer
+#1-container
+	@media screen and (max-width: 520px)
+		display: none
+#2-container
+	@media screen and (max-width: 800px)
+		display: none
+#homepage
+	#feature-panel
+		display: none
+#full-feature
+	position: absolute
+	width: 100%
+	height: 100%
+#index2
+	#full-feature
+		background-image: image-url("fineart_cover4.jpg")
+		background-size: cover
+#exhibition
+	#full-feature
+		background-image: image-url("exhibition_cover.jpg")
+		background-size: cover

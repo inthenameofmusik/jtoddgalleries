@@ -5,7 +5,7 @@
     <div>
       <%= f.association :artist, label: false, :label_method => :fullname, default: 1, :include_blank => "Artist", input_html: {id: "artist-drop-down", :class => "exhibition"} %>
     </div>
-    <%= f.input :admission, label: false, placeholder: "Admission", input_html: {id: "admission-inputter"} %>
+    <%= f.input :link, label: false, placeholder: "RSVP Link", input_html: {id: "admission-inputter"} %>
   </div>
   <div id="column-2" class="exhibition">
     <div>Description</div>

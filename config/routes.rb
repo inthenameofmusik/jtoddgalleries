@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get 'fineart/q' => 'artworks#q'
   get 'fineart/q' => 'artworks#q2'
   post 'fineart/show' => 'artworks#ajax_show'
+  get 'fineart/feature' => 'artworks#show'
 
   get 'about/gallery' => 'about#gallery'
   get 'about/staff' => 'about#staff'
@@ -23,6 +24,8 @@ Rails.application.routes.draw do
   post 'article/show' => 'articles#ajax_show'
 
   post 'artists/popup' => 'artists#popup'
+
+  post 'new-feature' => 'home#new_feature'
 
   #and back
   get 'exhibitions' => 'exhibitions#index'

@@ -1,17 +1,33 @@
 <div id="feature-panel">
 
 	<% if type %>
-	<div id="full-feature">
-	</div>
+		<%= hidden_field_tag 'whether-async', "false" %>
+		<div id="full-feature">
+		</div>
 
 	<% else %>
-	<div id="multiple-features">
-		<div id="feature-1-of-3" class="a-feature">
+		<%= hidden_field_tag 'whether-async', "true" %>
+		<%= hidden_field_tag 'artwork_count', @total_art %>
+		<%= hidden_field_tag 'feature-1-photo', @random_one_art.photo.url(:detail) if !@random_one_art.nil? %>
+		<%= hidden_field_tag 'feature-1-id', @random_one_art.id if !@random_one_art.nil? %>
+		<%= hidden_field_tag 'feature-2-photo', @random_two_art.photo.url(:detail) if !@random_two_art.nil? %>
+		<%= hidden_field_tag 'feature-2-id', @random_two_art.id if !@random_two_art.nil? %>
+		<%= hidden_field_tag 'feature-3-photo', @random_three_art.photo.url(:detail) if !@random_three_art.nil? %>
+		<%= hidden_field_tag 'feature-3-id', @random_three_art.id if !@random_three_art.nil? %>
+		<div id="multiple-features">
+			<div id="1-container">
+				<div id="feature-1-of-3" class="a-feature">
+					<a href=" " class="to-art"></a>
+				</div>
+			</div>
+			<div id="2-container">
+				<div id="feature-2-of-3" class="a-feature">
+					<a href=" " class="to-art"></a>
+				</div>
+			</div>
+			<div id="feature-3-of-3" class="a-feature">
+				<a href=" " class="to-art"></a>
+			</div>
 		</div>
-		<div id="feature-2-of-3" class="a-feature">
-		</div>
-		<div id="feature-3-of-3" class="a-feature">
-		</div>
-	</div>
 	<% end %>
 </div>

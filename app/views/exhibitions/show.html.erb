@@ -3,9 +3,9 @@
 
 <br>
 <br>
-
+<div id="exhibition">
 <%= render :partial => "partials/feature", locals: {type: @full_feature} %>
-
+</div>
 <br><br>
 
 <div id="full-exhibition-results">
@@ -29,13 +29,19 @@
 				</div>
 				<div class="column-2">
 					<br><%= @exhibition.from_date.to_formatted_s(:long) if @exhibition.present? %><br><br>
-					<span class="admission">Admission: <%= @exhibition.admission if @exhibition.present? %></span>
+					<span class="admission">RSVP: <a href=<%= @exhibition.link %>>Secure Your Spot</a></span>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div id="description-of-showing">
 	<%= @exhibition.description if @exhibition.present? %>
+	</div>
+	<br>
+	<div class="picture-show">
+		<a href=<%= @exhibition.alt_photo_1.url(:popup) %>><%= image_tag(@exhibition.alt_photo_1.url(:icon)) unless @exhibition.alt_photo_1_file_name.nil? %></a>
+		<a href=<%= @exhibition.alt_photo_2.url(:popup) %>><%= image_tag(@exhibition.alt_photo_2.url(:icon)) unless @exhibition.alt_photo_2_file_name.nil? %></a>
+		<a href=<%= @exhibition.alt_photo_3.url(:popup) %>><%= image_tag(@exhibition.alt_photo_3.url(:icon)) unless @exhibition.alt_photo_3_file_name.nil? %></a>
 	</div>
 	<br><br>
 </div>

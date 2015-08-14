@@ -15,9 +15,7 @@
 //= require jquery_ujs
 //= require_tree .
 
-
 $(function(){
-
 	if (!Array.prototype.indexOf) {
 		Array.prototype.indexOf = function(searchElement, fromIndex) {
 
@@ -191,6 +189,14 @@ $(function(){
 	// 	console.log($(this));
 	// 	$(".attribute-popup").remove();
 	// });
+
+	var feature_image = $("#the-picture").attr("value");
+	$("#full-feature").css("background-image", feature_image);
+
+	$(".picture-show").magnificPopup({
+		delegate: 'a',
+		type: 'image'
+	});
 
 });
 

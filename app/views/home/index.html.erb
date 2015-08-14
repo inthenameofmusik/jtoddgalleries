@@ -3,9 +3,9 @@
 
 <br>
 <br>
-
-<%= render :partial => "partials/feature", locals: {type: @full_feature} %>
-
+<div id="homepage">
+<%= render :partial => "partials/feature", locals: {type: @full_feature, count: @total_art} %>
+</div>
 <div id="main-1">
 	<div id="welcome">
 		<p id="welcome-1">Largest Selection of Fine Art in New England</p>

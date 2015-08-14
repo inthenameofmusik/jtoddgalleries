@@ -8,6 +8,7 @@ class ArtworksController < ApplicationController
 		@artwork_q ||= Artwork.all
 		@last_artwork = Artwork.new
 		@last_artwork = @artwork_q.last
+		@full_feature = true
 
 		# render plain: @artwork_q
 	end
@@ -38,7 +39,9 @@ class ArtworksController < ApplicationController
 	end
 
 	def show
-		@artwork = Artwork.find(params[:id])
+		@artwork_q = Artwork.find(params[:id])
+		@full_feature = true
+		render "index2"
 	end
 
 	def new

@@ -3,9 +3,9 @@
 
 <br>
 <br>
-
+<div id="exhibition">
 <%= render :partial => "partials/feature", locals: {type: @full_feature} %>
-
+</div>
 <br><br>
 
 <div id="full-exhibition-results">
@@ -27,7 +27,7 @@
 					</div>
 					<div class="column-2">
 						<br><%= expo.from_date.to_formatted_s(:long) %><br>
-						<span class="admission">Admission: <%= expo.admission %></span>
+						<span class="admission">Click to RSVP</span>
 					</div>
 				</div>
 				<div class="to-show">

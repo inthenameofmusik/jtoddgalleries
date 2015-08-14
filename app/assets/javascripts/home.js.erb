@@ -1,0 +1,59 @@
+var number_of_works = $("#artwork_count").attr("value");
+var the_random_one;
+var new_picture_url;
+var which_feature = 1;
+var the_id;
+var img_1_url, img_1_id, img_2_url, img_2_id;
+
+if ($("#whether-async").attr("value") == "true") {
+	$("#feature-panel").slideDown().fadeIn(1000);
+
+		setInterval(function() {
+			if ($(window).width() > 799 ) {
+				the_random_one = Math.floor((Math.random() * number_of_works) + 1)
+				// console.log(the_random_one);
+
+				$.ajax({
+					type: "POST",
+					url: "/new-feature",
+					data: {which_one: the_random_one},
+					success: function(data) {
+						new_picture_url = data.photo;
+
+						$("#feature-" + which_feature + "-of-3").fadeTo('slow', 0, function() {
+							$(this).css("background-image", "url(" + new_picture_url + ")");
+						}).fadeTo(1000, 1);
+						$("#feature-" + which_feature + "-of-3 .to-art").attr("art_id", data.id)
+							.attr("href", window.location.protocol + "//" + window.location.host + "/fineart/feature?id=" + data.id);
+					}
+				})
+
+				if (which_feature !== 3) {
+					which_feature += 1;
+				} else {
+					which_feature = 1;
+				}
+			}
+		}, 5000);
+	
+}
+
+(function() {
+	img_1_url = $("#feature-1-photo").attr("value");
+	img_1_id = $("#feature-1-id").attr("value");
+	$("#feature-1-of-3").css("background-image", "url(" + img_1_url + ")");
+	$("#feature-1-of-3 .to-art").attr("art_id", img_1_id )
+		.attr("href", window.location.protocol + "//" + window.location.host + "/fineart/feature?id=" + img_1_id);
+
+	img_2_url = $("#feature-2-photo").attr("value");
+	img_2_id = $("#feature-2-id").attr("value");
+	$("#feature-2-of-3").css("background-image", "url(" + img_2_url + ")");
+	$("#feature-2-of-3 .to-art").attr("art_id", img_2_id )
+		.attr("href", window.location.protocol + "//" + window.location.host + "/fineart/feature?id=" + img_2_id);
+
+	img_3_url = $("#feature-3-photo").attr("value");
+	img_3_id = $("#feature-3-id").attr("value");
+	$("#feature-3-of-3").css("background-image", "url(" + img_3_url + ")");
+	$("#feature-3-of-3 .to-art").attr("art_id", img_3_id )
+		.attr("href", window.location.protocol + "//" + window.location.host + "/fineart/feature?id=" + img_3_id);
+})();

@@ -1,5 +1,6 @@
 class ExhibitionsController < ApplicationController
 	before_filter :authenticate, :except => [:index, :get_current, :show]
+	before_filter :fullfeature
 
 	def index
 		@first_one = Exhibition.order('from_date DESC').first
@@ -14,6 +15,7 @@ class ExhibitionsController < ApplicationController
 		end
 
 		@exhibition = Exhibition.order('from_date DESC')
+		@full_feature = true
 	end
 
 	def get_current
@@ -94,7 +96,11 @@ class ExhibitionsController < ApplicationController
 
 	private
 
+	def fullfeature
+		@full_feature = true
+	end
+
 	def exhibition_params
-		params.require(:exhibition).permit(:main_photo, :title, :description, :admission , :artist_id, :from_date, :to_date, :alt_photo_1, :alt_photo_2, :alt_photo_3)
+		params.require(:exhibition).permit(:main_photo, :title, :description, :admission, :link , :artist_id, :from_date, :to_date, :alt_photo_1, :alt_photo_2, :alt_photo_3)
 	end
 end
