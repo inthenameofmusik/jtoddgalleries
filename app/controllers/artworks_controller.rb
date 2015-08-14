@@ -1,5 +1,5 @@
 class ArtworksController < ApplicationController
-	before_filter :authenticate, :except => [:index2, :q, :ajax_show]
+	before_filter :authenticate, :except => [:index2, :q, :ajax_show, :show]
 	def index
 		@artwork = Artwork.all
 	end
