@@ -10,6 +10,10 @@
 	overflow: hidden
 	box-sizing: border-box
 	margin-bottom: 50px
+	border: 2px white solid
+	#listed-articles
+		border-top: 2px #704c4c solid
+		border-bottom: 2px #704c4c solid
 	.a-column
 		width: 45%
 		box-sizing: border-box
@@ -42,7 +46,14 @@
 				color: gray
 				overflow: hidden
 				font-style: italic
+				span
+					// width: 50px
+					// border: 1px blue solid
+				a
+
 	#shown-article
+		border-top: 2px #704c4c solid
+		border-bottom: 2px #704c4c solid
 		font-family: "Marion W01 Italic"
 		font-style: italic
 		font-size: 18px
@@ -50,3 +61,30 @@
 		letter-spacing: 3px
 		.title
 			font-weight: bold
+#new-article-link
+	width: 120px
+	margin: 0px auto
+	margin-bottom: 18px
+	a
+		color: gray
+		font-size: 18px
+		text-decoration: none
+		border-bottom: 2px gray solid
+form
+	width: 800px
+	margin: 0px auto
+	text-align: center
+	input
+		width: 300px
+		height: 24px
+		margin-bottom: 20px
+		text-align: center
+		font-size: 18px
+	textarea
+		width: 600px
+		height: 200px
+		margin-bottom: 30px
+		font-size: 16px
+	.article_published_date
+		margin-bottom: 30px
+

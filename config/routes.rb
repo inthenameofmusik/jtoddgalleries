@@ -25,6 +25,8 @@ Rails.application.routes.draw do
 
   post 'new-feature' => 'home#new_feature'
 
+  get 'articles/admin' => 'articles#admin'
+
   #and back
   get 'exhibitions' => 'exhibitions#index'
   get 'exhibitions/admin' => 'exhibitions#admin'

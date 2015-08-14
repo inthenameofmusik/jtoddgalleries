@@ -1,0 +1,6 @@
+<%= simple_form_for @article do |f| %>
+	<%= f.input :title, label: false, placeholder: "Title" %>
+	<%= f.input :body, label: false, placeholder: "Body Text" %>
+	<%= f.input :published_date, as: :date, label: "Published Date" %>
+	<%= f.button :submit %>
+<% end %>

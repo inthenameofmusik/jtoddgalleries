@@ -7,7 +7,9 @@
 </div>
 <br>
 <br>
-
+<div id="new-article-link">
+<%= link_to "New Article", new_article_path %>
+</div>
 <div id="full-articles-panel">
 	<div id="listed-articles" class="a-column">
 		<% @article.each do |news| %>
@@ -17,7 +19,9 @@
 					<div class="right-side"><%= news.published_date %></div>
 				</div><br>
 				<div class="bottom-info">
-					<%= news.body %>
+					<span><%= news.body[0...50] %></span>
+					<%= link_to "Edit", edit_article_path(news) %>
+					<%= link_to 'Destroy',  news,  method: :delete, data: { confirm: 'Are you sure?' } %>
 				</div>
 			</div>
 		<% end %>
