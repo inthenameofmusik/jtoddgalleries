@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get 'fineart/admin' => 'artworks#index3'
   get 'fineart/q' => 'artworks#q'
   get 'fineart/q' => 'artworks#q2'
+  get 'fineart/q3' => 'artworks#q3'
   post 'fineart/show' => 'artworks#ajax_show'
   get 'fineart/feature' => 'artworks#show'
 

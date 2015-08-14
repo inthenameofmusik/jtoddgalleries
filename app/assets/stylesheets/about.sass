@@ -100,11 +100,12 @@
 					border-bottom-right-radius: 15px
 					border-top-right-radius: 15px
 
-	#about-gallery
+	#about-section
 		width: 100%
 		margin-top: 100px
 		position: relative
 		margin-bottom: 80px
+		font-size: 15px
 		// border: 1px blue solid
 		// border-top: 2px #765454 solid
 		.left-entry
@@ -117,6 +118,9 @@
 				position: absolute
 				top: 0
 				width: 100%
+			& img#jessica-picture
+				width: 70%
+				right: 0
 			#column-1
 				padding: 15px
 				box-sizing: border-box
@@ -133,6 +137,7 @@
 				background-size: cover
 				height: 235px
 				float: right
+				position: relative
 				// border: 1px red solid
 				width: 35%
 				box-sizing: border-box
@@ -149,8 +154,13 @@
 				background-size: cover
 				height: 235px
 				float: left
+				position: relative
 				width: 35%
 				box-sizing: border-box
+				img
+					width: 85%
+					height: 99.5%
+					top: 1px
 			#column-2
 				padding: 15px
 				box-sizing: border-box
@@ -163,13 +173,25 @@
 					margin-bottom: 10px
 		#history-entry
 			#column-2
-				background-image: image_url("about_gallery_history.png")
+				// background-image: image_url("about_gallery_history.png")
 		#mission-statement
 			#column-1
-				background-image: image_url("about_gallery_mission.png")
+				// background-image: image_url("about_gallery_mission.png")
 		#goals-future
 			#column-2
-				background-image: image_url("about_gallery_goals.png")
+				// background-image: image_url("about_gallery_goals.png")
+#jessica-picture
+	position: relative
+	width: 20%
+	height: 100%
+
+#mona-picture
+	width: 100%
+	height: 100%
+	position: absolute
+	top: -5px
+	// bottom: -38px
+
 
 
 

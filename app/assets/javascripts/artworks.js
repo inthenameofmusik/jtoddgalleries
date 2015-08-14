@@ -1,4 +1,5 @@
 var $somethingSelected = false;
+var elementContent;
 
 $(".a-result").click(function(e) {
 	
@@ -102,3 +103,6 @@ $(".a-result").click(function(e) {
 		});
 	$(document).scrollTop($currentScroll);
 });
+
+
+

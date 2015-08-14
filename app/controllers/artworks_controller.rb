@@ -23,6 +23,7 @@ class ArtworksController < ApplicationController
 		@artwork_q = Artwork.search params[:q], :conditions => {:subject => params[:artwork][:subject_ids], :location => params[:artwork][:location_ids], :artist_last => params[:artwork][:artist_id]}, :order => params[:sort][:title]
 		@last_artwork = Artwork.new
 		@last_artwork = @artwork_q.last
+		@full_feature = true
 		render 'index2'
 	end
 
@@ -30,6 +31,11 @@ class ArtworksController < ApplicationController
 		@artwork_q = Artwork.search params[:q], :conditions => {:subject => params[:artwork][:subject_ids], :location => params[:artwork][:location_ids], :artist_last => params[:artwork][:artist_id], :artist_first => params[:artwork][:artist_id]}, :order => params[:sort][:title]
 		@last_artwork = Artwork.new
 		@last_artwork = @artwork_q.last
+		render 'index2'
+	end
+
+	def q3
+		@artwork_q = Artwork.search params[:q], :conditions => {:subjects => params[:subject_ids]}
 		render 'index2'
 	end
 
