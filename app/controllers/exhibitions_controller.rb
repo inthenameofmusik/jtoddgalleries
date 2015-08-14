@@ -24,9 +24,17 @@ class ExhibitionsController < ApplicationController
 		# @first_one = Exhibition.order('from_date DESC').first
 
 		@correct_version = "Now Showing"
+		@correct2 = "Upcoming"
 
 		# @exhibition = Exhibition.order('from_date DESC').first
 		render 'show'
+	end
+
+	def get_upcoming
+		@upcoming_expo = Clip.where("title = 'expo_upcoming'").first.value.to_i
+		@exhibition = Exhibition.find(@upcoming_expo)
+		@correct_version = "Now Showing"
+		render 'show2'
 	end
 
 	def admin
@@ -55,17 +63,10 @@ class ExhibitionsController < ApplicationController
 	def show
 		@first_one = Exhibition.order('from_date DESC').first
 
-		if !@first_one.to_date.nil?
-			if (@first_one.from_date..@first_one.to_date).cover?(DateTime.now.to_date)
-				@correct_version = "Now Showing"
-			else
-				@correct_version = "Soon Showing"
-			end
-		else
-			@correct_version = "Now Showing"
-		end
+		@correct_version = "Now Showing"
 
 		@exhibition = Exhibition.find(params[:id])
+		render 'show3'
 	end
 
 	def update

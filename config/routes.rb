@@ -31,6 +31,7 @@ Rails.application.routes.draw do
   get 'exhibitions' => 'exhibitions#index'
   get 'exhibitions/admin' => 'exhibitions#admin'
   get 'exhibitions/current' => 'exhibitions#get_current'
+  get 'exhibitions/upcoming' => 'exhibitions#get_upcoming'
   get 'services' => 'services#index'
   resources :articles
   get 'contact' => 'contact#index'

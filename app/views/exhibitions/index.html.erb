@@ -12,7 +12,8 @@
 	<div id="exhibition-nav-past">
 		<span>Exhibitions</span><br>
 		<ul>
-			<li id="margin-correct"><%= link_to @correct_version, exhibitions_current_path, :id => "first-link" %></li>
+			<li id="margin-correct"><%= link_to "Now Showing", exhibitions_current_path, :id => "first-link" %></li>
+			<li id="upcoming-expo"><%= link_to "Upcoming", exhibitions_upcoming_path, :id => "middle-link" %></li>
 			<li id="non-margin-correct"><%= link_to "Past", exhibitions_path, :id => "last-link" %></li>
 		</ul>
 	</div>

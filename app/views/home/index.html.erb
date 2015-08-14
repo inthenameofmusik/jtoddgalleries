@@ -30,6 +30,19 @@
 		</div>
 		<%= link_to "", exhibitions_current_path, :id => "to-now-showing" %>
 	</div>
+	<div id="now-playing-panel">
+		<div id="now-playing-panel-bg">
+			<%= image_tag @upcoming_one.main_photo.url(:listing) if @upcoming_one.present? %>
+		</div>
+		<div id="now-playing-title">Upcoming
+		</div>
+		<div id="now-playing-info">
+		"<%= @upcoming_one.title if @upcoming_one.present? %>"<br>
+		<%= @upcoming_one.artist.fullname if @upcoming_one.present? %><br>
+		<%= @upcoming_one.from_date.strftime("%B %e, %Y") if @upcoming_one.present? %>
+		</div>
+		<%= link_to "", exhibitions_upcoming_path, :id => "to-now-showing" %>
+	</div>
 	<div id="sub-heading-panel">
 		<div id="sub-heading-1" class="individual-sub-heading">
 			<div class="desaturated-heading">

@@ -5,6 +5,9 @@ class HomeController < ApplicationController
     @now_expo = Clip.where("title = 'expo_now'").first.value.to_i
     @first_one = Exhibition.find(@now_expo)
 
+    @upcoming_expo = Clip.where("title = 'expo_upcoming'").first.value.to_i
+    @upcoming_one = Exhibition.find(@upcoming_expo)
+
   	@total_art = Artwork.all.count
 
   	@random_one = Random.rand(0...@total_art)
