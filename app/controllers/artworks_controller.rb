@@ -5,7 +5,7 @@ class ArtworksController < ApplicationController
 	end
 
 	def index2
-		@artwork_q ||= Artwork.all
+		@artwork_q ||= Artwork.paginate(page: params[:page], per_page: 20)
 		@last_artwork = Artwork.new
 		@last_artwork = @artwork_q.last
 		@full_feature = true
