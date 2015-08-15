@@ -3,10 +3,10 @@ class HomeController < ApplicationController
   	# @first_one = Exhibition.order('from_date DESC').first
 
     @now_expo = Clip.where("title = 'expo_now'").first.value.to_i
-    @first_one = Exhibition.find(@now_expo)
+    @first_one = Exhibition.find_by_id(@now_expo)
 
     @upcoming_expo = Clip.where("title = 'expo_upcoming'").first.value.to_i
-    @upcoming_one = Exhibition.find(@upcoming_expo)
+    @upcoming_one = Exhibition.find_by_id(@upcoming_expo)
 
   	@total_art = Artwork.all.count
 
