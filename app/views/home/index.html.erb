@@ -24,7 +24,7 @@
 		<div id="now-playing-title"><%= @correct_version %>
 		</div>
 		<div id="now-playing-info">
-		"<%= @first_one.title if @first_one.present? %>"<br>
+		<%= @first_one.title if @first_one.present? %><br>
 		<%= @first_one.artist.fullname if @first_one.present? %><br>
 		<%= @first_one.from_date.strftime("%B %e, %Y") if @first_one.present? %>
 		</div>
@@ -37,7 +37,7 @@
 		<div id="now-playing-title">Upcoming
 		</div>
 		<div id="now-playing-info">
-		"<%= @upcoming_one.title if @upcoming_one.present? %>"<br>
+		<%= @upcoming_one.title if @upcoming_one.present? %><br>
 		<%= @upcoming_one.artist.fullname if @upcoming_one.artist.present? %><br>
 		<%= @upcoming_one.from_date.strftime("%B %e, %Y") if @upcoming_one.present? %>
 		</div>
