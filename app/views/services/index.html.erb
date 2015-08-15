@@ -13,7 +13,7 @@
 
 	<div id="services" class="classy-list">
 		<% @services.each.with_index do |service, index| %>
-			<div class="a-service">
+			<div class="a-service large">
 				<% if index.even? %>
 					<div class="picture-left picture">
 						<%= image_tag service.main_photo.url(:detail) %>
@@ -29,8 +29,16 @@
 				<% end %>
 			</div><br><br><br>
 		<% end %>
-		
+		<% @services.each.with_index do |service, index| %>
+			<div class="a-service normal">
+					<div class="picture">
+						<%= image_tag service.main_photo.url(:detail) %>
+						<div class="title-area"><%= service.title %></div>
+					</div>
+					<div class="description description-right"><%= service.description %></div>
+			</div><br><br><br><br><br>
+		<% end %>
 	</div>
-</div><br><br><br><br>
+</div>
 
 <%= render 'partials/footer' %>
