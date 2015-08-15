@@ -1,6 +1,6 @@
 <div class="returned-show">
-	<div id="column-1">
-		<%= image_tag @artwork.photo.url(:detail) %>
+	<div id="column-1" style="background-image: url(<%= @artwork.photo.url(:original) %>)">
+
 	</div>
 	<div id="column-2">
 		<div class="artist"><%= @artwork.artist.last_first unless @artwork.artist.nil? %></div>

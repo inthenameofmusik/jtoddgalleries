@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
 	before_action :set_article, only: [:show, :edit, :update, :destroy]
+	before_filter :authenticate, :only => [:admin]
+
 
 	def index
 		@article = Article.order('published_date DESC').all

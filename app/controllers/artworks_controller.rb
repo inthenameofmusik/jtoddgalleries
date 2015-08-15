@@ -17,6 +17,7 @@ class ArtworksController < ApplicationController
 		@artwork_q ||= Artwork.all
 		@last_artwork = Artwork.new
 		@last_artwork = @artwork_q.last
+		@full_feature = true
 	end
 
 	def q
@@ -52,6 +53,7 @@ class ArtworksController < ApplicationController
 
 	def new
 		@artwork = Artwork.new
+		@full_feature = true
 	end
 
 	def edit
