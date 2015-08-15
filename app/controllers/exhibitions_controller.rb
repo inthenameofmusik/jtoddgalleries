@@ -1,5 +1,5 @@
 class ExhibitionsController < ApplicationController
-	before_filter :authenticate, :except => [:index, :get_current, :show]
+	before_filter :authenticate, :except => [:index, :get_current, :get_upcoming, :show]
 	before_filter :fullfeature
 
 	def index
