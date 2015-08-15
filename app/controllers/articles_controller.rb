@@ -39,6 +39,7 @@ class ArticlesController < ApplicationController
 	def ajax_show
 		@article = Article.find(params[:id])
 		render 'ajax_return', layout: false
+		@full_feature = true
 	end
 
 	def admin
