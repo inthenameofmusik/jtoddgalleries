@@ -38,7 +38,7 @@
 		</div>
 		<div id="now-playing-info">
 		"<%= @upcoming_one.title if @upcoming_one.present? %>"<br>
-		<%= @upcoming_one.artist.fullname if @upcoming_one.present? %><br>
+		<%= @upcoming_one.artist.fullname if @upcoming_one.artist.present? %><br>
 		<%= @upcoming_one.from_date.strftime("%B %e, %Y") if @upcoming_one.present? %>
 		</div>
 		<%= link_to "", exhibitions_upcoming_path, :id => "to-now-showing" %>
