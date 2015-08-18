@@ -4,7 +4,7 @@ class EmployeesController < ApplicationController
 
 	def index
 		@full_feature = true
-		@employees = Employee.all
+		@employees = Employee.all.order("created_at ASC")
 	end
 
 	def new
