@@ -1,0 +1,52 @@
+
+<%= render 'partials/header' %>
+
+<br>
+<br>
+<div id="employees-page">
+<%= render :partial => "partials/feature", locals: {type: @full_feature} %>
+</div>
+<br><br>
+
+<div id="full-about-panel">
+	<div id="about-nav-staff">
+		<span>About Us</span><br>
+		<ul>
+			<li id="margin-correct"><%= link_to "Our Gallery", about_gallery_path, :id => "first-link" %></li>
+			<li id="non-margin-correct"><%= link_to "Our Staff", about_staff_path, :id => "last-link" %></li>
+		</ul>
+	</div>
+</div>
+
+<div id="full-employees-panel" class="classy-list-container">
+	<!-- <div id="title">Services</div> -->
+
+	<div id="employees" class="classy-list">
+		<% @employees.each.with_index do |service, index| %>
+			<div class="a-service large">
+				<% if index.even? %>
+					<div class="picture-left picture">
+						<%= image_tag service.staff_photo.url(:proper_height) %>
+						<div class="title-area"><%= service.name %></div>
+					</div>
+					<div class="description description-right"><%= service.bio %></div>
+				<% elsif index.odd? %>
+					<div class="picture-right picture">
+						<%= image_tag service.staff_photo.url(:proper_height) %>
+						<div class="title-area"><%= service.name %></div>
+					</div>
+					<div class="description description-left"><%= service.bio %></div>					
+				<% end %>
+			</div><br><br><br>
+		<% end %>
+		<% @employees.each.with_index do |service, index| %>
+			<div class="a-service normal">
+					<div class="picture">
+						<%= image_tag service.staff_photo.url(:proper_height) %>
+						<div class="title-area"><%= service.name %></div>
+					</div>
+					<div class="description description-right"><%= service.bio %></div>
+			</div><br><br><br><br><br>
+		<% end %>
+	</div>
+</div>

@@ -8,13 +8,13 @@
 </div>
 <br><br>
 
-<div id="full-services-panel">
+<div id="full-services-panel" class="classy-list-container">
 	<div id="title">Services</div>
 	<%= link_to "New Service", new_service_path %>
 
 	<div id="services" class="classy-list">
 		<% @services.each.with_index do |service, index| %>
-			<div class="a-service">
+			<div class="a-service large">
 				<% if index.even? %>
 					<div class="picture-left picture">
 						<%= image_tag service.main_photo.url(:detail) %>

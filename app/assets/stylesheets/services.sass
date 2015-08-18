@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#full-services-panel
+.classy-list-container
 	max-width: 1200px
 	position: relative
 	margin: 0px auto
@@ -14,7 +14,7 @@
 		color: #5e2626
 		font-size: 24px
 		letter-spacing: 9px
-	#services
+	.classy-list
 		width: 100%
 		.a-service.large
 			@media screen and (max-width: 1200px)
@@ -23,6 +23,7 @@
 			height: 300px
 			border-top: 1px #5e2626 solid
 			border-bottom: 1px #5e2626 solid
+			display: table
 			.picture
 				max-width: 500px
 				height: 300px
@@ -42,7 +43,8 @@
 				color: #233f4b
 				font-size: 20px
 				text-align: center
-				line-height: 55px
+				// line-height: 55px
+				padding-top: 18px
 				letter-spacing: 11px
 				&:hover
 					background-color: rgba(255,255,255,0.9)
@@ -55,7 +57,9 @@
 				line-height: 18px
 				height: 80%
 				position: relative
-				top: 60px
+				// top: 60px
+				display: table-cell
+				vertical-align: middle
 			.description-right
 				text-align: right
 			.description-left
@@ -98,4 +102,25 @@
 			.description
 				font-size: 18px
 				font-family: "kempler-std-display"
+.classy-form
+	// border: 2px black solid 
+	width: 600px
+	text-align: center
+	margin: 0px auto
+	input
+		margin-bottom: 30px
+		font-size: 18px
+		width: 250px
+		height: 30px
+	textarea
+		margin-bottom: 30px
+		width: 500px
+		height: 300px
 
+#full-employees-panel
+	.title-area
+		top: 60%
+		bottom: 30%
+		padding-top: 4px
+		letter-spacing: 2px
+		font-family: "clavo"

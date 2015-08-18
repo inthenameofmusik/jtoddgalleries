@@ -17,8 +17,13 @@ Rails.application.routes.draw do
   post 'fineart/show' => 'artworks#ajax_show'
   get 'fineart/feature' => 'artworks#show'
 
+  get 'about/staff/admin' => 'employees#admin'
+
   get 'about/gallery' => 'about#gallery'
-  get 'about/staff' => 'about#staff'
+  get 'about/staff' => 'employees#index'
+
+  get 'employees/admin' => 'employees#admin'
+  resources :employees
 
   post 'article/show' => 'articles#ajax_show'
 
@@ -28,6 +33,7 @@ Rails.application.routes.draw do
 
   get 'articles/admin' => 'articles#admin'
 
+  
   #and back
   get 'exhibitions' => 'exhibitions#index'
   get 'exhibitions/admin' => 'exhibitions#admin'
@@ -38,6 +44,7 @@ Rails.application.routes.draw do
   get 'contact' => 'contact#index'
 
   get 'services/admin' => 'services#admin'
+
   resources :services
 
   get 'clips/expo_now' => 'clips#expo_now'
