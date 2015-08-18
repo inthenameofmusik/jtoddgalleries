@@ -28,6 +28,7 @@
 					<div class="picture-left picture">
 						<%= image_tag service.staff_photo.url(:proper_height) %>
 						<div class="title-area"><%= service.name %></div>
+						<div class="role-area"><%= service.role if service.role.present? %></div>
 					</div>
 					<div class="description-parent">
 						<div class="description description-right"><%= service.bio %></div>
@@ -36,6 +37,7 @@
 					<div class="picture-right picture">
 						<%= image_tag service.staff_photo.url(:proper_height) %>
 						<div class="title-area"><%= service.name %></div>
+						<div class="role-area"><%= service.role if service.role.present? %></div>
 					</div>
 					<div class="description-parent">
 						<div class="description description-left"><%= service.bio %></div>	
@@ -50,9 +52,11 @@
 						<div class="title-area"><%= service.name %></div>
 					</div>
 					<div class="description-parent">
+						<div class="mobile-title"><%= service.name %> - <%= service.role %></div>
 						<div class="description description-right"><%= service.bio %></div>
 					</div>
 			</div><br><br><br><br><br>
 		<% end %>
 	</div>
 </div>
+<%= render 'partials/footer' %>

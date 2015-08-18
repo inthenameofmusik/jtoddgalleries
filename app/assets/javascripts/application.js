@@ -197,6 +197,9 @@ $(function(){
 		delegate: 'a',
 		type: 'image'
 	});
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ 		$("#info-icon-phone").attr("href", "tel:781-237-3434")
+	}
 
 });
 

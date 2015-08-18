@@ -53,7 +53,7 @@
 
 					</div>
 					<div class="a-result-info">
-						<%= art.artist.last_first if art.artist.present? %><br>
+						<%= art.artist.fullname if art.artist.present? %><br>
 						<strong><%= art.title %></strong><span class="hidden_id"><%= art.id %></span><br>
 					</div>
 				</div>
@@ -64,7 +64,7 @@
 					<%= image_tag @artwork_q.photo.url(:listing) %>
 				</div>
 				<div class="a-result-info">
-					<%= @artwork_q.artist.last_first if @artwork_q.artist.present? %><br>
+					<%= @artwork_q.artist.fullname if @artwork_q.artist.present? %><br>
 					<strong><%= @artwork_q.title %></strong><span class="hidden_id"><%= @artwork_q.id %></span><br>
 				</div>
 			</div>
@@ -77,3 +77,4 @@
 </div>
 <br><br><br>
 <br>
+<%= render 'partials/footer' %>

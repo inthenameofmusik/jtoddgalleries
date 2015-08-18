@@ -1,5 +1,6 @@
 <%= simple_form_for @employee, html: {class: "classy-form"}  do |f| %>
 	<%= f.input :name, label: false, placeholder: "Name" %>
+	<%= f.input :role, label: false, placeholder: "Role" %>
 	<%= f.input :bio, label: false, placeholder: "Bio Text" %>
     <%= f.input :staff_photo, as: :file, input_html: {id: "photo-upload-field"}, label: false %>
 	<%= f.button :submit %>
