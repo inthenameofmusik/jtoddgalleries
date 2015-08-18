@@ -10,7 +10,7 @@ gem 'simple_form'
 
 gem 'figaro'
 
-gem 'will_paginate', '~> 3.0.7'
+gem 'will_paginate'
 
 # Use sqlite3 as the database for Active Record
 
