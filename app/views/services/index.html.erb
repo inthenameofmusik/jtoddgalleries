@@ -19,13 +19,17 @@
 						<%= image_tag service.main_photo.url(:detail) %>
 						<div class="title-area"><%= service.title %></div>
 					</div>
-					<div class="description description-right"><%= service.description %></div>
+					<div class="description-parent">
+						<div class="description description-right"><%= service.description %></div>		
+					</div>	
 				<% elsif index.odd? %>
 					<div class="picture-right picture">
 						<%= image_tag service.main_photo.url(:detail) %>
 						<div class="title-area"><%= service.title %></div>
 					</div>
-					<div class="description description-left"><%= service.description %></div>					
+					<div class="description-parent">
+						<div class="description description-left"><%= service.description %></div>		
+					</div>			
 				<% end %>
 			</div><br><br><br>
 		<% end %>
