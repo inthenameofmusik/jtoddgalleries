@@ -71,7 +71,7 @@
 				<span class="article info"><%= @top_news_2.published_date.strftime("%b %e") %>: <%= @top_news_2.title %></span><br>
 				<span class="article info"><%= @top_news_3.published_date.strftime("%b %e") unless @top_news_3.nil? %>: <%= @top_news_3.title unless @top_new_3.nil? %></span><br>
 			</div>
-			<%= link_to "", contact_path, :class => "clickable-overlay" %>
+			<%= link_to "", articles_path, :class => "clickable-overlay" %>
 		</div>
 		<div id="sub-heading-3" class="individual-sub-heading">
 			<div class="desaturated-heading">
