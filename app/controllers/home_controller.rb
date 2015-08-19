@@ -19,6 +19,10 @@ class HomeController < ApplicationController
   	@random_three = Random.rand(0...@total_art)
   	@random_three_art = Artwork.offset(@random_three).first
 
+    @top_news_1 = Article.all.order("published_date DESC").first
+    @top_news_2 = Article.all.order("published_date DESC").limit(2).last
+    @top_news_3 = Article.all.order("published_date DESC").third
+
 	# if (@first_one.from_date..@first_one.to_date).cover?(DateTime.now.to_date)
 	# 	@correct_version = "Now Showing"
 	# else

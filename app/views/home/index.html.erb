@@ -67,9 +67,9 @@
 			</div>
 			<div class="sub-heading-text">
 				<div class="title">News</div><br>
-				<span id="breakpoint-margin" class="article info">Oct 23: Building Renovation</span><br>
-				<span class="article info">Nov 8: Mona Visits</span><br>
-				<span class="article info">January 12: World Famous Visit</span><br>
+				<span id="breakpoint-margin" class="article info"><%= @top_news_1.published_date.strftime("%b %e") %>: <%= @top_news_1.title %></span><br>
+				<span class="article info"><%= @top_news_2.published_date.strftime("%b %e") %>: <%= @top_news_2.title %></span><br>
+				<span class="article info"><%= @top_news_3.published_date.strftime("%b %e") unless @top_news_3.nil? %>: <%= @top_news_3.title unless @top_new_3.nil? %></span><br>
 			</div>
 			<%= link_to "", contact_path, :class => "clickable-overlay" %>
 		</div>
