@@ -30,10 +30,11 @@
 				<div id="column-2">
 					<div id="sub-column-1" class="sub-column">
 						<%= collection_select(:artwork, :artist_id, Artist.order('lower(last_name) ASC'), :last_name, :last_first, include_blank: "Artist") %>
-						<%= collection_select(:sort, :title, Sort.all, :value, :title, include_blank: "Sort") %>
+						<%= collection_select(:style, :title, Style.order('lower(title) ASC'), :title, :title, include_blank: "Style") %>
 					</div>
 					<div id="sub-column-2" class="sub-column">
 						<%= collection_select(:artwork, :subject_ids, Subject.order('lower(title) ASC'), :title, :title, include_blank: "Subject") %>
+						<%= collection_select(:sort, :title, Sort.all, :value, :title, include_blank: "Sort") %>
 						
 					</div>
 					<div id="sub-column-3" class="sub-column">
@@ -75,6 +76,9 @@
 			</div>
 		<% end %>
 	</div>
+
+	<%= will_paginate @artwork_q %>
+	
 	<br><br>
 </div>
 <br><br><br><br><br><br>

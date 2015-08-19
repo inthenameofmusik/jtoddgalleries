@@ -5,7 +5,7 @@ class ArtworksController < ApplicationController
 	end
 
 	def index2
-		@artwork_q ||= Artwork.paginate(page: params[:page], per_page: 20)
+		@artwork_q ||= Artwork.paginate(page: params[:page], per_page: 32)
 		@last_artwork = Artwork.new
 		@last_artwork = @artwork_q.last
 		@full_feature = true
@@ -15,14 +15,14 @@ class ArtworksController < ApplicationController
 	end
 
 	def index3
-		@artwork_q ||= Artwork.all
+		@artwork_q ||= Artwork.paginate(page: params[:page], per_page: 32)
 		@last_artwork = Artwork.new
 		@last_artwork = @artwork_q.last
 		@full_feature = true
 	end
 
 	def q
-		@artwork_q = Artwork.search params[:q], :conditions => {:subject => params[:artwork][:subject_ids], :location => params[:artwork][:location_ids], :artist_last => params[:artwork][:artist_id], :style => params[:style][:title]}, :order => params[:sort][:title]
+		@artwork_q = Artwork.search params[:q], :conditions => {:subject => params[:artwork][:subject_ids], :location => params[:artwork][:location_ids], :artist_last => params[:artwork][:artist_id], :style => params[:style][:title]}, :order => params[:sort][:title], :page => params[:page], :per_page => 32
 		@last_artwork = Artwork.new
 		@last_artwork = @artwork_q.last
 		@full_feature = true
@@ -30,10 +30,11 @@ class ArtworksController < ApplicationController
 	end
 
 	def q2
-		@artwork_q = Artwork.search params[:q], :conditions => {:subject => params[:artwork][:subject_ids], :location => params[:artwork][:location_ids], :artist_last => params[:artwork][:artist_id], :artist_first => params[:artwork][:artist_id]}, :order => params[:sort][:title]
+		@artwork_q = Artwork.search params[:q], :conditions => {:subject => params[:artwork][:subject_ids], :location => params[:artwork][:location_ids], :artist_last => params[:artwork][:artist_id], :style => params[:style][:title]}, :order => params[:sort][:title], :page => params[:page], :per_page => 32
 		@last_artwork = Artwork.new
 		@last_artwork = @artwork_q.last
-		render 'index2'
+		@full_feature = true
+		render 'index3'
 	end
 
 	def q3
