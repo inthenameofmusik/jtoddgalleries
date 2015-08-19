@@ -1,6 +1,6 @@
 <div class="returned-show">
 	<div id="column-1" style="background-image: url(<%= @artwork.photo.url(:original) %>)">
-
+		<a href="<%=@artwork.photo.url%>" class="click-to-popup"></a>
 	</div>
 	<div id="column-2">
 		<div class="artist">
@@ -46,6 +46,10 @@
 			$("#q-search-bar").attr("value", elementContent);
 			$("#query-submit").trigger("click");
 
+		});
+
+		$(".click-to-popup").magnificPopup({
+			type: 'image'
 		});
 
 	</script>

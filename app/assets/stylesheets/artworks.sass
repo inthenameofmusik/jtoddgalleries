@@ -390,12 +390,21 @@ $jtodd-blue: #305768
 				width: 50%
 				height: 100%
 				float: left
+				position: relative
 				background-size: contain
 				background-repeat: no-repeat
 				// overflow: hidden
 				img
 					width: 100%
 					height: 100%
+				.click-to-popup
+					display: block
+					position: absolute
+					width: 100%
+					height: 100%
+					&:hover
+						// border-right: 2px $jtodd-blue solid
+						cursor: pointer
 			#column-2
 				width: 50%
 				box-sizing: border-box
