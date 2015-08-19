@@ -16,6 +16,7 @@
 //= require_tree .
 
 $(function(){
+	$("#click-for-fact").trigger("click");
 	if (!Array.prototype.indexOf) {
 		Array.prototype.indexOf = function(searchElement, fromIndex) {
 

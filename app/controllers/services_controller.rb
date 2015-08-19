@@ -39,6 +39,13 @@ class ServicesController < ApplicationController
 		@services = Service.all
 	end
 
+	def destroy
+		@service = Service.find(params[:id])
+		@service.destroy
+
+		redirect_to action: "admin"
+	end
+
 	private
 
 	def set_service

@@ -1,0 +1,14 @@
+
+<%= render 'partials/header' %>
+
+<br>
+<br>
+<div id="articles-page">
+<%= render :partial => "partials/feature", locals: {type: @full_feature} %>
+</div>
+<br><br>
+
+<div id="facts-page">
+	<div id="title">Update Fact</div>
+	<%= render 'form' %>
+</div>

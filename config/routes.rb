@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   resources :home
 
-  get 'about' => 'about#index'
+  # get 'about' => 'about#index'
   resources :artworks
 
   #for users
@@ -17,7 +17,11 @@ Rails.application.routes.draw do
   post 'fineart/show' => 'artworks#ajax_show'
   get 'fineart/feature' => 'artworks#show'
 
+  get 'about/admin' => 'about#admin'
+  get 'about' => 'employees#index'
   get 'about/staff/admin' => 'employees#admin'
+
+  get 'about/gallery/admin' => 'about#gallery_admin'
 
   get 'about/gallery' => 'about#gallery'
   get 'about/staff' => 'employees#index'
@@ -46,6 +50,11 @@ Rails.application.routes.draw do
   get 'services/admin' => 'services#admin'
 
   resources :services
+
+  get 'facts/ajax' => 'facts#ajax_show'
+
+  get 'facts/admin' => 'facts#admin'
+  resources :facts
 
   get 'clips/expo_now' => 'clips#expo_now'
   get 'clips/expo_upcoming' => 'clips#expo_upcoming'

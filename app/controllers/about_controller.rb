@@ -6,5 +6,9 @@ class AboutController < ApplicationController
   def staff
   	@full_feature = true
   end
+
+  def admin
+  	
+  end
 end
 

@@ -1,0 +1,21 @@
+
+<%= render 'partials/header' %>
+
+<br>
+<br>
+<div id="services-page">
+<%= render :partial => "partials/feature", locals: {type: @full_feature} %>
+</div>
+<br><br>
+
+<div id="facts-page">
+	<div id="title">Facts</div>
+	<div id="new"><%= link_to "New Fact", new_fact_path %>
+	<br><br><br><br>
+
+	<% @facts.each do |fact| %>
+		<div class="a-fact">
+			<%= fact.phrase %> | <%= link_to "Edit", edit_fact_path(fact) %> | <%= link_to "Delete", fact, method: :delete, data: {confirm: 'Are you sure?'} %>
+		</div>
+	<% end %>
+</div>
