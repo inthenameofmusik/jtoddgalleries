@@ -33,6 +33,8 @@ $(".a-result").click(function(e) {
 		$(window).scrollTop(+350);
 	} else if ($original.hasClass("only-one")) {
 		$rowBeginner = $original;
+	} else if ($original.attr("id") == "0") {
+		$rowBeginner = $original;
 	} else {
 		if ($next1.length !== 0) {
 			if ($next1.offset().top !== $thisOffset) {

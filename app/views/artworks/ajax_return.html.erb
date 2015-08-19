@@ -18,9 +18,9 @@
 		<br><br>
 		<div class="additional-info">
 			Style: 
-			<% @artwork.styles.each do |r| %>
-				<%= r.title %>
-			<% end %>
+			<span class="listing"><% @artwork.styles.each do |r| %>
+				<a href="javascript:void(0)" class="fake-search"><%= r.title %></a>
+			<% end %></span>
 			<br>
 			Subjects:
 			<span class="listing"><% @artwork.subjects.each do |r| %>
