@@ -71,7 +71,7 @@
 		<% end %>
 	</div>
 
-	<%= will_paginate @artwork_q %>
+	<%= will_paginate @artwork_q unless @single == true %>
 
 	<br><br>
 </div>
