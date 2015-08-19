@@ -34,6 +34,7 @@ $(".a-result").click(function(e) {
 	} else if ($original.hasClass("only-one")) {
 		$rowBeginner = $original;
 	} else if ($original.attr("id") == "0") {
+		$reverseDirection = true;
 		$rowBeginner = $original;
 	} else {
 		if ($next1.length !== 0) {
