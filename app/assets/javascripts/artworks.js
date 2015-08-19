@@ -87,7 +87,7 @@ $(".a-result").click(function(e) {
 	$original.addClass("selected");
 
 	var $artwork_id = $($original).find(".hidden_id").text();
-	console.log($artwork_id);
+	// console.log($artwork_id);
 
 	var url = window.location.href;
 	var arr = url.split("/");

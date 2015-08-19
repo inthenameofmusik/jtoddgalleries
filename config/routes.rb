@@ -50,6 +50,8 @@ Rails.application.routes.draw do
   get 'clips/expo_now' => 'clips#expo_now'
   get 'clips/expo_upcoming' => 'clips#expo_upcoming'
 
+  get 'for-artists' => 'for_artists#index'
+
   resources :subjects
   resources :locations
   resources :keywords
