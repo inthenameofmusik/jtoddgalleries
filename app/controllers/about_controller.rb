@@ -1,4 +1,5 @@
 class AboutController < ApplicationController
+	before_filter :authenticate, :only => [:admin]
   def gallery
   	@full_feature = true
   end
