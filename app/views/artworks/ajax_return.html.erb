@@ -3,7 +3,11 @@
 
 	</div>
 	<div id="column-2">
-		<div class="artist"><%= @artwork.artist.last_first unless @artwork.artist.nil? %></div>
+		<div class="artist">
+			<span class="listing">
+				<a href="javascript:void(0)" class="fake-search"><%= @artwork.artist.last_first unless @artwork.artist.nil? %></a>
+			</span>
+		</div>
 		<div class="title"><%= @artwork.title %></div>
 
 		Medium:
