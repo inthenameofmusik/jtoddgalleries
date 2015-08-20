@@ -1,0 +1,18 @@
+<%= render 'partials/header' %>
+
+<br>
+<br>
+<div id="index2">
+<%= render :partial => "partials/feature", locals: {type: @full_feature} %>
+</div>
+
+<br>
+<%= render 'partials/artwork_admin' %>
+<br>
+<div class="edit-attributes-form">
+	<div id="title">Update About</div>
+	<%= simple_form_for @about do |f| %>
+		<%= f.input :value, label: false, placeholder: "Text..." %>
+		<%= f.button :submit %>
+	<% end %>
+</div>

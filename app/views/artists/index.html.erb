@@ -2,8 +2,9 @@
 
 <br>
 <br>
-
+<div id="index2">
 <%= render :partial => "partials/feature", locals: {type: @full_feature} %>
+</div>
 
 <br>
 <%= render 'partials/artwork_admin' %>
@@ -24,11 +25,13 @@
 		<table>
 			<tr>
 				<td><strong>Record</strong></td>
+				<td><strong>Edit</strong></td>
 				<td><strong>Delete</strong></td>
 			</tr>
 			<% @artist.each do |s| %>
 			<tr>
 				<td><%= s.fullname %></td>
+				<td><%= link_to "Edit", edit_artist_path(s) %></td>
 				<td><%= link_to "Delete", s, method: :delete %></td>
 			</tr>
 			<% end %>

@@ -1,7 +1,13 @@
 class KeywordsController < ApplicationController
+	before_filter :set_keyword, only: [:edit, :update]
 	def index
 		@keyword = Keyword.all
 		@new_keyword = Keyword.new
+		@full_feature = true
+	end
+
+	def edit
+		@full_feature = true
 	end
 
 	def create
@@ -16,6 +22,14 @@ class KeywordsController < ApplicationController
 		end
 	end
 
+	def update
+		if @keyword.update(keyword_params)
+			redirect_to action: 'index'
+		else
+			redirect_to action: 'edit'
+		end
+	end
+
 	def destroy
 		@keyword = Keyword.find(params[:id])
 		@keyword.destroy
@@ -24,6 +38,10 @@ class KeywordsController < ApplicationController
   	end
 
 	private
+
+	def set_keyword
+		@keyword = Keyword.find(params[:id])
+	end
 
 	def keyword_params
 		params.require(:keyword).permit(:title)

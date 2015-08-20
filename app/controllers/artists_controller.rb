@@ -2,6 +2,7 @@ class ArtistsController < ApplicationController
 	def index
 		@artist = Artist.all
 		@new_artist = Artist.new
+		@full_feature = true
 	end
 
 	def popup
@@ -20,6 +21,20 @@ class ArtistsController < ApplicationController
 				flash[:error] = "That record already exists"
 				redirect_to action: 'index'
 			end
+		end
+	end
+
+	def edit
+		@artist = Artist.find(params[:id])
+		@full_feature = true
+	end
+
+	def update
+		@artist = Artist.find(params[:id])
+		if @artist.update(artist_params)
+			redirect_to action: 'index', notice: "Artist Updated"
+		else
+			redirect_to action: 'edit'
 		end
 	end
 

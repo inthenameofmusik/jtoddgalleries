@@ -37,6 +37,10 @@ Rails.application.routes.draw do
 
   get 'articles/admin' => 'articles#admin'
 
+  post 'gallery/snippet' => 'about#update'
+
+  patch 'gallery/snippet' => 'about#update'
+
   
   #and back
   get 'exhibitions' => 'exhibitions#index'
