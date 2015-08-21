@@ -57,10 +57,29 @@ class ArtworksController < ApplicationController
 	def new
 		@artwork = Artwork.new
 		@full_feature = true
+		@keyword = Keyword.new
+		@keyword_tell = "new"
 	end
 
 	def edit
 		@artwork = Artwork.find(params[:id])
+		@artwork_id = params[:id]
+		@full_feature = true
+		@keyword = Keyword.new
+		@keyword_tell = "edit"
+	end
+
+	def keyword_update
+		@full_feature = true
+		@new_keyword = Keyword.create(title: params[:title])
+
+		if params[:type] == "new"
+			redirect_to action: "new"
+		else
+			@artwork = Artwork.find(params[:the_id])
+			render 'edit'
+		end
+
 	end
 
 	def create
@@ -74,10 +93,11 @@ class ArtworksController < ApplicationController
 	end
 
 	def update
-		@artwork = Artwork.find(params[:id])
-		@artwork_q = @artwork
+		@artwork_q = Artwork.find(params[:id])
+		@single = true
+		@full_feature = true
 
-		if @artwork.update(artwork_params)
+		if @artwork_q.update(artwork_params)
 			render action: 'index2'
 		else
 			render 'edit'
@@ -94,5 +114,9 @@ class ArtworksController < ApplicationController
 
 		def artwork_params
 			params.require(:artwork).permit(:title, :jtg, :photo, :width, :height, :artist_id, :subject_ids => [], :location_ids => [], :keyword_ids => [], :style_ids => [], :medium_ids => [])
+		end
+
+		def keyword_params
+			params.require(:keyword).permit(:title)
 		end
 end

@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   post 'fineart/show' => 'artworks#ajax_show'
   get 'fineart/feature' => 'artworks#show'
 
+  post 'fineart/keyword-update' => 'artworks#keyword_update'
+
   get 'about/admin' => 'about#admin'
   get 'about' => 'employees#index'
   get 'about/staff/admin' => 'employees#admin'

@@ -161,6 +161,18 @@ $(function(){
 				$("#popup-panel").html(data);
 			});
 		}
+
+		if (e.keyCode == 75 && e.altKey) {
+			$("#keyword-addition").css("display", "block");
+			window.setTimeout(focusNow, 100);
+			function focusNow () {
+				$("#keyword-enter").focus();
+			}
+		}
+	});
+
+	$("#close-box").click(function() {
+		$("#keyword-addition").css("display", "none");
 	});
 
 	$(".a-article").click(function() {

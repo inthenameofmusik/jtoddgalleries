@@ -1,0 +1,14 @@
+<div id="keyword-addition">
+	<%= form_tag('/fineart/keyword-update', method: :post) do %>
+		<%= hidden_field_tag 'type', @keyword_tell %>
+		<%= hidden_field_tag 'the_id', @artwork_id unless @artwork_id.nil? %>
+		<%= text_field_tag 'title', '', :id => "keyword-enter" %>
+		<%= submit_tag 'New Keyword', :id => "keyword-submit" %>
+	<% end %>
+	<div id="close-box">Close</div>
+</div>
+
+<script>
+
+	
+</script>
