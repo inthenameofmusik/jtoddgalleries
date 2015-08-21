@@ -2,6 +2,15 @@
 	<%= image_tag "footer/bottom_divider.png", :id => "bottom-divider" %>
 	
 	<div id="footer-panels">
+		
+		<div id="footer-panel-2" class="a-footer-panel">
+			<div class="panel-title">
+			Newsletter
+			</div>
+			<div id="email-form">
+			<%= link_to "Subscribe to<br>J. Todd News".html_safe, "http://jtoddgalleries.com/" %>
+			</div>
+		</div>
 		<div id="footer-panel-1" class="a-footer-panel">
 			<div class="panel-title">
 			Follow Us
@@ -18,19 +27,6 @@
 				</div>
 			</div>
 		</div>
-		
-		<div id="footer-panel-2" class="a-footer-panel">
-			<div class="panel-title">
-			Newsletter
-			</div>
-			<div id="email-form">
-			<%= form_for("/subscribe", method: "post") do %>
-				<%= label_tag(:e, "Enter Email") %> <br><br>
-				<%= text_field_tag(:e) %> <br><br>
-				<%= submit_tag("Subscribe", id: "submit-button") %>
-			<% end %>
-			</div>
-		</div>
 		<div id="footer-panel-3" class="a-footer-panel">
 			<div class="panel-title">
 			For Artists
@@ -42,6 +38,7 @@
 	</div>
 	<br>
 	<br>
+	<div id="temp-submission"><%= link_to "Artist Submission Information", for_artists_path %></div>
 	<div id="copyright">
 	©2015 J. Todd Galleries
 	</div>

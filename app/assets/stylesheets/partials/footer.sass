@@ -30,6 +30,9 @@ footer
 			.panel-title
 				font-size: 18px
 				letter-spacing: 9px
+		#footer-panel-1
+			@media screen and (max-width: 530px)
+				margin-bottom: 60px
 		#social-icons
 			position: relative
 			// border: 1px black solid
@@ -64,7 +67,9 @@ footer
 			#email-form
 				text-align: center
 				margin: 0px auto
-				margin-top: 30px
+				margin-top: 50px
+				@media screen and (max-width: 530px)
+					margin-bottom: 60px
 				font-size: 13px
 				letter-spacing: 6px
 				form
@@ -80,8 +85,14 @@ footer
 					width: 80px
 					font-size: 14px
 					background-color: #e9e8e0
+				a
+					text-decoration: none
+					font-family: "trajan-pro-3"
+					color: $jtodd-blue
+					&:hover
+						border-bottom: 1px $jtodd-blue solid
 		#footer-panel-3
-			@media screen and (max-width: 800px)
+			@media screen and (max-width: 800px) and (min-width: 531px)
 				display: none
 			#pinterest-panel
 				margin-top: 14px
@@ -99,7 +110,15 @@ footer
 					color: $jtodd-blue
 					&:hover
 						border-bottom: 1px $jtodd-blue solid
-
+	#temp-submission
+		letter-spacing: 2px
+		font-size: 14px
+		text-align: center
+		display: none
+		a
+			color: $jtodd-blue
+		@media screen and (max-width: 800px) and (min-width: 531px)
+			display: block
 	#copyright
 		position: relative
 		clear: both
