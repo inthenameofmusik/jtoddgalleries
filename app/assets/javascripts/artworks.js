@@ -1,7 +1,7 @@
 var $somethingSelected = false;
 var elementContent;
 
-$(".a-result").click(function(e) {
+$(".a-result-admin").click(function(e) {
 	
 	var $original = $(this);
 
@@ -102,9 +102,74 @@ $(".a-result").click(function(e) {
 			} else {
 				$rowBeginner.after(data);
 			}
+			$(".returned-show").css("display", "block");
+			$(".returned-show").unwrap().unwrap();
 		});
 	$(document).scrollTop($currentScroll);
 });
+
+
+
+
+
+var $somethingSelected = false;
+var elementContent;
+
+$(".a-result").click(function(e) {
+	
+	var $original = $(this);
+	var $originalRow = $(this).parent().parent().closest('tr').eq(0)
+
+	var $currentScroll;
+	var $reverseDirection = false;
+
+	$currentScroll = $(document).scrollTop();
+
+	// if ($somethingSelected == true) {
+	// 	$("div.returned-show").remove();
+	// }
+
+	function removeIt () {
+		$(".insert-row").remove();
+	}
+
+	if ($somethingSelected == true){
+		if ($original.hasClass("selected")) {
+			$originalRow.removeClass("selected-row");
+			$original.removeClass("selected");
+			$(".returned-show").slideUp("fast");
+			setTimeout( removeIt, 500 );
+			$somethingSelected = false;
+			return;
+		} else {
+			$(".selected").removeClass("selected");
+			$(".selected-row").removeClass("selected-row");
+			$(".insert-row").remove();
+		}
+	}
+
+	var $thisOffset = $original.offset().top;
+
+
+	$somethingSelected = true;
+	$original.addClass("selected");
+	$originalRow.addClass("selected-row");
+
+	var $artwork_id = $($original).find(".hidden_id").text();
+	console.log($artwork_id);
+
+	var url = window.location.href;
+	var arr = url.split("/");
+	var result = arr[0] + "//" + arr[2]
+
+	$.post(result + "/fineart/show", {id: $artwork_id})
+		.done(function(data){
+			$originalRow.after(data);
+			$(".returned-show").slideDown("fast");
+		});
+	$(document).scrollTop($currentScroll);
+});
+
 
 
 

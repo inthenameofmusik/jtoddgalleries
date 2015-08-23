@@ -236,9 +236,13 @@ $jtodd-blue: #305768
 			#column-1
 				box-sizing: border-box
 				width: 50%
+				@media screen and (max-width: 700px)
+					width: 100%
 				height: 100%
 				// border: 1px red solid
 				float: left
+				@media screen and (max-width: 700px)
+					float: none
 				#row-1
 					margin-top: 7px
 					width: 100%
@@ -248,7 +252,7 @@ $jtodd-blue: #305768
 					color: $jtodd-blue
 				#row-2
 					position: relative
-					width: 70%
+					width: 50%
 					margin: 0px auto
 					height: 25px
 					background-image: image_url("input_diamond.png")
@@ -278,9 +282,13 @@ $jtodd-blue: #305768
 			#column-2
 				box-sizing: border-box
 				width: 50%
+				@media screen and (max-width: 700px)
+					width: 100%
 				height: 100%
 				// border: 1px blue solid
 				float: left
+				@media screen and (max-width: 700px)
+					margin-left: 25px
 				.sub-column
 					padding-top: 24px
 					box-sizing: border-box
@@ -322,25 +330,45 @@ $jtodd-blue: #305768
 			height: 27px
 			background-image: image_url("rounded_bottom_2.png")
 			background-size: 100%
+			@media screen and (max-width: 700px)
+				display: none
 			// border: 1px green solid
 	#results-panel
 		margin-top: 20px
+		@media screen and (max-width: 700px)
+			margin-top: 110px
 		// border: 1px blue solid
 		overflow: hidden
 		position: relative
+		table
+			width: 100%
+			td
+				width: 25%
 		.a-result
 			box-sizing: border-box
 			position: relative
-			width: 25%
+			width: 100%
 			height: 242px
-			float: left
-			padding: 2%
+			@media screen and (max-width: 570px)
+				height: 210px
+			// float: left
+			padding: 7%
 			// border: 1px black solid
 			.a-result-photo
 				box-sizing: border-box
 				position: relative
 				width: 100%
 				height: 165px
+				@media screen and (max-width: 875px)
+					height: 150px
+				@media screen and (max-width: 775px)
+					height: 135px
+				@media screen and (max-width: 675px)
+					height: 120px
+				@media screen and (max-width: 550px)
+					height: 100px
+				@media screen and (max-width: 475px)
+					height: 85px
 				img
 					width: 100%
 				div
@@ -351,12 +379,12 @@ $jtodd-blue: #305768
 					background-color: white
 					font-family: "kepler-std-display"
 					top: 0
-				#update-photo
+				.update-photo
 					background-color: rgba(220, 219, 20, 0.1)
 					left: 0
 					&:hover
 						background-color: rgba(220,225,10, 0.8)
-				#delete-photo
+				.delete-photo
 					background-color: rgba(230,20,20,0.1)
 					&:hover
 						background-color: rgba(230,20,14,0.8)
@@ -386,8 +414,13 @@ $jtodd-blue: #305768
 			// border: 1px purple solid
 			clear: both
 			padding: 8px
+			display: none
 			#column-1
 				width: 50%
+				@media screen and (max-width: 800px)
+					width: 60%
+				@media screen and (max-width: 700px)
+					width: 70%
 				height: 100%
 				float: left
 				position: relative
@@ -407,24 +440,44 @@ $jtodd-blue: #305768
 						cursor: pointer
 			#column-2
 				width: 50%
+				@media screen and (max-width: 800px)
+					width: 40%
+				@media screen and (max-width: 700px)
+					width: 30%
 				box-sizing: border-box
 				line-height: 25px
 				letter-spacing: 4.5px
 				font-family: 'kepler-std-display'
 				padding: 10px
+				overflow-y: auto
+				@media screen and (max-width: 800px)
+					padding-top: 0px
 				float: left
 				.title
 					font-weight: bold
 					font-size: 18px
+					@media screen and (max-width: 700px)
+						font-size: 16px
 					letter-spacing: 5px
 				.additional-info
 					font-size: 14px
+					@media screen and (max-width: 700px)
+						font-size: 12px
+						padding-top: 0px
+						line-height: 15px
 				.listing
 					font-style: italic
+					font-size: 16px
+					@media screen and (max-width: 700px)
+						font-size: 12px
 					a
 						text-decoration: none
 						color: gray
 						border-bottom: 1px gray solid
+				.the-jtg
+					font-size: 16px
+					@media screen and (max-width: 700px)
+						font-size: 12px
 #keyword-addition
 	position: fixed
 	height: 200px
@@ -458,7 +511,154 @@ $jtodd-blue: #305768
 		&:hover
 			opacity: 0.6
 
+.returned-td
+	width: 100%
 
+.mobile-remove
+	@media screen and (max-width: 700px)
+		display: none
+.another-mobile-remove
+	@media screen and (max-width: 600px)
+		display: none
 
-
-
+#results-panel-admin
+	margin-top: 20px
+	// border: 1px blue solid
+	overflow: hidden
+	position: relative
+	tr
+		width: 960px
+	.a-result-admin
+		box-sizing: border-box
+		position: relative
+		width: 25%
+		height: 242px
+		@media screen and (max-width: 570px)
+			height: 210px
+		float: left
+		padding: 2%
+		// border: 1px black solid
+		.a-result-photo
+			box-sizing: border-box
+			position: relative
+			width: 100%
+			height: 165px
+			@media screen and (max-width: 875px)
+				height: 150px
+			@media screen and (max-width: 775px)
+				height: 135px
+			@media screen and (max-width: 675px)
+				height: 120px
+			@media screen and (max-width: 550px)
+				height: 100px
+			@media screen and (max-width: 475px)
+				height: 85px
+			img
+				width: 100%
+			div
+				position: absolute
+				text-align: center
+				width: 50%
+				display: block
+				background-color: white
+				font-family: "kepler-std-display"
+				top: 0
+			.update-photo
+				background-color: rgba(220, 219, 20, 0.1)
+				left: 0
+				&:hover
+					background-color: rgba(220,225,10, 0.8)
+			.delete-photo
+				background-color: rgba(230,20,20,0.1)
+				&:hover
+					background-color: rgba(230,20,14,0.8)
+				right: 0
+			div a
+				display: block
+				text-decoration: none
+				letter-spacing: 3px
+				font-weight: bold
+				color: rgba(0,0,0,.2)
+				&:hover
+					color: rgba(0,0,0,.8)
+		.a-result-info
+			text-align: center
+			font-family: "Marion W01 Italic"
+			font-style: italic
+			color: $jtodd-blue
+	.a-result-admin:hover
+		border: 1px $jtodd-blue solid
+		cursor: pointer
+	.hidden_id
+		display: none
+	.returned-show
+		box-sizing: border-box
+		width: 100%
+		height: 350px
+		// border: 1px purple solid
+		clear: both
+		padding: 8px
+		display: none
+		#column-1
+			width: 50%
+			@media screen and (max-width: 800px)
+				width: 60%
+			@media screen and (max-width: 700px)
+				width: 70%
+			height: 100%
+			float: left
+			position: relative
+			background-size: contain
+			background-repeat: no-repeat
+			// overflow: hidden
+			img
+				width: 100%
+				height: 100%
+			.click-to-popup
+				display: block
+				position: absolute
+				width: 100%
+				height: 100%
+				&:hover
+					// border-right: 2px $jtodd-blue solid
+					cursor: pointer
+		#column-2
+			width: 50%
+			@media screen and (max-width: 800px)
+				width: 40%
+			@media screen and (max-width: 700px)
+				width: 30%
+			box-sizing: border-box
+			line-height: 25px
+			letter-spacing: 4.5px
+			font-family: 'kepler-std-display'
+			padding: 10px
+			overflow-y: auto
+			@media screen and (max-width: 800px)
+				padding-top: 0px
+			float: left
+			.title
+				font-weight: bold
+				font-size: 18px
+				@media screen and (max-width: 700px)
+					font-size: 16px
+				letter-spacing: 5px
+			.additional-info
+				font-size: 14px
+				@media screen and (max-width: 700px)
+					font-size: 12px
+					padding-top: 0px
+					line-height: 15px
+			.listing
+				font-style: italic
+				font-size: 16px
+				@media screen and (max-width: 700px)
+					font-size: 12px
+				a
+					text-decoration: none
+					color: gray
+					border-bottom: 1px gray solid
+			.the-jtg
+				font-size: 16px
+				@media screen and (max-width: 700px)
+					font-size: 12px

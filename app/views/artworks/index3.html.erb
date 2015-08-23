@@ -47,14 +47,14 @@
 			</div>
 		<% end %>
 	</div>
-	<div id="results-panel">
+	<div id="results-panel-admin">
 		<% if @artwork_q.respond_to?('each') %>
 			<% @artwork_q.each.with_index do |art, index| %>
-				<div class="a-result<%= " last-one" if art.id == @last_artwork.id %>" id="<%= index %>">
+				<div class="a-result-admin<%= " last-one" if art.id == @last_artwork.id %>" id="<%= index %>">
 					<div class="a-result-photo">
 						<%= image_tag art.photo.url(:listing) %>
-							<div id="update-photo"><%= link_to "Update", edit_artwork_path(art.id) %></div>
-							<div id="delete-photo"><%= link_to "Delete", artwork_path(art.id), 'data-method' => :delete, 'data-confirm' => "Are you sure?" %></div>
+							<div class="update-photo"><%= link_to "Update", edit_artwork_path(art.id) %></div>
+							<div class="delete-photo"><%= link_to "Delete", artwork_path(art.id), 'data-method' => :delete, 'data-confirm' => "Are you sure?" %></div>
 					</div>
 					<div class="a-result-info">
 						<%= art.artist.last_first if art.artist.present? %><br>

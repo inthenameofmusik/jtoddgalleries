@@ -45,30 +45,53 @@
 		<% end %>
 	</div>
 	<div id="results-panel">
-		<% if @artwork_q.respond_to?('each') %>
-			<% @artwork_q.each.with_index do |art, index| %>
-				<div class="a-result<%= " last-one" if art.id == @last_artwork.id %>" id="<%= index %>">
-					<div class="a-result-photo">
-						<%= image_tag art.photo.url(:listing) %>
-
-					</div>
-					<div class="a-result-info">
-						<%= art.artist.fullname if art.artist.present? %><br>
-						<strong><%= art.title %></strong><span class="hidden_id"><%= art.id %></span><br>
-					</div>
-				</div>
-			<% end %>
-		<% else %>
-			<div class="a-result only-one" id="0">
-				<div class="a-result-photo">
-					<%= image_tag @artwork_q.photo.url(:listing) %>
-				</div>
-				<div class="a-result-info">
-					<%= @artwork_q.artist.fullname if @artwork_q.artist.present? %><br>
-					<strong><%= @artwork_q.title %></strong><span class="hidden_id"><%= @artwork_q.id %></span><br>
-				</div>
-			</div>
-		<% end %>
+		<table>
+			<tbody>
+				<% if @artwork_q.respond_to?('each') %>
+					<% @artwork_q.each_with_index do |art, index| %>
+						<% if (index == 0) %>
+							<tr><td><div class="a-result" id="<%= index %>">
+								<div class="a-result-photo">
+									<%= image_tag art.photo.url(:listing) %>
+								</div>
+								<div class="a-result-info">
+									<%= art.artist.fullname if art.artist.present? %><br>
+									<strong><%= art.title %></strong><span class="hidden_id"><%= art.id %></span><br>
+								</div>
+							</div></td>
+						<% else %>
+							<% if ((index % 4) == 0) %></tr><tr><% end %>
+							<td><div class="a-result" id="<%= index %>">
+								<div class="a-result-photo">
+									<%= image_tag art.photo.url(:listing) %>
+								</div>
+								<div class="a-result-info">
+									<%= art.artist.fullname if art.artist.present? %><br>
+									<strong><%= art.title %></strong><span class="hidden_id"><%= art.id %></span><br>
+								</div>
+							</div></td>
+						<% end %>
+					<% end %>
+				<% else %>
+					<tr>
+						<td>
+							<div class="a-result" id="0">
+								<div class="a-result-photo">
+									<%= image_tag @artwork_q.photo.url(:listing) %>
+								</div>
+								<div class="a-result-info">
+									<%= @artwork_q.artist.fullname if @artwork_q.artist.present? %></br>
+									<strong><%= @artwork_q.title %></strong><span class="hidden_id"><%= @artwork_q.id %></span></br>
+								</div>
+							</div>
+						</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+				<% end %>
+			</tbody>
+		</table>
 	</div>
 
 	<%= will_paginate @artwork_q unless @single == true %>

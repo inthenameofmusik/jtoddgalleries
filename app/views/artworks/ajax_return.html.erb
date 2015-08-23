@@ -1,3 +1,4 @@
+<tr class="insert-row"><td colspan="4">
 <div class="returned-show">
 	<div id="column-1" style="background-image: url(<%= @artwork.photo.url(:original) %>)">
 		<a href="<%=@artwork.photo.url%>" class="click-to-popup"></a>
@@ -10,20 +11,20 @@
 		</div>
 		<div class="title"><%= @artwork.title %></div>
 
-		Medium:
+		<span class="mobile-remove">Medium:</span>
 		<% @artwork.media.each do |r| %>
-			<%= r.title %>
+			<span class="mobile-remove"><%= r.title %></span>
 		<% end %>
 		<br>
 		<% unless @artwork.width.nil? %>
 			<%= @artwork.width %>" x <%= @artwork.height %>"<br>
 		<% end %>
-		JTG#: <%= @artwork.jtg %><br>
-		<br><br>
+		<div class="the-jtg">JTG#: <%= @artwork.jtg %></div><br>
+		<br class="another-mobile-remove"><br class="mobile-remove">
 		<div class="additional-info">
-			Style: 
-			<span class="listing"><% @artwork.styles.each do |r| %>
-				<a href="javascript:void(0)" class="fake-search"><%= r.title %></a>
+			<span class="mobile-remove">Style:</span>
+			<span class="listing mobile-remove"><% @artwork.styles.each do |r| %>
+				<a href="javascript:void(0)" class="fake-search mobile-remove"><%= r.title %></a>
 			<% end %></span>
 			<br>
 			Subjects:
@@ -54,3 +55,4 @@
 
 	</script>
 </div>
+</td></tr>
