@@ -222,25 +222,31 @@ $jtodd-blue: #305768
 		width: 100%
 		height: 130px
 		// border: 1px red solid
+		border-top: 1px $jtodd-blue solid
 		#top-round
 			width: 100%
 			height: 25px
 			background-image: image_url("rounded_top.png")
 			background-size: cover
+			// border: 1px gold solid
+			// border-top: 1px $jtodd-blue solid
+			display: none
 		#main-row
 			width: 100%
 			height: 70px
 			// border: 1px blue solid
-			margin-left: -20px
+			// margin-left: -20px
 			font-family: "Marion W01 Italic"
 			#column-1
 				box-sizing: border-box
 				width: 50%
 				@media screen and (max-width: 700px)
-					width: 100%
+					width: 105%
 				height: 100%
 				// border: 1px red solid
 				float: left
+				margin-top: 13px
+				position: relative
 				@media screen and (max-width: 700px)
 					float: none
 				#row-1
@@ -252,16 +258,17 @@ $jtodd-blue: #305768
 					color: $jtodd-blue
 				#row-2
 					position: relative
-					width: 50%
+					width: 300px
 					margin: 0px auto
 					height: 25px
 					background-image: image_url("input_diamond.png")
 					background-size: contain
 					background-repeat: no-repeat
+					background-position: center
 					// border: 1px green solid
 					#q-search-bar
 						position: absolute
-						width: 58%
+						width: 300px
 						top: 2px
 						left: 0
 						right: 0
@@ -288,7 +295,7 @@ $jtodd-blue: #305768
 				// border: 1px blue solid
 				float: left
 				@media screen and (max-width: 700px)
-					margin-left: 25px
+					// margin-left: 25px
 				.sub-column
 					padding-top: 24px
 					box-sizing: border-box
@@ -304,6 +311,8 @@ $jtodd-blue: #305768
 						text-align: center
 						letter-spacing: 2.1px
 						color: $jtodd-blue
+						@media screen and (max-width: 700px)
+							height: 25px
 				#sort_title
 					margin-top: 20px
 				#query-submit
@@ -328,11 +337,13 @@ $jtodd-blue: #305768
 		#bottom-round
 			width: 100%
 			height: 27px
-			background-image: image_url("rounded_bottom_2.png")
+			// background-image: image_url("rounded_bottom_2.png")
 			background-size: 100%
 			@media screen and (max-width: 700px)
 				display: none
 			// border: 1px green solid
+			// display: none
+			border-bottom: 1px $jtodd-blue solid
 	#results-panel
 		margin-top: 20px
 		@media screen and (max-width: 700px)
