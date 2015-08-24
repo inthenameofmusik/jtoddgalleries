@@ -22,18 +22,18 @@
 		<div class="the-jtg">JTG#: <%= @artwork.jtg %></div><br>
 		<br class="another-mobile-remove"><br class="mobile-remove">
 		<div class="additional-info">
-			<span class="mobile-remove">Style:</span>
-			<span class="listing mobile-remove"><% @artwork.styles.each do |r| %>
+			<span class="mobile-remove small-remove">Style:</span>
+			<span class="listing mobile-remove small-remove"><% @artwork.styles.each do |r| %>
 				<a href="javascript:void(0)" class="fake-search mobile-remove"><%= r.title %></a>
 			<% end %></span>
 			<br>
-			Subjects:
-			<span class="listing"><% @artwork.subjects.each do |r| %>
+			<span class="small-remove">Subjects:</span>
+			<span class="listing small-remove"><% @artwork.subjects.each do |r| %>
 				<a href="javascript:void(0)" class="fake-search"><%= r.title %></a> |
 			<% end %></span>
 			<br>
-			Locations:
-			<span class="listing"><% @artwork.locations.each do |r| %>
+			<span class="small-remove">Locations:</span>
+			<span class="listing small-remove"><% @artwork.locations.each do |r| %>
 				<a href="javascript:void(0)" class="fake-search"><%= r.title %></a> |
 			<% end %></span>
 			<br>

@@ -1,6 +1,10 @@
 <footer>
 	<%= image_tag "footer/bottom_divider.png", :id => "bottom-divider" %>
-	
+	<div id="signup">
+		<div id="popup">
+			<%= render 'partials/newsletter' %>
+		</div>
+	</div>
 	<div id="footer-panels">
 		
 		<div id="footer-panel-2" class="a-footer-panel">
@@ -8,7 +12,10 @@
 			Newsletter
 			</div>
 			<div id="email-form">
-			<%= link_to "Subscribe to<br>J. Todd News".html_safe, "http://jtoddgalleries.com/" %>
+				<span id="to-popup-signup">
+				Subscribe to<br>
+				J. Todd News
+				</span>
 			</div>
 		</div>
 		<div id="footer-panel-1" class="a-footer-panel">
@@ -39,6 +46,7 @@
 	<br>
 	<br>
 	<div id="temp-submission"><%= link_to "Artist Submission Information", for_artists_path %></div>
+
 	<div id="copyright">
 	©2015 J. Todd Galleries
 	</div>

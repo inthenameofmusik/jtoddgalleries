@@ -67,11 +67,12 @@ footer
 			#email-form
 				text-align: center
 				margin: 0px auto
-				margin-top: 50px
+				margin-top: 48px
 				@media screen and (max-width: 530px)
 					margin-bottom: 60px
 				font-size: 13px
 				letter-spacing: 6px
+				line-height: 24px
 				form
 					width: 300px
 				#e
@@ -85,12 +86,14 @@ footer
 					width: 80px
 					font-size: 14px
 					background-color: #e9e8e0
-				a
-					text-decoration: none
-					font-family: "trajan-pro-3"
-					color: $jtodd-blue
-					&:hover
-						border-bottom: 1px $jtodd-blue solid
+			span
+				margin-top: 40px
+				cursor: pointer
+				text-decoration: none
+				font-family: "trajan-pro-3"
+				color: $jtodd-blue
+				&:hover
+					border-bottom: 1px $jtodd-blue solid
 		#footer-panel-3
 			@media screen and (max-width: 800px) and (min-width: 531px)
 				display: none
@@ -125,4 +128,23 @@ footer
 		letter-spacing: 4px
 		font-size: 11px	
 		padding-top: 20px
-		// border: 1px green solid		
+		// border: 1px green solid	
+
+#signup
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background-color: rgba(0,0,0,.4)
+	z-index: 100
+	display: none
+	#popup
+		position: absolute
+		top: 35%
+		bottom: 25%
+		left: 30%
+		right: 30%
+		background-color: white
+		border: 3px $jtodd-blue solid
+
