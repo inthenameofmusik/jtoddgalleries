@@ -26,6 +26,15 @@ class ArtworksController < ApplicationController
 		@last_artwork = Artwork.new
 		@last_artwork = @artwork_q.last
 		@full_feature = true
+		@single = false
+		@double = false
+		@triple = false
+		@single = true if @artwork_q.count == 1
+		@double = true if @artwork_q.count == 2
+		@triple = true if @artwork_q.count == 3
+		logger.debug "#{@single}"
+		logger.debug "#{@double}"
+		logger.debug "#{@triple}"
 		render 'index2'
 	end
 
@@ -34,6 +43,7 @@ class ArtworksController < ApplicationController
 		@last_artwork = Artwork.new
 		@last_artwork = @artwork_q.last
 		@full_feature = true
+		# @single = true
 		render 'index3'
 	end
 

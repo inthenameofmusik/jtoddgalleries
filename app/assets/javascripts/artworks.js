@@ -172,4 +172,9 @@ $(".a-result").click(function(e) {
 
 
 
+$("select").change(function() {
+	$("#query-submit").trigger("click");
+});
+
+
 

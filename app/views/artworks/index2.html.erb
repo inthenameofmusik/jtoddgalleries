@@ -47,7 +47,7 @@
 	<div id="results-panel">
 		<table>
 			<tbody>
-				<% if @artwork_q.respond_to?('each') %>
+				<% if @artwork_q.respond_to?('each') && @single != true && @double != true && @triple != true %>
 					<% @artwork_q.each_with_index do |art, index| %>
 						<% if (index == 0) %>
 							<tr><td><div class="a-result" id="<%= index %>">
@@ -72,6 +72,87 @@
 							</div></td>
 						<% end %>
 					<% end %>
+				<% elsif @artwork_q.respond_to?('each') && @single == true %>
+					<tr>
+						<td>
+							<div class="a-result" id="0">
+								<div class="a-result-photo">
+									<%= image_tag @artwork_q[0].photo.url(:listing) %>
+								</div>
+								<div class="a-result-info">
+									<%= @artwork_q[0].artist.fullname if @artwork_q[0].artist.present? %></br>
+									<strong><%= @artwork_q[0].title %></strong><span class="hidden_id"><%= @artwork_q[0].id %></span></br>
+								</div>
+							</div>
+						</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+				<% elsif @artwork_q.respond_to?('each') && @double == true %>
+					<tr>
+						<td>
+							<div class="a-result" id="0">
+								<div class="a-result-photo">
+									<%= image_tag @artwork_q[0].photo.url(:listing) %>
+								</div>
+								<div class="a-result-info">
+									<%= @artwork_q[0].artist.fullname if @artwork_q[0].artist.present? %></br>
+									<strong><%= @artwork_q[0].title %></strong><span class="hidden_id"><%= @artwork_q[0].id %></span></br>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="a-result" id="1">
+								<div class="a-result-photo">
+									<%= image_tag @artwork_q[1].photo.url(:listing) %>
+								</div>
+								<div class="a-result-info">
+									<%= @artwork_q[1].artist.fullname if @artwork_q[1].artist.present? %></br>
+									<strong><%= @artwork_q[1].title %></strong><span class="hidden_id"><%= @artwork_q[1].id %></span></br>
+								</div>
+							</div>
+						</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+				<% elsif @artwork_q.respond_to?('each') && @triple == true %>
+					<tr>
+						<td>
+							<div class="a-result" id="0">
+								<div class="a-result-photo">
+									<%= image_tag @artwork_q[0].photo.url(:listing) %>
+								</div>
+								<div class="a-result-info">
+									<%= @artwork_q[0].artist.fullname if @artwork_q[0].artist.present? %></br>
+									<strong><%= @artwork_q[0].title %></strong><span class="hidden_id"><%= @artwork_q[0].id %></span></br>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="a-result" id="1">
+								<div class="a-result-photo">
+									<%= image_tag @artwork_q[1].photo.url(:listing) %>
+								</div>
+								<div class="a-result-info">
+									<%= @artwork_q[1].artist.fullname if @artwork_q[1].artist.present? %></br>
+									<strong><%= @artwork_q[1].title %></strong><span class="hidden_id"><%= @artwork_q[1].id %></span></br>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="a-result" id="2">
+								<div class="a-result-photo">
+									<%= image_tag @artwork_q[2].photo.url(:listing) %>
+								</div>
+								<div class="a-result-info">
+									<%= @artwork_q[2].artist.fullname if @artwork_q[2].artist.present? %></br>
+									<strong><%= @artwork_q[2].title %></strong><span class="hidden_id"><%= @artwork_q[2].id %></span></br>
+								</div>
+							</div>
+						</td>
+						<td>&nbsp;</td>
+					</tr>
 				<% else %>
 					<tr>
 						<td>
